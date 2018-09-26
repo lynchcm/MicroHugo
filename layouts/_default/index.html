@@ -1,0 +1,236 @@
+{{ partial "head.html" . }}
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="/images/micro-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid" id="intro">
+    <div class="container">
+        <h1 class="text-center">We’re Micro. We’re tiny business experts. Focus on what you’re good at while we create the brand and website to match.</h1>
+    </div>
+</div>
+
+<div id="mobile-image" class="jumbotron jumbotron-fluid d-md-none">
+    <img src="/images/apple-computer-cup-597331-mob.jpg" class="img-fluid">
+</div>
+
+<div class="container-fluid" id="summary"> 
+    <div class="row">
+        <div class="col-md-6 d-flex order-md-1" id="summary-bullet-column">
+            <div id="summary-bullet-section">
+                <h2 class="d-md-none instant-brand-package">INSTANT BRAND PACKAGE</h2>
+                <p>✓ WEBSITE<br>✓ STOCK IMAGES<br>✓ ALL CONTENT WRITTEN<br>✓ LOGO DESIGN<br>✓ BRAND COLOURS &amp; FONTS<br>✓ BUSINESS CARD DESIGN</p>
+                <div id="price-tag">
+                    <h2 class="text-center">£299</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-0" id="summary-prose-column">
+            <h2 class="d-none d-md-block instant-brand-package">INSTANT BRAND PACKAGE</h2>
+            <p>You could get a logo made on Fiverr and spend hours wrestling with website design tools... or you could focus on what you’re good at and leave the rest to us.</p>
+            <p>Our Instant Brand package includes everything you need to get started quickly: a website, content written by a professional copywriter, logo, brand colour palette, and business card design. All for £299 and completed in less than a week.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="benefit-circle" id="approach"><img id="approach-image" src="/images/360approach.png"></div>
+            <div class="features-headings">
+                <h3>360 APPROACH</h3>
+            </div>
+            <p class="text-center">Create a coherent look, save time, and get great value by getting everything in one place.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="benefit-circle" id="micro-prices"><img id="micro-prices-image" src="/images/microprices.png"></div>
+            <div class="features-headings">
+                <h3>MICRO PRICES</h3>
+            </div>
+            <p class="text-center">A website, all content, a logo, and a business card design for just £299.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="benefit-circle" id="never-outsourced"><img id="never-outsourced-image" src="/images/neveroutsourced.png"></div>
+            <div class="features-headings">
+                <h3>NEVER OUTSOURCED</h3>
+            </div>
+            <p class="text-center">UK based, native English speakers — talk directly to the people working on your project.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="benefit-circle" id="quick-turnaround"><img id="quick-turnaround-image" src="/images/quickturnaround.png"></div>
+            <div class="features-headings">
+                <h3>QUICK TURNAROUND</h3>
+            </div>
+            <p class="text-center">Know exactly when we're working on your project and have it back in days not months.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 d-none d-lg-block" id="extra-services-left">
+            <div class="grey-overlay"></div>
+        </div>
+        <div class="col-lg-6" id="extra-services-right">
+            <div class="grey-overlay"></div>
+            <h2>EXTRA SERVICES</h2>
+            <div class="extra-service-container">
+                <div class="extra-service-text">
+                    <h3>SUPPORT PLUS</h3>
+                    <p>Let us handle updates and send you website traffic insights.</p>
+                </div>
+                <div class="arrow-button" id="arrow-button-support">
+                    <span>></span>
+                </div>
+            </div>
+            <div class="extra-service-container">
+                <div class="extra-service-text">
+                    <h3>SPREAD THE WORD</h3>
+                    <p>Post on social media every day without even logging in.</p>
+                </div>
+                <div class="arrow-button" id="arrow-button-spread">
+                    <span>></span>
+                </div>
+            </div>
+            <div class="extra-service-container">
+                <div class="extra-service-text">
+                    <h3>NETWORK READY</h3>
+                    <p>Become the face of your company on LinkedIn.</p>
+                </div>
+                <div class="arrow-button" id="arrow-button-network">
+                    <span>></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="portfolio-carousel" class="carousel slide d-none d-md-block" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+        <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+        <li data-target="#portfolio-carousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block mx-auto" src="/images/genneu.png">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block mx-auto" src="/images/ckcoaching.png">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block mx-auto" src="/images/concept34.png">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block mx-auto" src="/images/portfoliro.png">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#portfolio-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div id="about-section" class="container-fluid">
+    <h2>About</h2>
+    <p>We founded Micro after starting two tiny businesses of our own.</p>
+    <p>Finding something between an expensive web design agency and copy-and-paste website templates turned out to be, well, impossible.</p>
+    <p>We started Micro to be the service we couldn’t find: affordable web design with all the other bits and pieces that make a brand — all in one place.</p>
+    <p>We bring our first hand business experience to every project, helping you shape your brand and communicate it to the world.</p>
+    <div class="row">
+        <div class="col-md-6 d-flex bio-column justify-content-center">
+            <div class="person-photo order-md-1">
+                <img src="/images/ro.png">
+            </div>
+            <div class="person-name order-md-0">
+                <h3>ROANNA MOTTERSHEAD</h3>
+            </div>
+            <div class="person-desc order-md-2">
+                <p>With seven years’ experience in marketing and branding, Roanna takes care of the copywriting, design, and social media side of projects.</p>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex bio-column justify-content-center">
+            <div class="person-photo order-md-1">
+                <img src="/images/chris.png">
+            </div>
+            <div class="person-name order-md-0">
+                <h3>CHRIS LYNCH</h3>
+            </div>
+            <div class="person-desc order-md-2">
+                <p>An engineer by training, Chis focuses on coding and building websites. When he's not bringing designs to life, he’s also a beady-eyed editor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid contact-section">
+    <h2>Contact</h2>
+    <p>Whether you’re just thinking about going freelance or have already taken the leap, we’d love to hear about your project. Get in touch using the form below or email <a href="mailto: hello@wearemicro.co">hello@wearemicro.co</a>.</p>
+</div>
+<div id="contact-form-container" class="container-fluid contact-section">
+
+    <form id="contact-form" method="post">
+        <div class="row">
+            <div class="col-md-3 offset-md-3">
+                <input id="name-input" type="text" name="name-input" placeholder="Name">
+            </div>
+            <div class="col-md-3">
+                <input id="email-input" type="email" name="email-address" placeholder="Email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <textarea id="message-input" rows="3" name="message-input" placeholder="Message"></textarea>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="sendButton">SEND</button>
+        </div>
+    </form>
+    <div id="form-alert"><? echo $alertMessage; ?></div>
+    <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
+</div>
+
+<div class="container-fluid footer-section">
+    <div class="text-center">
+        <img src="/images/twitter.png">
+        <img src="/images/email.png">
+    </div>
+    <p id="copyright">&copy; 2018 by Micro Boutique Branding</p>
+    <p>Registered address:<br>Micro Boutique Branding Ltd, Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX<br>Registered in England and Wales<br>Company number 10993015</p>
+</div>
+
+{{ partial "footer.html" . }}
