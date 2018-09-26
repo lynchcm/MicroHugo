@@ -1,6 +1,6 @@
 +++
 date = "2018-09-26 15:22:18 +0000"
-resource_centre_h1 = "Resource Centre"
+resource_centre_h1 = "Resource Centre (CMS)"
 section_1_subtitle = ""
 section_1_title = "Test1"
 section_2_subtitle = ""
