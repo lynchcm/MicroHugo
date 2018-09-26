@@ -12,4 +12,19 @@ fields:
     required: true
 - type: text
   label: Section One Title
-  name: section_one_title
+  name: section_1_title
+- type: text
+  name: section_2_title
+  label: Section Two Title
+- type: text
+  name: section_3_title
+  label: Section Three Title
+- type: text
+  name: section_4_title
+  label: Section Four Title
+- type: text
+  name: section_5_title
+  label: Section Five Title
+- type: text
+  name: section_6_title
+  label: Section Six Title
