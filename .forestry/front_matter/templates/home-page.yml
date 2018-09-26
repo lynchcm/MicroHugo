@@ -7,3 +7,5 @@ fields:
   label: Banner Headline
   name: banner_headline
   description: H1 text placed on main banner with blue background.
+pages:
+- content/_index.html
