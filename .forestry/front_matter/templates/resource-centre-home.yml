@@ -10,3 +10,6 @@ fields:
   description: Resource Centre main heading (H1)
   config:
     required: true
+- type: text
+  label: Section One Title
+  name: section_one_title
