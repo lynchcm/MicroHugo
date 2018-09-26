@@ -1,0 +1,12 @@
+---
+label: Resource Centre Home
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: Resource Centre
+  label: Resource Centre H1
+  name: resource_centre_h1
+  description: Resource Centre main heading (H1)
+  config:
+    required: true
