@@ -24,6 +24,8 @@ p {
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 6vw;
+    color: #4A4A4A;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,6 +57,17 @@ h3 {
     background-color: #13C3C6;
     color: #FFFFFF;
     margin-bottom: 0;
+    
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 6vw;
+    }
+
+    @media only screen and (min-width: 768px) {
+        h1 {
+            font-size: 50px;
+        }
+    }
 }
 
 #mobile-image {
@@ -472,4 +485,15 @@ input {
     font-size: 18px;
     color: #13C3C6;
     padding-top: 20px;
+}
+
+#resource-centre-sections {
+    color: white;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid black;
+    
+    .col-md-6 {
+        height: 200px;
+    }
 }
