@@ -15,7 +15,7 @@
         <div class="col-md-6">
 
 
-            {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch "potato1.jpg" }}
+            {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch ".Params.image" }}
             
             {{ $imgurlcms := .Params.image }}
             
