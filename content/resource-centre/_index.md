@@ -14,6 +14,6 @@ section_5_title = "boring"
 section_6_subtitle = "bored"
 section_6_title = "boroed still"
 title = "Resource Centre"
-image = "/images/potato2.jpg"
+image = "potato2.jpg"
 +++
 Starting your own business is an incredible learning curve — even if you have years of experience, there’s always something new to pick up. Speed up the process with our dedicated resource centre. You’ll find everything from tips on picking your business name and defining your target audience to technical advice on SEO and website hosting, all tailored for micro businesses.
