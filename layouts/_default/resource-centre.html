@@ -4,6 +4,13 @@
     <div class="container">
         <h1>{{ .Params.resource_centre_h1 }}</h1>
         <p>{{ .Content }}</p>
+        
+        <img srcset="/images/small.png 400w,
+                         /images/medium.png 600w,
+                         /images/large.png 1000w">
+                 <!--src="/images/small.png">-->
+        
+        
     </div>
 </div>
 <div class="container" id="resource-centre-sections">
@@ -18,6 +25,7 @@
             {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.image) }}
             {{ $resized := $resource.Resize "200x" }}
             <img src="{{$resized.Permalink}}">
+            
             
             
         </div>
