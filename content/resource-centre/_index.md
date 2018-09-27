@@ -1,6 +1,6 @@
 +++
 date = "2018-09-26 15:22:18 +0000"
-image = "/uploads/flower-clipart-11.jpg"
+image = "/uploads/potato1.jpg"
 resource_centre_h1 = "Resource Centre (CMS)"
 section_1_subtitle = "Hi"
 section_1_title = "Test1"
