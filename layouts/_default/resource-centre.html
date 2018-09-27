@@ -15,7 +15,7 @@
         <div class="col-md-6">
             {{ with .Params.image }}
                 {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                {{ $resized := $imageResource.Fill "200x200" }}
+                {{ $resized := $imageResource.Resize "200x" }}
                 <img src="{{ $resized.RelPermalink }}" />
             {{ end }}
         </div>
