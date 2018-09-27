@@ -13,11 +13,9 @@
             {{ .Params.section_1_subtitle }}
         </div>
         <div class="col-md-6">
-            {{ with .Params.image }}
-                {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
-                {{ $resized := $imageResource.Resize "200x" }}
-                <img src="{{ $resized.RelPermalink }}" />
-            {{ end }}
+            {{ $resource := .Resources.GetMatch "potato*" }}
+            {{ $image := $resource.Resize "200x" }}
+		    <img src="{{ $image.RelPermalink }}">
         </div>
     </div>
     <div class="row">
