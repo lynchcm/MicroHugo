@@ -1,5 +1,6 @@
 +++
 date = "2018-09-26 15:22:18 +0000"
+image = "/uploads/flower-clipart-11.jpg"
 resource_centre_h1 = "Resource Centre (CMS)"
 section_1_subtitle = "Hi"
 section_1_title = "Test1"
@@ -14,6 +15,6 @@ section_5_title = "boring"
 section_6_subtitle = "bored"
 section_6_title = "boroed still"
 title = "Resource Centre"
-image = "potato2.jpg"
+
 +++
 Starting your own business is an incredible learning curve — even if you have years of experience, there’s always something new to pick up. Speed up the process with our dedicated resource centre. You’ll find everything from tips on picking your business name and defining your target audience to technical advice on SEO and website hosting, all tailored for micro businesses.
