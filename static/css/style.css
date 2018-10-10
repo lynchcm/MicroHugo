@@ -385,12 +385,79 @@ input {
   color: #13C3C6;
   padding-top: 20px; }
 
+.grey-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+  .grey-hover-overlay:hover {
+    background-color: #FFFFFF55; }
+
 #resource-centre-sections {
-  color: white;
   text-align: center;
-  background-color: aqua;
-  border: 1px solid black; }
+  margin-bottom: 60px; }
+  #resource-centre-sections a:hover {
+    text-decoration: none;
+    background-color: red;
+    z-index: 100; }
+  #resource-centre-sections h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 26px;
+    padding: 0px 10px; }
+  #resource-centre-sections p {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 0; }
   #resource-centre-sections .col-md-6 {
-    height: 200px; }
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  #resource-centre-sections .row {
+    position: relative;
+    z-index: 2; }
+    #resource-centre-sections .row .image-block {
+      height: 150px; }
+    #resource-centre-sections .row img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5; }
+  #resource-centre-sections .row:hover {
+    background-color: #FFFFFFA0; }
+  #resource-centre-sections .spacer {
+    height: 20px;
+    width: 100%; }
+  @media only screen and (min-width: 768px) {
+    #resource-centre-sections h2 {
+      font-size: 36px;
+      padding: 0px 10px; }
+    #resource-centre-sections p {
+      font-size: 18px; }
+    #resource-centre-sections .col-md-6 {
+      padding: 0; }
+    #resource-centre-sections .row .image-block {
+      height: auto; }
+    #resource-centre-sections .row img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; } }
+  #resource-centre-sections #row-1 {
+    background-color: #929292; }
+  #resource-centre-sections #row-2 {
+    background-color: #13C3C6; }
+  #resource-centre-sections #row-3 {
+    background-color: #FF636B; }
+  #resource-centre-sections #row-4 {
+    background-color: #FFA963; }
+  #resource-centre-sections #row-5 {
+    background-color: #929292; }
+  #resource-centre-sections #row-6 {
+    background-color: #13C3C6; }
 
 /*# sourceMappingURL=style.css.map */

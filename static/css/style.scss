@@ -1,9 +1,20 @@
+$MicroGrey: #929292;
+$MicroDarkGrey: #4A4A4A;
+$MicroBlue: #13C3C6;
+$MicroCoral: #FF636B;
+$MicroOrange: #FFA963;
+
+$MainFont: 'Poppins', sans-serif;
+$SecondaryFont: 'Josefin Sans', sans-serif;
+
+$medium: 768px;
+
 .navbar {
     background-color: white;
 }
 
 .nav-link {
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
 }
 
 .nav-item {
@@ -18,13 +29,13 @@ p {
     padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 0;
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 6vw;
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
     text-align: center;
 }
 
@@ -35,10 +46,9 @@ h1 {
 }
 
 h2 {
- //   font-family: 'Lato', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -49,12 +59,12 @@ h3 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 200;
     font-size: 28px;
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
     text-align: center;
 }
 
 #intro {
-    background-color: #13C3C6;
+    background-color: $MicroBlue;
     color: #FFFFFF;
     margin-bottom: 0;
     
@@ -139,7 +149,7 @@ h3 {
     width:120px;
     height: 120px;
     border-radius: 50%;
-    background-color: #FFA963;
+    background-color: $MicroOrange;
     position: absolute;
     right: 10px;
     top: -80px;
@@ -206,11 +216,11 @@ h3 {
 }
 
 #approach {
-    background-color: #13C3C6;
+    background-color: $MicroBlue;
 }
 
 #micro-prices {
-    background-color: #929292;
+    background-color: $MicroGrey;
 }
 
 #never-outsourced {
@@ -218,7 +228,7 @@ h3 {
 }
 
 #quick-turnaround {
-    background-color: #FFA963;
+    background-color: $MicroOrange;
 }
 
 .features-headings {
@@ -307,15 +317,15 @@ h3 {
 }
 
 #arrow-button-support {
-    background-color: #13C3C6;
+    background-color: $MicroBlue;
 }
 
 #arrow-button-spread {
-    background-color: #FFA963;
+    background-color: $MicroOrange;
 }
 
 #arrow-button-network {
-    background-color: #FF636B;
+    background-color: $MicroCoral;
 }
 
 .carousel-item {
@@ -326,25 +336,25 @@ h3 {
 .carousel-control-next-icon:after {
     content: '>';
     font-size: 55px;
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
 }
 
 .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
-    color: #4A4A4A;
+    color: $MicroDarkGrey;
 }
 
 .carousel-indicators li {
-    background-color: #929292;
+    background-color: $MicroGrey;
 }
 
 .carousel-indicators .active {
-    background-color: #4A4A4A;
+    background-color: $MicroDarkGrey;
 }
 
 #about-section {
-    background-color: #13C3C6;
+    background-color: $MicroBlue;
 }
 
 #about-section h2 {
@@ -389,7 +399,7 @@ h3 {
 }
 
 .contact-section {
-    background-color: #929292;
+    background-color: $MicroGrey;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
@@ -407,7 +417,7 @@ h3 {
 }
 
 a {
-    color: #13C3C6;
+    color: $MicroBlue;
 }
 
 #contact-form-container {
@@ -419,7 +429,7 @@ a {
 }
 
 input {
-    background-color: #929292;
+    background-color: $MicroGrey;
     box-shadow: 0;
     border: none;
     border-bottom: 1px solid white;
@@ -436,7 +446,7 @@ input {
 }
 
 #message-input {
-    background-color: #929292;
+    background-color: $MicroGrey;
     border: none;
     resize: none;
     border-bottom: 1px solid white;
@@ -449,7 +459,7 @@ input {
 #sendButton {
     text-align: center;
     border: none;
-    background-color: #929292;
+    background-color: $MicroGrey;
     color: white;
     font-size: 150%;
 }
@@ -484,17 +494,129 @@ input {
 
 #copyright {
     font-size: 18px;
-    color: #13C3C6;
+    color: $MicroBlue;
     padding-top: 20px;
 }
 
+.grey-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+    &:hover {
+        background-color: #FFFFFF55;
+    }
+}
+
 #resource-centre-sections {
-    color: white;
     text-align: center;
-    background-color: aqua;
-    border: 1px solid black;
+    margin-bottom: 60px;
+    
+    a:hover {
+        text-decoration: none;
+        background-color: red;
+        z-index: 100;
+    }
+    
+    h2 {
+        font-family: $MainFont;
+        color: white;
+        font-size: 26px;
+        padding: 0px 10px;
+    }
+    
+    p {
+        font-family: $MainFont;
+        color: white;
+        font-size: 18px;
+        padding-bottom: 0;
+    }
     
     .col-md-6 {
-        height: 200px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .row {
+        //margin-top: 10px;
+        position: relative;
+        z-index: 2;
+        
+        .image-block {
+            height: 150px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+    }
+    
+    .row:hover {
+        background-color: #FFFFFFA0;
+    }
+    
+    .spacer {
+        height: 20px;
+        width: 100%;
+    }
+    
+    @media only screen and (min-width: $medium) {
+        h2 {
+            font-size: 36px;
+            padding: 0px 10px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+
+        .col-md-6 {
+            padding: 0;
+        }
+
+        .row {
+            .image-block {
+                height: auto;
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    #row-1 {
+        background-color: $MicroGrey;
+    }
+    
+    #row-2 {
+        background-color: $MicroBlue;
+    }
+    
+    #row-3 {
+        background-color: $MicroCoral;
+    }
+    
+    #row-4 {
+        background-color: $MicroOrange;
+    }
+    
+    #row-5 {
+        background-color: $MicroGrey;
+    }
+    
+    #row-6 {
+        background-color: $MicroBlue;
     }
 }
