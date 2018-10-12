@@ -3,6 +3,7 @@ $MicroDarkGrey: #4A4A4A;
 $MicroBlue: #13C3C6;
 $MicroCoral: #FF636B;
 $MicroOrange: #FFA963;
+$transparentWhite: #FFFFFFA0;
 
 $MainFont: 'Poppins', sans-serif;
 $SecondaryFont: 'Josefin Sans', sans-serif;
@@ -100,7 +101,7 @@ h3 {
 }
 
 #summary-prose-column {
-    background-color: #FFFFFFA0;
+    background-color: $transparentWhite;
     text-align: center;
 }
 
@@ -619,4 +620,62 @@ input {
     #row-6 {
         background-color: $MicroBlue;
     }
+}
+
+
+
+.article-list-item-wrapper {
+    position: relative;
+    padding: 0;
+    margin-bottom: 50px;
+    
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    .article-list-image {
+        position: absolute;
+        height: 100%;
+        
+        @media only screen and (min-width: $medium) {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+        }
+    }
+    
+    .article-list-text {
+        position: relative;
+        margin: 15px;
+        border-radius: 5px;
+        background-color: $transparentWhite;
+        
+        @media only screen and (min-width: $medium) {
+            width: 50%;
+            margin: 0;
+            background-color: none;
+        }
+        
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.capitals {
+    text-transform: uppercase;
 }

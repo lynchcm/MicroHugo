@@ -7,127 +7,32 @@
     </div>
 </div>
 <div class="container" id="resource-centre-sections">
-    <a href="#">
-        <div class="row" id="row-1">
+    
+    
+    {{ $.Scratch.Set "counter" 0 }}
+    
+    {{ range where (.Site.Pages.ByParam "order") "Params.layout" "article-list" }}
+        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+    <a href="{{ .Permalink }}">
+        <div class="row" id='row-{{ $.Scratch.Get "counter" }}'>
             <div class="grey-hover-overlay"></div>
-            <div class="col-md-6 order-md-last image-block">
-                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.row1image) }}
+            <div class='col-md-6 {{ if eq (mod ($.Scratch.Get "counter") 2) 1 }}order-md-last {{ end }}image-block'>
+                {{ $resource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.section_image) }}
                 {{ $resizedSmall := $resource.Resize "400x" }}
                 {{ $resizedMed := $resource.Resize "800x" }}
-                {{ $resizedLarge := $resource.Resize "1200x" }}
                 <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w,
-                             {{$resizedLarge.Permalink}} 1200w,"
+                             {{$resizedMed.Permalink}} 800w"
                      src="{{$resource.Permalink}}">
             </div>
             <div class="col-md-6">
-                <h2>{{ .Params.section_1_title }}</h2>
-                <p>{{ .Params.section_1_subtitle }}</p>
+                <h2>{{ .Params.article_list_h1 }}</h2>
+                <p>{{ .Params.article_list_summary }}</p>
             </div>
         </div>
+        <div class="row spacer d-block d-md-none"></div>
     </a>
-    <div class="row spacer d-block d-md-none"></div>
-    <a href="#">
-        <div class="row" id="row-2">
-            <div class="grey-hover-overlay"></div>
-            <div class="col-md-6 image-block">
-                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.row2image) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
-                {{ $resizedMed := $resource.Resize "800x" }}
-                {{ $resizedLarge := $resource.Resize "1200x" }}
-                <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w,
-                             {{$resizedLarge.Permalink}} 1200w,"
-                     src="{{$resource.Permalink}}">
-            </div>
-            <div class="col-md-6">
-                <h2>{{ .Params.section_2_title }}</h2>
-                <p>{{ .Params.section_2_subtitle }}</p>
-            </div>
-        </div>
-    </a>
-    <div class="row spacer d-block d-md-none"></div>
-    <a href="#">
-        <div class="row" id="row-3">
-            <div class="grey-hover-overlay"></div>
-            <div class="col-md-6 order-md-last image-block">
-                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.row3image) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
-                {{ $resizedMed := $resource.Resize "800x" }}
-                {{ $resizedLarge := $resource.Resize "1200x" }}
-                <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w,
-                             {{$resizedLarge.Permalink}} 1200w,"
-                     src="{{$resource.Permalink}}">
-            </div>
-            <div class="col-md-6">
-                <h2>{{ .Params.section_3_title }}</h2>
-                <p>{{ .Params.section_3_subtitle }}</p>
-            </div>
-
-        </div>
-    </a>
-    <div class="row spacer d-block d-md-none"></div>
-    <a href="#">
-        <div class="row" id="row-4">
-            <div class="grey-hover-overlay"></div>
-            <div class="col-md-6 image-block">
-                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.row4image) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
-                {{ $resizedMed := $resource.Resize "800x" }}
-                {{ $resizedLarge := $resource.Resize "1200x" }}
-                <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w,
-                             {{$resizedLarge.Permalink}} 1200w,"
-                     src="{{$resource.Permalink}}">
-            </div>
-            <div class="col-md-6">
-                <h2>{{ .Params.section_4_title }}</h2>
-                <p>{{ .Params.section_4_subtitle }}</p>
-            </div>
-        </div>
-    </a>
-    <div class="row spacer d-block d-md-none"></div>
-    <a href="#">
-        <div class="row" id="row-5">
-            <div class="grey-hover-overlay"></div>
-            <div class="col-md-6 order-md-last image-block">
-                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.row5image) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
-                {{ $resizedMed := $resource.Resize "800x" }}
-                {{ $resizedLarge := $resource.Resize "1200x" }}
-                <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w,
-                             {{$resizedLarge.Permalink}} 1200w,"
-                     src="{{$resource.Permalink}}">
-            </div>
-            <div class="col-md-6">
-                <h2>{{ .Params.section_5_title }}</h2>
-                <p>{{ .Params.section_5_subtitle }}</p>
-            </div>
-
-        </div>
-    </a>
-    <div class="row spacer d-block d-md-none"></div>
-    <a href="#">
-        <div class="row" id="row-6">
-            <div class="grey-hover-overlay"></div>
-            <div class="col-md-6 image-block">
-                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.row6image) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
-                {{ $resizedMed := $resource.Resize "800x" }}
-                {{ $resizedLarge := $resource.Resize "1200x" }}
-                <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w,
-                             {{$resizedLarge.Permalink}} 1200w,"
-                     src="{{$resource.Permalink}}">
-            </div>
-            <div class="col-md-6">
-                <h2>{{ .Params.section_6_title }}</h2>
-                <p>{{ .Params.section_6_subtitle }}</p>
-            </div>
-        </div>
-    </a>
+    {{ end }}
+    
 </div>
 
 {{ partial "footer.html" . }}

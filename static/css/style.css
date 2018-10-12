@@ -460,4 +460,42 @@ input {
   #resource-centre-sections #row-6 {
     background-color: #13C3C6; }
 
+.article-list-item-wrapper {
+  position: relative;
+  padding: 0;
+  margin-bottom: 50px; }
+  .article-list-item-wrapper a:hover {
+    text-decoration: none; }
+  .article-list-item-wrapper .article-list-image {
+    position: absolute;
+    height: 100%; }
+    @media only screen and (min-width: 768px) {
+      .article-list-item-wrapper .article-list-image {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%; } }
+    .article-list-item-wrapper .article-list-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0; }
+  .article-list-item-wrapper .article-list-text {
+    position: relative;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: #FFFFFFA0; }
+    @media only screen and (min-width: 768px) {
+      .article-list-item-wrapper .article-list-text {
+        width: 50%;
+        margin: 0;
+        background-color: none; } }
+    .article-list-item-wrapper .article-list-text h2 {
+      margin: 0; }
+    .article-list-item-wrapper .article-list-text p {
+      margin: 0; }
+
+.capitals {
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */
