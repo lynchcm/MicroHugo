@@ -507,7 +507,7 @@ input {
   text-align: left;
   font-size: 28px; }
 .article-formatting img {
-  text-align: center;
+  margin: 0 auto;
   width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
