@@ -679,3 +679,17 @@ input {
 .capitals {
     text-transform: uppercase;
 }
+
+.article-formatting {
+    h2 {
+        font-family: $MainFont;
+        font-size: 34px;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        font-family: $SecondaryFont;
+        text-align: left;
+        font-size: 28px;
+    }
+}

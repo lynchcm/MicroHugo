@@ -498,4 +498,13 @@ input {
 .capitals {
   text-transform: uppercase; }
 
+.article-formatting h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 34px; }
+.article-formatting h3 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 28px; }
+
 /*# sourceMappingURL=style.css.map */
