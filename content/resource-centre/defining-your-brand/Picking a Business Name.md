@@ -33,8 +33,8 @@ For a full list of the rules for naming a limited company, take a look at the GO
 
 It doesn’t matter how much you love a particular name, if someone has already registered it, you need to go back to the drawing board.
 
-If you’re UK based, you’ll need the Companies House name availability checker open to do a quick check on any ideas before you get too attached to them.
+If you’re UK based, you’ll need the Companies House [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability) open to do a quick check on any ideas before you get too attached to them.
 
 But it’s not just whether it’s legally available that matters: you’ll want to check if the domain is available too. It’s no use having registered the perfect name if you can’t get the website address to match.
 
-As well as the name availability checker, have a domain registrar like GoDaddy open in the next window.
+As well as the [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability), have a domain registrar like GoDaddy open in the next window.
