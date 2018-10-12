@@ -38,3 +38,23 @@ If you’re UK based, you’ll need the Companies House [name availability check
 But it’s not just whether it’s legally available that matters: you’ll want to check if the domain is available too. It’s no use having registered the perfect name if you can’t get the website address to match.
 
 As well as the [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability), have a domain registrar like GoDaddy open in the next window.
+
+![](/uploads/company-name-availability-checker.png)
+
+Since a bunch of new domain endings became available in 2011, this part has become a lot easier.
+
+Instead of being limited to ‘.co.uk’ or ‘.com’, you’ll find anything from ‘.company’, to ‘.life’, ‘.guru’, and ‘.wedding’. Some are intended for certain purposes (e.g. ‘.edu’ for educational institutions), but most are open to everyone.
+
+Be open to variations. For example, our full registered business name is Micro Boutique Branding, but micro.co.uk is taken so we went for [www.wearemicro.co](https://wearemicro.co).
+
+## Business Name Ideas
+
+### USING YOUR OWN NAME FOR YOUR BUSINESS
+
+Rather than the pressure to come up with something, using your name for your business can seem like an easy solution.
+
+There are two things to weigh up: is your name suitable as a brand name and what are your long-term plans for growing your business?
+
+In terms of suitability, consider the length and complexity of your name. You need people to be able to easily recall your company name and search for you online. Unusual spellings or long names would make this tricky.
+
+![](/uploads/ben-and-jerrys-logo.png)![](/uploads/rolls-royce.png)
