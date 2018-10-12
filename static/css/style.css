@@ -506,5 +506,8 @@ input {
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
   font-size: 28px; }
+.article-formatting img {
+  text-align: center;
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
