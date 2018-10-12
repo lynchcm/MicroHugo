@@ -57,8 +57,6 @@ There are two things to weigh up: is your name suitable as a brand name and what
 
 In terms of suitability, consider the length and complexity of your name. You need people to be able to easily recall your company name and search for you online. Unusual spellings or long names would make this tricky.
 
-![](/uploads/ben-and-jerrys-logo.png)
-
 For the long-term, if you plan to keep your business pretty small then using your name can work. There’s no additional company name for clients to remember and they immediately associate your business with you the person.
 
 The downside is if you plan to grow your company significantly or to try and sell it, having your name might create expectations of personal service that you no longer provide and limit resale value.
