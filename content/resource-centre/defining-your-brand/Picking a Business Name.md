@@ -58,3 +58,61 @@ There are two things to weigh up: is your name suitable as a brand name and what
 In terms of suitability, consider the length and complexity of your name. You need people to be able to easily recall your company name and search for you online. Unusual spellings or long names would make this tricky.
 
 ![](/uploads/ben-and-jerrys-logo.png)![](/uploads/rolls-royce.png)
+
+For the long-term, if you plan to keep your business pretty small then using your name can work. There’s no additional company name for clients to remember and they immediately associate your business with you the person.
+
+The downside is if you plan to grow your company significantly or to try and sell it, having your name might create expectations of personal service that you no longer provide and limit resale value.
+
+A good compromise can be to use your name as inspiration. How about taking your initials, like JCB, or using part of your name, like Dyson? If you have two founders, can you put your names together in some way?
+
+### ​DESCRIPTIVE BUSINESS NAMES
+
+Sometimes there’s nothing wrong with just spelling it out!
+
+Plenty of well-known company names are either literal descriptions of what they do, like Iceland or Facebook — you might have heard of them!  
+
+You could also take inspiration from the service you provide, like Welcome Break and Travelex, or a feature of your business, like burger chain ‘5 Guys’.
+
+### GO ABSTRACT: CHOOSING A RANDOM BUSINESS NAME
+
+The opposite of the above option, you could just pick a random word or phrase that appeals to you.
+
+It’s becoming an increasingly popular option, for example digital healthcare firm Dr Ed recently rebranded as Zava, and Monsoon — a women’s clothing chain — has been around for years.
+
+For a bit of help getting started, we like random name generator [Naming.net](http://www.naming.net/).
+
+Unlike other random name generators that are industry specific, it allows you to search by things like what letter you’d like it to begin with, number of syllables, if you want rhyming parts or Latin roots in there.
+
+It’s a great way to get a lot of ideas in a very short space of time.
+
+### ​LINK TO YOUR KEY BENEFIT
+
+One way to create a memorable business name is to link it to the benefits you provide.
+
+For example, popular soft drink Pepsi gets its name from the word dyspepsia as it was invented to cure indigestion.
+
+When we were choosing our name, we wanted something that would emphasise that we worked with small businesses. That's why we chose Micro.
+
+Think about the one thing you want to be known for by your customers and pick a name that will help them remember that.
+
+## Sense Checking Your Business Name
+
+If it meets the legal requirements and the name is free, that’s great. But you’re not finished with your due diligence yet.
+
+There are three more things you need to do before registering your company: run the name past a friend or relative, Google search it, and put it into Urban Dictionary.
+
+The first two are pretty self explanatory. Don’t worry too much if people you ask about the name don’t love it or they make alternative suggestions, the main thing is they don’t laugh at it!
+
+That’s where the third thing comes in. If you’re not familiar with [Urban Dictionary](https://www.urbandictionary.com/), it’s an online glossary of slang terms and rude words.
+
+What’s this got to do with your company name? Well, you need to check it doesn’t have any weird associations you’re not aware of.
+
+When we were running through names, we had a front runner… until Urban Dictionary educated us that an alternative meaning of ‘rhubarb’ was talking bullshit!
+
+![](/uploads/urban-dictionary.png)
+
+It’ll take just a few seconds to check, but could save you a red face in the long run.
+
+One final check: Does it sound like a team name from The Apprentice? If the answer is yes, abandon the name now!
+
+Names like Synergy, Kinetic, Power, Solutions all sound dated now. Pick something that's modern and up-to-date using some of the ideas above instead.
