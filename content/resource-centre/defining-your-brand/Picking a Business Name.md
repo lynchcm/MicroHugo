@@ -69,7 +69,7 @@ A good compromise can be to use your name as inspiration. How about taking your 
 
 Sometimes there’s nothing wrong with just spelling it out!
 
-Plenty of well-known company names are either literal descriptions of what they do, like Iceland or Facebook — you might have heard of them!  
+Plenty of well-known company names are either literal descriptions of what they do, like Iceland or Facebook — you might have heard of them!
 
 You could also take inspiration from the service you provide, like Welcome Break and Travelex, or a feature of your business, like burger chain ‘5 Guys’.
 
