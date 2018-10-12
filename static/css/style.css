@@ -11,8 +11,6 @@ p {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 200;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 30px;
   padding-top: 0;
   color: #4A4A4A; }
@@ -29,9 +27,7 @@ h1 {
 h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
-  color: #4A4A4A;
-  padding-left: 30px;
-  padding-right: 30px; }
+  color: #4A4A4A; }
 
 h3 {
   margin: 20px 0;
@@ -504,6 +500,7 @@ input {
 .article-formatting h3 {
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
+  text-align: left;
   font-size: 28px; }
 .article-formatting img {
   text-align: center;
