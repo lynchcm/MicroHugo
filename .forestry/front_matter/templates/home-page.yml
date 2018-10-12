@@ -8,5 +8,4 @@ fields:
   name: banner_headline
   description: H1 text placed on main banner with blue background.
 pages:
-- content/test.md
 - content/_index.html
