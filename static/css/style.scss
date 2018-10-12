@@ -689,11 +689,12 @@ input {
     h3 {
         text-transform: uppercase;
         font-family: $SecondaryFont;
-        text-align: left;
+        //text-align: left;
         font-size: 28px;
     }
     img {
         text-align: center;
-        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 }
