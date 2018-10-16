@@ -37,11 +37,7 @@ If you’re UK based, you’ll need the Companies House [name availability check
 
 But it’s not just whether it’s legally available that matters: you’ll want to check if the domain is available too. It’s no use having registered the perfect name if you can’t get the website address to match.
 
-As well as the [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability), have a domain registrar like GoDaddy open in the next window.
-
-![](/uploads/company-name-availability-checker.png)
-
-Since a bunch of new domain endings became available in 2011, this part has become a lot easier.
+As well as the [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability), have a domain registrar like GoDaddy open in the next window.![](/uploads/company-name-availability-checker.png)Since a bunch of new domain endings became available in 2011, this part has become a lot easier.
 
 Instead of being limited to ‘.co.uk’ or ‘.com’, you’ll find anything from ‘.company’, to ‘.life’, ‘.guru’, and ‘.wedding’. Some are intended for certain purposes (e.g. ‘.edu’ for educational institutions), but most are open to everyone.
 
@@ -65,7 +61,7 @@ The downside is if you plan to grow your company significantly or to try and sel
 
 A good compromise can be to use your name as inspiration. How about taking your initials, like JCB, or using part of your name, like Dyson? If you have two founders, can you put your names together in some way?
 
-### ​DESCRIPTIVE BUSINESS NAMES
+### DESCRIPTIVE BUSINESS NAMES
 
 Sometimes there’s nothing wrong with just spelling it out!
 
@@ -85,7 +81,7 @@ Unlike other random name generators that are industry specific, it allows you to
 
 It’s a great way to get a lot of ideas in a very short space of time.
 
-### ​LINK TO YOUR KEY BENEFIT
+### LINK TO YOUR KEY BENEFIT
 
 One way to create a memorable business name is to link it to the benefits you provide.
 
