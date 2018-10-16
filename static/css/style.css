@@ -502,7 +502,8 @@ input {
     height: 100%;
     max-width: 500px;
     object-fit: cover;
-    margin: 0; }
+    margin: 0 auto;
+    border: 1px solid red; }
 .article-formatting h2 {
   font-family: "Poppins", sans-serif;
   font-size: 34px; }
