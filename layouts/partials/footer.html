@@ -12,5 +12,92 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            
+            
+            $('#menu-checkbox').on('click touch', function() {
+                if (this.checked) {
+                    $('.menu-toggle').html("&times;");
+                    $('.menu-toggle').addClass('menu-toggle-close');
+                }
+                if (!this.checked) {
+                    $('.menu-toggle').html("&#9776;").removeAttr('style');
+                    $('.menu-toggle').removeClass('menu-toggle-close');
+                }
+            })
+                
+
+        
+
+{{ if eq .Title "Services" }}
+        
+            //calculate price of additional features
+            var basic = 599;
+            var total = 599;
+            var service = [100, 150, 50, 100, 200]
+            var priceStringText = 'Your estimate: £';
+            var priceString = '';
+
+            $('.service-checkbox').on('click touch', function() {
+                total = basic;
+                for (i = 0; i < 5 ; i++) {
+                    if (document.getElementById('service-' + (i + 1)).checked) {
+                        total += service[i];
+                    }
+                }
+                priceString = priceStringText + total;
+                $('#price-estimate').text(priceString);
+                $('#price-estimate').show();
+            });
+
+            priceString = priceStringText + total;
+            $('#price-estimate').text(priceString);
+            $('#price-estimate').css('display', 'block');
+
+            //hide scrollbar if user has JS
+            $('.hide-scrollbar').css('display', 'block');
+            $('.service-selection-scroll').css('display', 'block');
+
+            //click arrows to scroll horizontally through additional features
+            var scrollPosition;
+
+
+            var timeout;
+            var scrolling;
+            $('.right-scroll').on('mousedown touchstart', function(){
+                scrolling = true;
+                timeout = setInterval(function(){
+                    scrollPosition = $('.service-selection-container').scrollLeft();
+                    $('.service-selection-container').scrollLeft(scrollPosition + 8);
+                }, 10);
+                return false;
+            });
+
+            $('.left-scroll').on('mousedown touchstart', function(){
+                scrolling = true;
+                timeout = setInterval(function(){
+                    scrollPosition = $('.service-selection-container').scrollLeft();
+                    $('.service-selection-container').scrollLeft(scrollPosition - 8);
+                }, 10);
+                return false;
+            });
+
+            $(document).on('mouseup touchend', function(){
+                if (scrolling) {
+                    clearInterval(timeout);
+                    scrolling = false;
+                    return false;
+                }
+            });
+
+        
+            
+{{ end }}
+            
+        });
+    </script>
+        
   </body>
 </html>

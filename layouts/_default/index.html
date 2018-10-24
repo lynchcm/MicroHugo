@@ -1,58 +1,54 @@
 {{ partial "head.html" . }}
 
-<div class="jumbotron jumbotron-fluid" id="intro">
+<div class="jumbotron jumbotron-fluid" id="intro-banner">
     <div class="container">
-        <h1 class="text-center">{{ .Params.banner_headline }}</h1>
+        <h1>{{ .Params.banner_headline | safeHTML }}</h1>
     </div>
 </div>
 
-<div id="mobile-image" class="jumbotron jumbotron-fluid d-md-none">
-    <img src="/images/apple-computer-cup-597331-mob.jpg" class="img-fluid">
-</div>
 
-<div class="container-fluid" id="summary"> 
-    <div class="row">
-        <div class="col-md-6 d-flex order-md-1" id="summary-bullet-column">
-            <div id="summary-bullet-section">
-                <h2 class="d-md-none instant-brand-package">INSTANT BRAND PACKAGE</h2>
-                <p>✓ WEBSITE<br>✓ STOCK IMAGES<br>✓ ALL CONTENT WRITTEN<br>✓ LOGO DESIGN<br>✓ BRAND COLOURS &amp; FONTS<br>✓ BUSINESS CARD DESIGN</p>
-                <div id="price-tag">
-                    <h2 class="text-center">£299</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 order-md-0" id="summary-prose-column">
-            <h2 class="d-none d-md-block instant-brand-package">INSTANT BRAND PACKAGE</h2>
-            <p>You could get a logo made on Fiverr and spend hours wrestling with website design tools... or you could focus on what you’re good at and leave the rest to us.</p>
-            <p>Our Instant Brand package includes everything you need to get started quickly: a website, content written by a professional copywriter, logo, brand colour palette, and business card design. All for £299 and completed in less than a week.</p>
-        </div>
+
+<div class="container-fluid" id="video-section">
+    <div id="mobile-image">
+        <img src="/images/mobile-img.png" class="img-fluid">
+    </div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="backgroundVideo">
+        <source src="/images/micro-video.mp4" type="video/mp4">
+    </video>
+    <div class="dark-grey-overlay"></div>
+    <div class="text-over-video">
+        <h2 class="capitals">Affordable Website &amp; Branding&nbsp;Packages</h2>
+        <p>Designing a website with one company, a logo on fiverr, and copy from someone else doesn't create the unified brand you need for your website to be memorable. Our small team handles every step in house, creating a custom site that perfectly represents your business.</p>
+        <a href="/services"><p class="packages-button capitals">See Packages</p></a>
     </div>
 </div>
+
+
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="benefit-circle" id="approach"><img id="approach-image" src="/images/360approach.png"></div>
             <div class="features-headings">
                 <h3>360 APPROACH</h3>
             </div>
             <p class="text-center">Create a coherent look, save time, and get great value by getting everything in one place.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="benefit-circle" id="micro-prices"><img id="micro-prices-image" src="/images/microprices.png"></div>
             <div class="features-headings">
                 <h3>MICRO PRICES</h3>
             </div>
-            <p class="text-center">A website, all content, a logo, and a business card design for just £299.</p>
+            <p class="text-center">A website, all content, a logo, and a business card design starting from just £599.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="benefit-circle" id="never-outsourced"><img id="never-outsourced-image" src="/images/neveroutsourced.png"></div>
             <div class="features-headings">
                 <h3>NEVER OUTSOURCED</h3>
             </div>
             <p class="text-center">UK based, native English speakers — talk directly to the people working on your project.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6 col-lg-3">
             <div class="benefit-circle" id="quick-turnaround"><img id="quick-turnaround-image" src="/images/quickturnaround.png"></div>
             <div class="features-headings">
                 <h3>QUICK TURNAROUND</h3>
@@ -86,14 +82,40 @@
                     <span>></span>
                 </div>
             </div>
-            <div class="extra-service-container">
-                <div class="extra-service-text">
-                    <h3>NETWORK READY</h3>
-                    <p>Become the face of your company on LinkedIn.</p>
-                </div>
-                <div class="arrow-button" id="arrow-button-network">
-                    <span>></span>
-                </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid no-padding">
+    <div class="slideshow homepage-slideshow">
+        <input type="radio" id="slide-1-radio" name="testimonials" class="slideshow-radio" checked="checked">
+        <input type="radio" id="slide-2-radio" name="testimonials" class="slideshow-radio">
+        <input type="radio" id="slide-3-radio" name="testimonials" class="slideshow-radio">
+        <div class="slideshow-controls" id="slide-1-controls">
+            <label for="slide-3-radio" class="slide-control prev-slide"></label>
+            <label for="slide-2-radio" class="slide-control next-slide"></label>
+        </div>
+        <div class="slideshow-controls" id="slide-2-controls">
+            <label for="slide-1-radio" class="slide-control prev-slide"></label>
+            <label for="slide-3-radio" class="slide-control next-slide"></label>
+        </div>
+        <div class="slideshow-controls" id="slide-3-controls">
+            <label for="slide-2-radio" class="slide-control prev-slide"></label>
+            <label for="slide-1-radio" class="slide-control next-slide"></label>
+        </div>
+        <label for="slide-1-radio" class="slide-indicator slide-indicator-1"></label>
+        <label for="slide-2-radio" class="slide-indicator slide-indicator-2"></label>
+        <label for="slide-3-radio" class="slide-indicator slide-indicator-3"></label>
+        <a href="/portfolio"><h2 class="capitals" id="see-portfolio-h2">See Portfolio</h2></a>
+        <div class="slideshow-rail">
+            <div class="slide slide-1">
+                <img src="images/5th-element-integrative.png">
+            </div>
+            <div class="slide slide-2">
+                <img src="images/life-consulting-group.png">
+            </div>
+            <div class="slide slide-3">
+                <img src="images/concept-34.png">
             </div>
         </div>
     </div>
@@ -101,9 +123,7 @@
 
 
 
-
-
-
+<!--
 <div id="portfolio-carousel" class="carousel slide d-none d-md-block" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
@@ -134,65 +154,71 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
+-->
 <div id="about-section" class="container-fluid">
-    <h2>About</h2>
-    <p>We founded Micro after starting two tiny businesses of our own.</p>
-    <p>Finding something between an expensive web design agency and copy-and-paste website templates turned out to be, well, impossible.</p>
-    <p>We started Micro to be the service we couldn’t find: affordable web design with all the other bits and pieces that make a brand — all in one place.</p>
-    <p>We bring our first hand business experience to every project, helping you shape your brand and communicate it to the world.</p>
-    <div class="row">
-        <div class="col-md-6 d-flex bio-column justify-content-center">
-            <div class="person-photo order-md-1">
-                <img src="/images/ro.png">
+    <div class="container">
+        <h2>About</h2>
+        <p>We founded Micro after starting two tiny businesses of our own.</p>
+        <p>Finding something between an expensive web design agency and copy-and-paste website templates turned out to be, well, impossible.</p>
+        <p>We started Micro to be the service we couldn’t find: affordable web design with all the other bits and pieces that make a brand — all in one place.</p>
+        <p>We bring our first hand business experience to every project, helping you shape your brand and communicate it to the world.</p>
+        <div class="row">
+            <div class="col-md-6 bio-column">
+                <div class="person-photo order-md-1">
+                    <img src="/images/ro.png">
+                </div>
+                <div class="person-name order-md-0">
+                    <h3>ROANNA MOTTERSHEAD</h3>
+                </div>
+                <div class="person-desc order-md-2">
+                    <p>With seven years’ experience in marketing and branding, Roanna takes care of the copywriting, design, and social media side of projects.</p>
+                </div>
             </div>
-            <div class="person-name order-md-0">
-                <h3>ROANNA MOTTERSHEAD</h3>
-            </div>
-            <div class="person-desc order-md-2">
-                <p>With seven years’ experience in marketing and branding, Roanna takes care of the copywriting, design, and social media side of projects.</p>
-            </div>
-        </div>
-        <div class="col-md-6 d-flex bio-column justify-content-center">
-            <div class="person-photo order-md-1">
-                <img src="/images/chris.png">
-            </div>
-            <div class="person-name order-md-0">
-                <h3>CHRIS LYNCH</h3>
-            </div>
-            <div class="person-desc order-md-2">
-                <p>An engineer by training, Chis focuses on coding and building websites. When he's not bringing designs to life, he’s also a beady-eyed editor.</p>
+            <div class="col-md-6 bio-column">
+                <div class="person-photo order-md-1">
+                    <img src="/images/chris.png">
+                </div>
+                <div class="person-name order-md-0">
+                    <h3>CHRIS LYNCH</h3>
+                </div>
+                <div class="person-desc order-md-2">
+                    <p>An engineer by training, Chis focuses on coding and building websites. When he's not bringing designs to life</p><!--, he’s also a beady-eyed editor.</p>-->
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="container-fluid contact-section">
-    <h2>Contact</h2>
-    <p>Whether you’re just thinking about going freelance or have already taken the leap, we’d love to hear about your project. Get in touch using the form below or email <a href="mailto: hello@wearemicro.co">hello@wearemicro.co</a>.</p>
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Whether you’re just thinking about going freelance or have already taken the leap, we’d love to hear about your project. Get in touch using the form below or email <a href="mailto: hello@wearemicro.co">hello@wearemicro.co</a>.</p>
+    </div>
 </div>
-<div id="contact-form-container" class="container-fluid contact-section">
 
-    <form id="contact-form" method="post">
-        <div class="row">
-            <div class="col-md-3 offset-md-3">
-                <input id="name-input" type="text" name="name-input" placeholder="Name">
+<div id="contact-form-container" class="container-fluid contact-section">
+    <div class="container">
+        <form id="contact-form" method="post">
+            <div class="row">
+                <div class="col-md-3 offset-md-3">
+                    <input id="name-input" type="text" name="name-input" placeholder="Name">
+                </div>
+                <div class="col-md-3">
+                    <input id="email-input" type="email" name="email-address" placeholder="Email">
+                </div>
             </div>
-            <div class="col-md-3">
-                <input id="email-input" type="email" name="email-address" placeholder="Email">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <textarea id="message-input" rows="3" name="message-input" placeholder="Message"></textarea>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <textarea id="message-input" rows="3" name="message-input" placeholder="Message"></textarea>
+            <div class="d-flex justify-content-center">
+                <button id="sendButton">SEND</button>
             </div>
-        </div>
-        <div class="d-flex justify-content-center">
-            <button id="sendButton">SEND</button>
-        </div>
-    </form>
-    <div id="form-alert"><? echo $alertMessage; ?></div>
-    <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
+        </form>
+        <div id="form-alert"></div>
+        <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
+    </div>
 </div>
 
 

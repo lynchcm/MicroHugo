@@ -4,23 +4,32 @@ $MicroBlue: #13C3C6;
 $MicroCoral: #FF636B;
 $MicroOrange: #FFA963;
 $transparentWhite: #FFFFFFA0;
+$MicroColours: (#13C3C6, #929292, #FF636B, #FFA963);
+$hoverGrey: #eaeaea;
 
 $MainFont: 'Poppins', sans-serif;
 $SecondaryFont: 'Josefin Sans', sans-serif;
 
+$small: 576px;
 $medium: 768px;
 
-.navbar {
-    background-color: white;
-}
+$numberOfHomepagePortfolios: 3;
+$numberOfTestimonials: 3;
+$numberOfPortfolioEntries: 6;
+$numberOfAddFeatures: 8;
+$widthOfAddFeaturesCard: 250px;
+$widthOfAddFeaturesCardText: 200px;
+$edgePageGapAddFeaturesCard: 100px;
+$midPageGapAddFeaturesCard: 50px;
+$addFeaturesCardPadding: 30px;
+$addFeaturesCardImgWidth: 125px;
 
-.nav-link {
-    color: $MicroDarkGrey;
-}
+$numberOfFAQs: 10;
 
-.nav-item {
-    padding: 6px;
-}
+$slideshowControlSize: 30px;
+$slideshowIndicatorSize: 20px;
+
+$mobileSlideshowTopMargin: 20px;
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -28,14 +37,13 @@ p {
     font-weight: 200;
     //padding-left: 30px; removed when working on resource centre article styling
     //padding-right: 30px; removed when working on resource centre article styling
-    padding-bottom: 30px;
-    padding-top: 0;
+    //padding-bottom: 30px;
+    //padding-top: 0;
     color: $MicroDarkGrey;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 6vw;
     color: $MicroDarkGrey;
     text-align: center;
 }
@@ -61,18 +69,123 @@ h3 {
     font-weight: 200;
     font-size: 28px;
     color: $MicroDarkGrey;
-    text-align: center;
+    //text-align: center; removed - probably not needed
 }
 
-#intro {
+#menu-bar {
+    height: 90px;
+    width: 100%;
+    //border: 1px solid black;
+    position: relative;
+    //overflow-y: scroll;
+    
+    #logo {
+        width: 200px;
+        position: relative;
+        top: 6px;
+        left: 10px;
+    }
+}
+
+#menu-list {
+    display: none;
+    
+    .menu-list-items {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        a {
+            text-decoration: none;
+            color: white;
+            
+            &:hover {
+                color: $MicroBlue;
+            }
+        }
+    }
+}
+
+.menu-toggle {
+    position: absolute;
+    z-index: 6;
+    right: 20px;
+    top: 20px;
+    font-family: $MainFont;
+    font-size: 30px;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.menu-toggle-close {
+    color: white;
+    right: 30px;
+    font-size: 40px;
+}
+
+#menu-checkbox {
+    display: none;
+    
+    &:checked ~ #menu-list {
+        background-color: $MicroGrey;
+        display: block;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        list-style-type: none;
+        
+        li {
+            color: white;
+            font-family: $MainFont;
+            font-size: 6vw;
+        }
+    }
+    
+    &:checked ~ .menu-toggle {
+        position: fixed;
+    }
+}
+
+
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: $MicroDarkGrey;
+    font-family: $MainFont;
+}
+
+.nav-item {
+    padding: 6px;
+}
+
+.page-intro {
+    padding: 30px 0;
+    
+    h1, p {
+        color: white;
+    }
+
+}
+
+#intro-banner {
     background-color: $MicroBlue;
-    color: #FFFFFF;
+    color: white;
     margin-bottom: 0;
     
     h1 {
-        font-family: 'Poppins', sans-serif;
         font-size: 6vw;
         color: white;
+        text-align: left;
     }
 
     @media only screen and (min-width: 768px) {
@@ -82,116 +195,154 @@ h3 {
     }
 }
 
-#mobile-image {
+
+
+#video-section {
+    
     padding: 0;
     margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-    #summary {
-        background-image: url(/images/apple-computer-cup-597331.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
-
-#summary {
-    background-color: white;
-}
-
-#summary-prose-column {
-    background-color: $transparentWhite;
-    text-align: center;
-}
-
-.instant-brand-package {
-    margin-top: 20px;
-    font-weight: 300;
-    text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-    .instant-brand-package {
-        margin-top: 40px;
-    }
-}
-
-#summary-bullet-column {
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-
-#summary-bullet-section {
-    //width: 100%;
+    overflow: hidden;
     position: relative;
-    padding-top: 15px;
-}
-
-@media only screen and (min-width: 768px) {
-    #summary-bullet-section {
-        width: 350px;
-        height: 220px;
-        padding-top: 0;
-        border-top-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        background-color: #FFFFFFA0;
+    //border: 1px solid red;
+    width: 100%;
+    height: 55vw;
+    min-height: 320px;
+    max-height: 500px;
+    display: flex;
+    
+    @media only screen and (min-width: $medium) {
+        display: block;
     }
-}
+    
+    #mobile-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
 
-#summary-bullet-section > p {
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-
-
-#price-tag {
-    width:120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: $MicroOrange;
-    position: absolute;
-    right: 10px;
-    top: -80px;
-}
-
-@media only screen and (min-width: 768px) {
-    #price-tag {
-        width:150px;
-        height: 150px;
-        right:-20px;
-        top: -80px;
+        @media only screen and (min-width: $medium) {
+            display: none;
+        }
     }
-}
 
-#price-tag:hover {
-    background-color: #FDA969C0;
-    cursor: pointer;
-}
+    #backgroundVideo {
+        display: none;
 
-#price-tag > h2 {
-    color: white;
-    font-size: 40px;
-    position: relative;
-    top: 40px;
-    right: 12px;
-}
-
-@media only screen and (min-width: 768px) {
-    #price-tag > h2 {
-        top: 52px;
-        right: 0;
+        @media only screen and (min-width: $medium) {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            max-height: 500px;
+            z-index: 0;
+        }
     }
+
+    .dark-grey-overlay {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000A0;
+    }
+
+    .text-over-video {
+        position: relative;
+        width: 90%;
+        z-index: 2;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h2, p {
+            color: white;
+        }
+        
+        p {
+            font-size: 16px;
+            
+        }
+        
+        h2 {
+            font-size: 20px;
+        }
+        
+        @media only screen and (min-width: $small) {
+            h2 {
+                font-size: 28px;
+            }
+        }
+        
+        @media only screen and (min-width: $medium) {
+            position: absolute;
+            top: calc(50% - 176px);
+            left: 5%;
+            width: 410px;
+            heigth: 312px;
+            
+            p {
+                font-size: 20px;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .packages-button {
+        position: relative;
+        background-color: $MicroCoral;
+        height: 36px;
+        width: 160px;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 0;
+        margin: 0 auto;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        a, a:hover, a:focus {
+            p {
+                text-decoration: none;
+            }
+            text-decoration: none;
+        }
+        
+        @media only screen and (min-width: $medium) {
+            position: absolute;
+            height: 40px;
+            padding: 4px 0;
+            bottom: -40px;
+            left: calc(50% - 80px);
+        }
+
+    }
+    
 }
+
+
+
 
 .benefit-circle {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin: 50px auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+/*
 #approach-image {
     position: relative;
     left: 27px;
@@ -209,11 +360,10 @@ h3 {
     left: 36px;
     top: 27px;
 }
-
+*/
 #quick-turnaround-image {
     position: relative;
-    left: 30px;
-    top: 27px;
+    bottom: 4px;
 }
 
 #approach {
@@ -225,7 +375,7 @@ h3 {
 }
 
 #never-outsourced {
-    background-color: #D73264;
+    background-color: $MicroCoral;
 }
 
 #quick-turnaround {
@@ -237,6 +387,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #extra-services-left {
@@ -307,7 +458,7 @@ h3 {
     text-align: center;
     position: relative;
     bottom: 5px;
-    z-index: 10;
+    z-index: 3;
     color: #707070;
 }
 
@@ -323,10 +474,6 @@ h3 {
 
 #arrow-button-spread {
     background-color: $MicroOrange;
-}
-
-#arrow-button-network {
-    background-color: $MicroCoral;
 }
 
 .carousel-item {
@@ -356,47 +503,72 @@ h3 {
 
 #about-section {
     background-color: $MicroBlue;
-}
-
-#about-section h2 {
-    color: white;
-    padding-top: 30px;
-    font-family: "Poppins", sans-serif;
-}
-
-#about-section p {
-    color: white;
-    margin: 0;
+    
+    h2 {
+        color: white;
+        padding-top: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    p {
+        color: white;
+        margin: 0 0 10px 0;
+    }
+    
+    .row {
+        //border: 1px solid yellow;
+        padding: 20px 0;
+    }
 }
 
 .bio-column {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
+    //border: 1px solid aqua;
 }
 
 .person-name {
     width: 100%;
-}
-
-.person-name h3 {
-    color: white;
+    height: 70px;
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h3 {
+        color: white;
+        //border: 1px solid blue;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        text-align: center;
+    }
 }
 
 .person-photo {
+    //border: 1px solid blue;
     width: 225px;
     flex-grow: 0;
-    margin-bottom: 20px;
+    margin: 20px 0 0 0;
 }
 
 .person-desc {
+    //border: 1px solid green;
     width: 150px;
     flex-grow: 1;
-}
-
-.person-desc p {
-    padding-left: 10px;
-    padding-right: 6px
+    
+    @media only screen and (min-width: $medium) {
+        margin-top: 20px;
+    }
+    
+    p {
+        padding-left: 10px;
+        padding-right: 6px
+    }
 }
 
 .contact-section {
@@ -481,23 +653,22 @@ input {
 
 .footer-section {
     background-color: #F5F5F5;
-    padding-top: 30px;
-    padding-left: 5px;
-}
-
-.footer-section p {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 200;
-    margin-bottom: 0;
+    padding: 30px 5px;
     
+    p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 0;
+    }
+    #copyright {
+        font-size: 18px;
+        color: $MicroBlue;
+        padding-top: 20px;
+    }
 }
 
-#copyright {
-    font-size: 18px;
-    color: $MicroBlue;
-    padding-top: 20px;
-}
+
 
 .grey-hover-overlay {
     position: absolute;
@@ -519,7 +690,7 @@ input {
     a:hover {
         text-decoration: none;
         background-color: red;
-        z-index: 100;
+        z-index: 3;
     }
     
     h2 {
@@ -712,3 +883,566 @@ input {
         margin: 0 auto;
     }
 }
+
+.no-padding {
+    padding: 0;
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    
+    .slideshow-radio {
+        display: none;
+    }
+    
+    .slideshow-rail {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .slideshow-controls {
+        position: relative;
+        z-index: 1;
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slide-control {
+        position: absolute;
+        top: 78%;
+        width: $slideshowControlSize;
+        height: $slideshowControlSize;
+        
+        border-width: 5px 5px 0 0;
+        border-style: solid;
+        margin-top: -($slideshowControlSize / 2);
+        
+        &:hover {
+            cursor: pointer;
+        }
+        
+         @media only screen and (min-width: $small) {
+            top: 50%;
+        }
+    }
+    
+    .prev-slide {
+        left: 30px;
+        transform: rotate(-135deg);
+    }
+    
+    .next-slide {
+        right: 30px;
+        transform: rotate(45deg);
+    }
+    
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+        
+        @media only screen and (min-width: $small) {
+            display: flex;
+            align-items: center;
+            
+            img {
+                margin-top: 0;
+            }
+        }
+        
+    }
+
+    .slideshow-rail {
+        transition: transform 1s;
+    }
+    
+    .slide-indicator {
+        position: absolute;
+        bottom: calc((48vw - #{$mobileSlideshowTopMargin} - 100px) / 2);
+        left: 50%;
+        z-index: 3;
+        width: $slideshowIndicatorSize;
+        height: $slideshowIndicatorSize;
+        border-radius: 50%;
+        cursor: pointer;
+        
+        @media only screen and (min-width: $small) {
+            bottom: 20px;
+        }
+    }
+    
+    @for $i from 1 through $numberOfTestimonials {
+        .slideshow-radio:nth-of-type(#{$i}):checked ~ .slide-indicator-#{$i} {
+            border: 1px solid white;
+        }
+    }
+    
+    h2 {
+        color: white;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+    
+    p {
+        color: white;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    @for $i from 1 through $numberOfTestimonials {
+        .slideshow-rail .slide:nth-of-type(#{$i}) {
+            transform: translateX(($i) * 100%);
+        }
+    }
+    
+    @for $i from 1 through $numberOfTestimonials {
+        .slideshow-radio:nth-of-type(#{$i}):checked ~ .slideshow-rail {
+            transform: translateX(($i) * (-100%));
+        }
+    }
+    
+    @for $i from 1 through $numberOfTestimonials {
+        .slideshow-radio:nth-of-type(#{$i}):checked ~ #slide-#{$i}-controls {
+            display: block;
+        }
+    }
+
+}
+
+
+
+
+.homepage-slideshow {
+    height: 100vw;
+    max-height: $small;
+    
+    @for $i from 1 through $numberOfHomepagePortfolios {
+        .slide-indicator-#{$i} {
+            $j: ((($i - 1) % length($MicroColours)) + 1);
+            $pos: ((($numberOfHomepagePortfolios - 1) * (-20px)) - ($slideshowIndicatorSize / 2) + (($i - 1) * 40));
+            background-color: nth($MicroColours, $j);
+            transform: translateX($pos);
+        }
+    }
+    
+    .slide-control {
+        border-color: $MicroGrey;
+        
+        &:hover {
+            border-color: $MicroDarkGrey;
+        }
+    }
+    
+    img {
+        margin: 0 auto 50px auto;
+    }
+    
+    #see-portfolio-h2 {
+        color: white; //duplicate
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3; //duplicate end
+        
+        bottom: calc((48vw - #{$mobileSlideshowTopMargin}) / 2);
+        width: 200px;
+        background-color: $MicroCoral;
+        font-size: 20px;
+        padding: 10px 18px 6px 18px;
+        border-radius: 4px;
+        
+        @media only screen and (min-width: $small) {
+            bottom: 65px;
+        }
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.testimonials-slideshow {
+    display: none;
+    
+    @media only screen and (min-width: $small) {
+        display: block;
+        height: 350px;
+
+        @for $i from 1 through $numberOfTestimonials {
+            .slide-indicator-#{$i} {
+                $j: ((($i - 1) % length($MicroColours)) + 1);
+                $pos: ((($numberOfTestimonials - 1) * (-20px)) - ($slideshowIndicatorSize / 2) + (($i - 1) * 40));
+                background-color: nth($MicroColours, $j);
+                transform: translateX($pos);
+            }
+        }
+
+        @for $i from 1 through $numberOfTestimonials {
+            .slide-#{$i} {
+                background-color: nth($MicroColours, $i);
+            }
+        }
+
+        .slide-control {
+            border-color: $transparentWhite;
+
+            &:hover {
+                border-color: white;
+            }
+        }
+
+        h2 {
+            top: 40px;
+            width: 325px;
+        }
+    }
+}
+
+.portfolio {
+    padding-top: 40px;
+    
+    .row {
+        padding: 20px 0 0 0;
+        
+        hr {
+            border-width: 1px;
+            width: 80%;
+        }
+        
+        img {
+            max-width: 100%;
+            padding-bottom: 30px;
+        }
+        
+        .portfolio-text{
+            a {
+                font-family: $MainFont;
+                font-size: 20px;
+
+                &:hover {
+                    font-color: $MicroBlue !important;
+                }
+            }
+        }
+        
+            
+    }
+    
+    
+    
+    @for $i from 1 through $numberOfPortfolioEntries {
+        hr:nth-of-type(#{$i}) {
+            $j: ((($i - 1) % length($MicroColours)) + 1);
+            border-color: nth($MicroColours, $j);
+        }
+    }
+}
+
+.services-intro {
+    background-color: $MicroGrey;
+}
+
+.always-included {
+    h2 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    text-align: left;
+    padding: 40px 0;
+    
+    .row {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    table {
+        width: 320px;
+        margin: 0 auto;
+        font-family: $MainFont;
+        font-size: 20px;
+        color: $MicroDarkGrey;
+        font-weight: 200;
+        tr {
+            padding: 0 0px;
+            .tick {
+                width: 40px;
+            }
+        }
+    }
+}
+
+.additional-features-heading {
+    padding: 40px 0 0 0;
+    h2, p {
+        text-align: center;
+    }
+}
+
+.service-selection-scroll-container {
+    position: relative;
+    height: 0;
+    width: 100%;
+        
+    .service-selection-scroll {
+        position: absolute;
+        z-index: 3;
+        top: 170px;
+        width: 50px;
+        height: 50px;
+        border-width: 5px 5px 0 0;
+        border-style: solid;
+        border-color: $MicroBlue;
+        margin-top: -($slideshowControlSize / 2);
+        display: none;
+        
+        &:hover {
+            cursor: pointer;
+            border-color: $MicroOrange;
+        }
+    }
+    
+    .left-scroll {
+        left: 30px;
+        transform: rotate(-135deg);
+    }
+    
+    .right-scroll {
+        right: 30px;
+        transform: rotate(45deg);
+    }
+    
+}
+
+.service-selection-container {
+    width: 100%;
+    height: 350px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0;
+    position: relative;
+
+    .service-selection-box-wrapper {
+        width: ($edgePageGapAddFeaturesCard * 2) + (($numberOfAddFeatures - 1) * $midPageGapAddFeaturesCard) + ($numberOfAddFeatures * $widthOfAddFeaturesCard);
+        height: 400px;
+        position: relative;
+        padding: 0;
+        //overflow-y: hidden;
+  
+        .service-checkbox {
+            display: none;
+        }
+
+        @for $i from 1 through $numberOfAddFeatures {
+            #service-box-label-#{$i} {
+                transform: translateX(($i - 1) * 300px);
+            }
+        }
+        
+        .service-box-label {
+            width: $widthOfAddFeaturesCard;
+            height: 300px;
+            position: absolute;
+            top: 25px;
+            left: $edgePageGapAddFeaturesCard;
+            background-color: white;
+            border-radius: 10px;
+            padding: $addFeaturesCardPadding;
+            margin: 0;
+            box-shadow: 0 0 5px 1px $MicroGrey;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $hoverGrey;
+                
+                .service-box-image {
+                    background-color: $hoverGrey;
+                }
+            }
+
+            .service-box-label-content {
+                .service-description {
+                    position: absolute;
+                    left: (($widthOfAddFeaturesCard - $widthOfAddFeaturesCardText) / 2);
+                    bottom: 10px;
+                    height: 100px;
+                    display: flex;
+                    width: $widthOfAddFeaturesCardText;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    p {
+                        color: $MicroDarkGrey;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .service-box-image {
+                position: absolute;
+                top: 40px;
+                left: (($widthOfAddFeaturesCard - $addFeaturesCardImgWidth) / 2);
+                z-index: 1;
+                width: $addFeaturesCardImgWidth;
+                background-color: white;
+                
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .service-box-selected-image {
+                z-index: 0;
+            }
+        }
+        
+        @for $i from 1 through $numberOfAddFeatures {
+            .service-checkbox:nth-of-type(#{$i}):checked ~ #service-box-label-#{$i} {
+                background-color: $MicroCoral;
+                box-shadow: inset 0 0 10px $MicroDarkGrey;
+                
+                
+                .service-box-image {
+                    background-color: white;
+                }
+                
+                .service-box-selected-image {
+                    z-index: 2;
+                }
+                
+                .service-box-label-content {
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hide-scrollbar {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    bottom: 20px;
+    z-index: 3;
+    background-color: white;
+    display: none;
+}
+
+.estimate-section {
+    background-color: white;
+    padding: 40px 0;
+    
+    p {
+        color: $MicroDarkGrey;
+    }
+    
+    #price-estimate {
+        display: none;
+        text-align: center;
+        font-size: 30px;
+        background-color: $MicroCoral;
+        padding: 0 20px;
+        border-radius: 10px;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        max-width: 400px;
+    }    
+}
+
+.faq-section {
+    background-color: $MicroBlue;
+    padding: 40px 0;
+    
+    h2 {
+        text-align: center;
+        color: white;
+        padding-bottom: 30px;
+    }
+    
+    p {
+        color: white;
+    }
+    
+    .question {
+        //border: 1px solid blue;
+        width: calc(100% - 50px);
+    }
+    
+    .expand-arrow {
+        position: absolute;
+        top: 2px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+        border-bottom: 4px solid $MicroOrange;
+        border-right: 4px solid $MicroOrange;
+        transform: rotate(45deg);
+    }
+    
+    .answer {
+        height: 0;
+        overflow: hidden;
+        
+        p {
+            font-size: 18px;
+        }
+        
+        a {
+            color: $MicroOrange;
+        }
+    }
+    
+    .question-label {
+        //border: 1px solid red;
+        position: relative;
+        margin: 0 10px;
+    }
+    
+    .question-checkbox {
+        display: none;
+    }
+    
+    @for $i from 1 through ($numberOfFAQs) {
+        .question-checkbox:nth-of-type(#{$i}) {
+
+            &:checked ~ .question-label:nth-of-type(#{$i}) {
+                .expand-arrow {
+                    transform: rotate(225deg);
+                    top: 15px;
+                }
+                
+                .answer {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
