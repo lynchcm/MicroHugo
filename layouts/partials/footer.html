@@ -96,6 +96,14 @@
             
 {{ end }}
             
+{{ if eq .Title "Micro Boutique Branding" }}
+            
+            $('#contact-link').on('click touch', function() {
+                $('#menu-checkbox').prop('checked', false);
+            });
+            
+{{ end }}
+            
         });
     </script>
         

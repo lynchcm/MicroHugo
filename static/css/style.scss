@@ -73,17 +73,78 @@ h3 {
 }
 
 #menu-bar {
-    height: 90px;
+    height: 100px;
     width: 100%;
     //border: 1px solid black;
     position: relative;
     //overflow-y: scroll;
     
     #logo {
-        width: 200px;
-        position: relative;
+        width: 240px;
+        height: 90px;
+        position: fixed;
+        z-index: 4;
         top: 6px;
-        left: 10px;
+        left: 0;
+        border-top-right-radius: 45px;
+        border-bottom-right-radius: 45px;
+        background-color: #ffffffd0;
+        
+        img {
+            position: relative;
+            left: 15px;
+            top: 5px;
+            width: 80%;
+        }
+        
+        .logo-dot {
+            position: absolute;
+            top: 9px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+        }
+        
+        .dot-1 {
+            left: 15px;
+            background-color: $MicroBlue;
+        }
+        
+        .dot-2 {
+            left: 43px;
+            background-color: $MicroGrey;
+        }
+        
+        .dot-3 {
+            left: 71px;
+            background-color: $MicroCoral;
+        }
+        
+        .dot-4 {
+            left: 99px;
+            background-color: $MicroOrange;
+        }
+        
+        .logo-micro {
+            font-family: 'Montserrat', sans-serif;
+            color: $MicroGrey;
+            font-size: 28px;
+            letter-spacing: 10px;
+            position: absolute;
+            left: 13px;
+            top: 25px;
+        }
+        
+        .logo-boutique-branding {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: $MicroGrey;
+            position: absolute;
+            left: 15px;
+            top: 58px;
+        }
     }
 }
 
@@ -573,8 +634,8 @@ h3 {
 
 .contact-section {
     background-color: $MicroGrey;
-    padding-left: 50px;
-    padding-right: 50px;
+    //padding-left: 50px;
+    //padding-right: 50px;
     padding-bottom: 20px;
 }
 
