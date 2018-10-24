@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 
-<div class="container">
+<div class="container portfolio-intro">
     <h1>{{ .Title }}</h1>
 </div>
 <div class="container-fluid no-padding">
@@ -55,7 +55,7 @@
         <div class="col-md-6 portfolio-text">
             <h2 class="capitals">{{ .Params.company }}</h2>
             <h2 class="capitals">{{ .Params.category }}</h2>
-            {{ .Params.link | safeHTML }}
+            <a href="{{ .Params.linkURL }}" target="_blank">{{ .Params.linkName }}</a>
             <p>{{ .Params.description }}</p>
         </div>
     </div>
