@@ -58,7 +58,7 @@ h3 {
       background-color: #DDE0d4; }
     #menu-bar #logo .dot-3 {
       left: 71px;
-      background-color: #56F987; }
+      background-color: red; }
     #menu-bar #logo .dot-4 {
       left: 99px;
       background-color: #1A7781; }
@@ -152,7 +152,7 @@ h3 {
   margin-bottom: 0; }
   #intro-banner h1 {
     font-size: 6vw;
-    color: #56F987;
+    color: red;
     text-align: left; }
   @media only screen and (min-width: 768px) {
     #intro-banner h1 {
@@ -231,7 +231,7 @@ h3 {
           font-size: 2rem; } }
   #video-section .packages-button {
     position: relative;
-    background-color: #56F987;
+    background-color: red;
     height: 36px;
     width: 160px;
     border-radius: 5px;
@@ -290,7 +290,7 @@ h3 {
   .front-page-features #micro-prices {
     background-color: #DDE0d4; }
   .front-page-features #never-outsourced {
-    background-color: #56F987; }
+    background-color: red; }
   .front-page-features #quick-turnaround {
     background-color: #1A7781; }
   .front-page-features .features-headings {
@@ -583,7 +583,7 @@ input {
   #resource-centre-sections #row-2 {
     background-color: #605970; }
   #resource-centre-sections #row-3 {
-    background-color: #56F987; }
+    background-color: red; }
   #resource-centre-sections #row-4 {
     background-color: #1A7781; }
   #resource-centre-sections #row-5 {
@@ -789,7 +789,7 @@ input {
     z-index: 3;
     bottom: calc((48vw - 20px) / 2);
     width: 200px;
-    background-color: #56F987;
+    background-color: red;
     font-size: 20px;
     padding: 10px 18px 6px 18px;
     border-radius: 4px; }
@@ -988,7 +988,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-box-label .service-box-selected-image {
         z-index: 0; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(1):checked ~ #service-box-label-1 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(1):checked ~ #service-box-label-1 .service-box-image {
         background-color: white; }
@@ -997,7 +997,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(1):checked ~ #service-box-label-1 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(2):checked ~ #service-box-label-2 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(2):checked ~ #service-box-label-2 .service-box-image {
         background-color: white; }
@@ -1006,7 +1006,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(2):checked ~ #service-box-label-2 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(3):checked ~ #service-box-label-3 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(3):checked ~ #service-box-label-3 .service-box-image {
         background-color: white; }
@@ -1015,7 +1015,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(3):checked ~ #service-box-label-3 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(4):checked ~ #service-box-label-4 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(4):checked ~ #service-box-label-4 .service-box-image {
         background-color: white; }
@@ -1024,7 +1024,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(4):checked ~ #service-box-label-4 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(5):checked ~ #service-box-label-5 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(5):checked ~ #service-box-label-5 .service-box-image {
         background-color: white; }
@@ -1033,7 +1033,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(5):checked ~ #service-box-label-5 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(6):checked ~ #service-box-label-6 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(6):checked ~ #service-box-label-6 .service-box-image {
         background-color: white; }
@@ -1042,7 +1042,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(6):checked ~ #service-box-label-6 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(7):checked ~ #service-box-label-7 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(7):checked ~ #service-box-label-7 .service-box-image {
         background-color: white; }
@@ -1051,7 +1051,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(7):checked ~ #service-box-label-7 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(8):checked ~ #service-box-label-8 {
-      background-color: #56F987;
+      background-color: red;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(8):checked ~ #service-box-label-8 .service-box-image {
         background-color: white; }
@@ -1078,7 +1078,7 @@ input {
     display: none;
     text-align: center;
     font-size: 30px;
-    background-color: #56F987;
+    background-color: red;
     padding: 0 20px;
     border-radius: 10px;
     margin: 0 auto 20px auto;
