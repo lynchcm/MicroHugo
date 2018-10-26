@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script>
-        $(function() {
+        $(document).ready(function() {
             
             
             $('#menu-checkbox').on('click touch', function() {
@@ -101,6 +101,48 @@
             $('#contact-link').on('click touch', function() {
                 $('#menu-checkbox').prop('checked', false);
             });
+            
+            var scaledPosFromCentre = [0, 0, 0];
+            var lastPosFromCentre = [0, 0, 0];
+            var newPosFromCentre = [0, 0, 0];
+            var positionOffset1 = 0.2;
+            var positionOffset2 = 0.05;
+            var mouseX, mouseY;
+            $(document).on('mousemove', function() {
+                mouseXfromCentre = event.pageX - ($(window).width() / 2);
+                mouseYfromCentre = event.pageY - ($(window).height() / 2);
+                scaledPosFromCentre = [(positionOffset1 * mouseXfromCentre), (positionOffset1 * mouseYfromCentre), (positionOffset2 * (mouseXfromCentre + mouseYfromCentre))];
+                //alert(scaledPosFromCentre[2]);
+            });
+            
+            setInterval(function() {
+                var xFromCentreString, yFromCentreString;
+                for (var i = 0; i < 3; i++) {
+                    newPosFromCentre[i] = lastPosFromCentre[i] + (0.1 * (scaledPosFromCentre[i] - lastPosFromCentre[i]));
+                    lastPosFromCentre[i] = newPosFromCentre[i]
+                }
+                
+                if (newPosFromCentre[0] > 0) {
+                    xFromCentreString = '-' + newPosFromCentre[0] + 'px, ';
+                } else {
+                    xFromCentreString =  ((-1) * newPosFromCentre[0]) + 'px, ';
+                }
+                if (newPosFromCentre[1] > 0) {
+                    yFromCentreString = '-' + newPosFromCentre[1] + 'px)';
+                } else {
+                    yFromCentreString =  ((-1) * newPosFromCentre[1]) + 'px)';
+                }
+                
+                var mousePosString = 'x: ' + scaledPosFromCentre[0] + ' y: ' + scaledPosFromCentre[1];
+                $('#mouse-position').html(mousePosString);
+                $('#intro-line').css('transform', 'translate(' + xFromCentreString + yFromCentreString);
+                var newPosFromCentreX = newPosFromCentre[2]; // - ($(window).width() * 0.25);
+                $('#background-1').css('transform', 'translate(' + newPosFromCentre[2] + 'px, ' + newPosFromCentre[2] + 'px)');
+                
+                var rotateAmount = newPosFromCentre[2] / 10;
+                $('#background-2').css('transform', 'rotate(' + rotateAmount + 'deg)');
+            }, 30);
+            
             
 {{ end }}
             

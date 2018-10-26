@@ -1,13 +1,19 @@
-$MicroGrey: #DDE0d4;//#929292;
+$MicroGrey: #929292;
 $MicroDarkGrey: #4A4A4A;
-$MicroBlue: #605970;//#13C3C6;
-$MicroCoral: red;//#56F987;//#FF636B;
-$MicroOrange: #1A7781;//#FFA963;
+$MicroBlue: #13C3C6;
+$MicroCoral: #FF636B;
+$MicroOrange: #FFA963;
 $transparentWhite: #FFFFFFA0;
 $MicroColours: (#13C3C6, #929292, #FF636B, #FFA963);
 $hoverGrey: #eaeaea;
 
-$MainFont: 'Poppins', sans-serif;
+$MicroTealDark: #254558;
+$MicroTealMid: #3A5768;
+$MicroTealLight: #9EACB4;
+$MicroLimeGreen: #EAFC40;
+
+$MainFont: 'Raleway', sans-serif;
+$IntroFont: 'Poppins', sans-serif;
 $SecondaryFont: 'Josefin Sans', sans-serif;
 
 $small: 576px;
@@ -31,8 +37,132 @@ $slideshowIndicatorSize: 20px;
 
 $mobileSlideshowTopMargin: 20px;
 
+.intro-background {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 200vh;
+    background-color: $MicroTealMid;
+
+    #background-1 {
+        z-index: 5;
+        height: 100%;
+        width: 300%;
+        margin-left: -100%;
+        position: absolute;
+
+        #background-1-1 {
+            width: 100%;
+            position: absolute;
+            border-bottom: 60vh solid $MicroTealLight;
+            border-left: 300vw solid transparent;
+            bottom: 90vh;
+        }
+
+        #background-1-2 {
+            position: absolute;
+            background-color: $MicroTealLight;
+            width: 100%;
+            height: 100vh;
+            bottom: 0;
+        }
+    }
+
+    #background-2 {
+        z-index: 6;
+        height: 150vh;
+        width: 150%;
+        margin-left: -25%;
+        margin-top: -25vh;
+        position: absolute;
+
+        #background-2-1 {
+            position: absolute;
+            border-top: 170vh solid $MicroTealDark;
+            border-right: 150vw solid transparent;
+            top: 0;
+        }
+    }
+    
+    #intro-line {
+        font-family: $IntroFont;
+        font-size: 6vw;
+        color: $MicroLimeGreen;
+        text-align: left;
+        padding: 0;
+        position: absolute;
+        top: 16%;
+        left: 20%;
+        width: 60%;
+        z-index: 7;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 40px;
+        }
+    }
+    
+    #micro-summary {
+        position: absolute;
+        z-index: 7;
+        top: 50%;
+        width: 100%;
+        height: 500px;
+        padding: 0 10%;
+        
+        h2 {
+            color: $MicroLimeGreen;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        .col-md-6 {
+            position: relative;
+            padding: 0;
+            height: 300px;
+            
+            img {
+                position: absolute;
+            }
+            
+            #portfolio-shell-laptop {
+                width: 80%;
+                left: 10%;
+                bottom: 0;
+                z-index: 8;
+            }
+            
+            #portfolio-shell-mobile {
+                width: 25%;
+                right: 5%;
+                bottom: 0;
+                z-index: 9;
+            }
+
+            #portfolio-laptop {
+                width: 57%;
+                bottom: 0;
+                left: 15%;
+                z-index: 7;
+            }
+            
+            #portfolio-mobile {
+                width: 18.5%;
+                bottom: 0;
+                right: 10.5%;
+                z-index: 8;
+            }
+        }
+            
+    }
+}
+
+
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: $MainFont;
     font-size: 20px;
     font-weight: 200;
     //padding-left: 30px; removed when working on resource centre article styling
@@ -57,7 +187,7 @@ h1 {
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: $MicroDarkGrey;
     //padding-left: 30px; removed when working on resource centre article styling
     //padding-right: 30px; removed when working on resource centre article styling
@@ -74,28 +204,30 @@ h3 {
 }
 
 #menu-bar {
-    height: 100px;
+    height: 0;
     width: 100%;
     //border: 1px solid black;
     position: relative;
+    z-index: 10;
     //overflow-y: scroll;
+    background-color: $MicroBlue;
     
     #logo {
         width: 240px;
         height: 90px;
-        position: fixed;
-        z-index: 4;
+        position: absolute;
+        z-index: 8;
         top: 6px;
         left: 0;
-        border-top-right-radius: 45px;
-        border-bottom-right-radius: 45px;
-        background-color: #ffffffd0;
+        //border-top-right-radius: 45px;
+        //border-bottom-right-radius: 45px;
+        //background-color: #ffffffd0;
         
         img {
             position: relative;
-            left: 15px;
-            top: 5px;
-            width: 80%;
+            left: 40px;
+            top: 20px;
+            width: 50%;
         }
         
         .logo-dot {
@@ -244,19 +376,32 @@ h3 {
 }
 
 #intro-banner {
-    background-color: $MicroBlue;
+    background-color: $MicroTealMid;
     color: white;
     margin-bottom: 0;
+    height: 100vh;
+    position: relative;
     
     h1 {
         font-size: 6vw;
-        color: $MicroCoral;
+        color: $MicroLimeGreen;
         text-align: left;
+        padding: 0;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        width: 60%;
+        z-index: 7;
+    }
+    
+    p {
+        position: relative;
+        top: 200px;
     }
 
     @media only screen and (min-width: 768px) {
         h1 {
-            font-size: 50px;
+            font-size: 40px;
         }
     }
 }
