@@ -11,6 +11,7 @@ $MicroTealDark: #254558;
 $MicroTealMid: #3A5768;
 $MicroTealLight: #9EACB4;
 $MicroLimeGreen: #EAFC40;
+$MicroSelected: #1ED2F4;
 
 $MainFont: 'Raleway', sans-serif;
 $IntroFont: 'Poppins', sans-serif;
@@ -18,6 +19,7 @@ $SecondaryFont: 'Josefin Sans', sans-serif;
 
 $small: 576px;
 $medium: 768px;
+$large: 992px;
 
 $numberOfHomepagePortfolios: 3;
 $numberOfTestimonials: 3;
@@ -37,12 +39,20 @@ $slideshowIndicatorSize: 20px;
 
 $mobileSlideshowTopMargin: 20px;
 
+body {
+    background-color: $MicroTealDark;
+}
+
 .intro-background {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 200vh;
+    height: 220vh;
     background-color: $MicroTealMid;
+    
+    @media only screen and (min-width: $large) {
+        height: 180vh;
+    }
 
     #background-1 {
         z-index: 5;
@@ -54,7 +64,7 @@ $mobileSlideshowTopMargin: 20px;
         #background-1-1 {
             width: 100%;
             position: absolute;
-            border-bottom: 60vh solid $MicroTealLight;
+            border-bottom: 60vh solid $MicroTealLight;//was 60vh
             border-left: 300vw solid transparent;
             bottom: 90vh;
         }
@@ -63,7 +73,7 @@ $mobileSlideshowTopMargin: 20px;
             position: absolute;
             background-color: $MicroTealLight;
             width: 100%;
-            height: 100vh;
+            height: 110vh;
             bottom: 0;
         }
     }
@@ -91,7 +101,7 @@ $mobileSlideshowTopMargin: 20px;
         text-align: left;
         padding: 0;
         position: absolute;
-        top: 16%;
+        top: 35vh;
         left: 20%;
         width: 60%;
         z-index: 7;
@@ -104,7 +114,7 @@ $mobileSlideshowTopMargin: 20px;
     #micro-summary {
         position: absolute;
         z-index: 7;
-        top: 50%;
+        top: 100vh;
         width: 100%;
         height: 500px;
         padding: 0 10%;
@@ -112,51 +122,154 @@ $mobileSlideshowTopMargin: 20px;
         h2 {
             color: $MicroLimeGreen;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 70px;
         }
         
         p {
             color: white;
         }
         
-        .col-md-6 {
+        .col-lg-6 {
             position: relative;
-            padding: 0;
-            height: 300px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             
-            img {
-                position: absolute;
-            }
-            
-            #portfolio-shell-laptop {
-                width: 80%;
-                left: 10%;
-                bottom: 0;
-                z-index: 8;
-            }
-            
-            #portfolio-shell-mobile {
-                width: 25%;
-                right: 5%;
-                bottom: 0;
-                z-index: 9;
-            }
+            .column-container {
+                position: relative;
+                
+                img {
+                    position: absolute;
+                }
 
-            #portfolio-laptop {
-                width: 57%;
-                bottom: 0;
-                left: 15%;
-                z-index: 7;
-            }
-            
-            #portfolio-mobile {
-                width: 18.5%;
-                bottom: 0;
-                right: 10.5%;
-                z-index: 8;
+                #portfolio-shell-laptop {
+                    position: relative;
+                    width: 80%;
+                    left: 10%;
+                    bottom: 0;
+                    z-index: 8;
+                    margin: 0;
+                }
+
+                #portfolio-laptop {
+                    width: 57%;
+                    bottom: 0;
+                    left: 15%;
+                    z-index: 7;
+                }
+
+                #portfolio-shell-mobile {
+                    width: 25%;
+                    right: 5%;
+                    bottom: 0;
+                    z-index: 9;
+                }
+
+                #portfolio-mobile {
+                    width: 18.5%;
+                    bottom: 0;
+                    right: 10.5%;
+                    z-index: 8;
+                }
             }
         }
-            
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        #portfolio-button {
+            color: $MicroTealDark;
+            font-size: 150%;
+            text-align: center;
+            width: 220px;
+            margin: 0 auto;
+            background-color: $MicroLimeGreen;
+            border-radius: 8px;
+        }
+    }
+}
+
+.features-and-about-background {
+    background-color: $MicroLimeGreen;
+    background-image: linear-gradient(to bottom right, $MicroLimeGreen, $MicroTealDark);
+    
+    .feature-columns-row {
+        padding: 80px 0;
+        
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        p, h3 {
+            text-align: center;
+            color: $MicroTealDark;
+        }
+        
+        h3 {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+    
+    .about-row {
+        padding-bottom: 80px;
+        text-align: center;
+    }
+}
+
+.contact-background {
+    background-color: $MicroTealDark;
+    padding: 80px 0;
+    
+    h2 {
+        color: $MicroLimeGreen;
+    }
+    
+    form {
+        border: 1px solid red;
+        width: 80%;
+        margin: 0 auto;
+        
+        div {
+            padding: 10px 0;
+            border: 1px solid green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        label {
+            color: $MicroLimeGreen;
+            font-family: $MainFont;
+            width: 100px;
+            border: 1px solid red;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: block;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        input, textarea {
+            background-color: #f4f5f6;
+            border: none;
+            width: 80%;
+            color: $MicroTealDark;
+            flex-shrink: 0;
+        }
+
+        input {
+            height: 40px;
+        }
     }
 }
 
@@ -206,11 +319,8 @@ h3 {
 #menu-bar {
     height: 0;
     width: 100%;
-    //border: 1px solid black;
     position: relative;
     z-index: 10;
-    //overflow-y: scroll;
-    background-color: $MicroBlue;
     
     #logo {
         width: 240px;
@@ -228,55 +338,6 @@ h3 {
             left: 40px;
             top: 20px;
             width: 50%;
-        }
-        
-        .logo-dot {
-            position: absolute;
-            top: 9px;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-        }
-        
-        .dot-1 {
-            left: 15px;
-            background-color: $MicroBlue;
-        }
-        
-        .dot-2 {
-            left: 43px;
-            background-color: $MicroGrey;
-        }
-        
-        .dot-3 {
-            left: 71px;
-            background-color: $MicroCoral;
-        }
-        
-        .dot-4 {
-            left: 99px;
-            background-color: $MicroOrange;
-        }
-        
-        .logo-micro {
-            font-family: 'Montserrat', sans-serif;
-            color: $MicroGrey;
-            font-size: 28px;
-            letter-spacing: 10px;
-            position: absolute;
-            left: 13px;
-            top: 25px;
-        }
-        
-        .logo-boutique-branding {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 3px;
-            color: $MicroGrey;
-            position: absolute;
-            left: 15px;
-            top: 58px;
         }
     }
 }
@@ -297,7 +358,7 @@ h3 {
             color: white;
             
             &:hover {
-                color: $MicroBlue;
+                color: $MicroLimeGreen;
             }
         }
     }
@@ -307,26 +368,29 @@ h3 {
     position: absolute;
     z-index: 6;
     right: 20px;
-    top: 20px;
-    font-family: $MainFont;
-    font-size: 30px;
+    top: 35px;
+    width: 30px;
     
     &:hover {
         cursor: pointer;
     }
-}
-
-.menu-toggle-close {
-    color: white;
-    right: 30px;
-    font-size: 40px;
+    
+    img {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+    
+    #menu-close {
+        display: none;
+    }
 }
 
 #menu-checkbox {
     display: none;
     
     &:checked ~ #menu-list {
-        background-color: $MicroGrey;
+        background-color: $MicroTealLight;
         display: block;
         position: fixed;
         z-index: 5;
@@ -1389,17 +1453,25 @@ input {
 }
 
 .services-intro {
-    background-color: $MicroGrey;
+    background-color: $MicroTealDark;
+    padding-top: 100px;
+    text-align: center;
+    
+    h1 {
+        color: $MicroLimeGreen;
+        font-family: $SecondaryFont;
+        margin-bottom: 50px;
+    }
 }
 
-.always-included {
+.always-included-and-additional {
+    background-color: $MicroTealDark;
+    
     h2 {
         text-align: center;
-        padding-bottom: 30px;
+        padding: 40px 0;
+        color: $MicroLimeGreen
     }
-    
-    text-align: left;
-    padding: 40px 0;
     
     .row {
         width: 100%;
@@ -1412,23 +1484,26 @@ input {
         margin: 0 auto;
         font-family: $MainFont;
         font-size: 20px;
-        color: $MicroDarkGrey;
+        color: white;
         font-weight: 200;
         tr {
             padding: 0 0px;
             .tick {
                 width: 40px;
             }
+            
+            td:nth-of-type(2) {
+                padding-left: 10px;
+            }
         }
     }
-}
-
-.additional-features-heading {
-    padding: 40px 0 0 0;
-    h2, p {
+    
+    p {
+        color: white;
         text-align: center;
     }
 }
+
 
 .service-selection-scroll-container {
     position: relative;
@@ -1436,6 +1511,7 @@ input {
     width: 100%;
         
     .service-selection-scroll {
+        
         position: absolute;
         z-index: 3;
         top: 170px;
@@ -1466,6 +1542,7 @@ input {
 }
 
 .service-selection-container {
+    background-color: $MicroTealDark;
     width: 100%;
     height: 350px;
     overflow-x: auto;
@@ -1550,7 +1627,7 @@ input {
         
         @for $i from 1 through $numberOfAddFeatures {
             .service-checkbox:nth-of-type(#{$i}):checked ~ #service-box-label-#{$i} {
-                background-color: $MicroCoral;
+                background-color: $MicroSelected;
                 box-shadow: inset 0 0 10px $MicroDarkGrey;
                 
                 
@@ -1578,23 +1655,23 @@ input {
     position: relative;
     bottom: 20px;
     z-index: 3;
-    background-color: white;
+    background-color: $MicroTealDark;
     display: none;
 }
 
 .estimate-section {
-    background-color: white;
+    background-color: $MicroTealDark;
     padding: 40px 0;
     
     p {
-        color: $MicroDarkGrey;
+        color: white;
     }
     
     #price-estimate {
         display: none;
         text-align: center;
         font-size: 30px;
-        background-color: $MicroCoral;
+        //background-color: $MicroCoral;
         padding: 0 20px;
         border-radius: 10px;
         margin: 0 auto 20px auto;
@@ -1604,12 +1681,12 @@ input {
 }
 
 .faq-section {
-    background-color: $MicroBlue;
+    background-color: $MicroTealDark;
     padding: 40px 0;
     
     h2 {
         text-align: center;
-        color: white;
+        color: $MicroLimeGreen;
         padding-bottom: 30px;
     }
     
@@ -1627,10 +1704,11 @@ input {
         top: 2px;
         right: 15px;
         width: 20px;
-        height: 20px;
-        border-bottom: 4px solid $MicroOrange;
-        border-right: 4px solid $MicroOrange;
-        transform: rotate(45deg);
+        //height: 20px;
+        transition: transform 0.5s;
+        //border-bottom: 4px solid $MicroSelected;
+        //border-right: 4px solid $MicroSelected;
+        //transform: rotate(45deg);
     }
     
     .answer {
@@ -1661,8 +1739,9 @@ input {
 
             &:checked ~ .question-label:nth-of-type(#{$i}) {
                 .expand-arrow {
-                    transform: rotate(225deg);
-                    top: 15px;
+                    transform: scale(1,-1);
+                    
+                    //top: 15px;
                 }
                 
                 .answer {

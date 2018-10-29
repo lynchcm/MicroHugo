@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         
         <title>{{ .Title }}</title>
-        <link rel="icon" href="/images/microFavicon.png" type="image/png" sizes="64x64">
+        <link rel="icon" href="/images/logo-favicon.png" type="image/png" sizes="51x64">
         
     </head>
     <body>
@@ -50,7 +50,7 @@
     <div id="menu-bar">
         <div id="logo">
             <a href="/">
-                <img src="/images/logo.png">
+                <img src="/images/micro-logo.svg">
                 <!--<div class="logo-dot dot-1"></div>
                 <div class="logo-dot dot-2"></div>
                 <div class="logo-dot dot-3"></div>
@@ -60,7 +60,10 @@
             </a>
         </div>
         <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+        <label for="menu-checkbox" class="menu-toggle" >
+            <img id="menu-burger" src="/images/menu-burger.svg">
+            <img id="menu-close" src="/images/menu-close.svg">
+        </label>
         <ul id="menu-list">
             <div class="menu-list-items">
                 <li class="capitals"><a href="/">Home</a></li>

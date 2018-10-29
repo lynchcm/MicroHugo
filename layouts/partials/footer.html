@@ -19,12 +19,12 @@
             
             $('#menu-checkbox').on('click touch', function() {
                 if (this.checked) {
-                    $('.menu-toggle').html("&times;");
-                    $('.menu-toggle').addClass('menu-toggle-close');
+                    $('#menu-close').css('display', 'block');
+                    $('#menu-burger').css('display', 'none');
                 }
                 if (!this.checked) {
-                    $('.menu-toggle').html("&#9776;").removeAttr('style');
-                    $('.menu-toggle').removeClass('menu-toggle-close');
+                    $('#menu-close').css('display', 'none');
+                    $('#menu-burger').css('display', 'block');
                 }
             })
                 

@@ -14,30 +14,89 @@
     <div id="micro-summary">
         <h2 class="capitals">Affordable<br>Websites &amp; Branding</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <p>For a website to really stand out, every part needs to match perfectly, giving a unified impression of the brand. That's why we handle every aspect of your site, from the words, to the logo, to the site build, creating a custom site that perfectly represents your business.</p>
             </div>
-            <div class="col-md-6">
-                <div id="portfolio-laptop">
+            <div class="col-lg-6">
+                <div class= column-container>
                     <img id="portfolio-shell-laptop" src="/images/portfolio-shell-laptop.svg">
                     <img id="portfolio-laptop" src="/images/life-consultancy-group-laptop.png">
-                </div>
-                <div id="portfolio-mobile">
                     <img id="portfolio-shell-mobile" src="/images/portfolio-shell-mobile.svg">
                     <img id="portfolio-mobile" src="/images/life-consultancy-group-mobile.png">
                 </div>
-                
+            </div>
+        </div>
+        <div>
+            <a href="/portfolio"><p id="portfolio-button" class="capitals">See Portfolio</p></a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid features-and-about-background">
+    <div class="container">
+        <div class="row feature-columns-row">
+            <div class="col-md-6 col-lg-3">
+                <img src="/images/envelope.svg">
+                <h3 class="capitals">Subtitle Subtitle</h3>
+                <p>Save time and create a coherent, profesional look with our total brand approach.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <img src="/images/pound-icon.svg">
+                <h3 class="capitals">Subtitle</h3>
+                <p>Build your own package, only paying for exactly what you need.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <img src="/images/map-icon.svg">
+                <h3 class="capitals">Subtitle</h3>
+                <p>Everything is done by our small, UK-based team, not outsourced to freelancers.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <img src="/images/calendar-icon.svg">
+                <h3 class="capitals">Subtitle</h3>
+                <p>We turn around custom-coded sites in weeks, not months.</p>
+            </div>
+        </div>
+        <div class="row about-row">
+            <div class="col-md-4">
+                <img src="images/ro.png">
+                <img src="images/chris.png">
+            </div>
+            <div class="col-md-8">
+                <h2 class="capitals">About Us</h2>
+                <p>We founded Micro after starting two tiny businesses of our own.</p>
+                <p>Finding something between an expensive web design agency and copy-and-paste website templates turned out to be, well, impossible.</p>
+                <p>We started Micro to be the service we couldn’t find: affordable web design with all the other bits and pieces that make a brand — all in one place.</p>
+                <p>We bring our first hand business experience to every project, helping you shape your brand and communicate it to the world.</p>
             </div>
         </div>
     </div>
-    
+</div>
+
+<div class="container-fluid contact-background">
+    <div class="container">
+        <h2 class="capitals">Contact</h2>
+        <form>
+            <div>
+                <label>Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea rows="5"></textarea>
+            </div>
+            
+        </form>
+    </div>
 </div>
 
 
 <!--<div class="container-fluid" id="intro-banner">
     <h1 id="intro-line">{{ .Params.banner_headline | safeHTML }}</h1>
-</div>-->
-<div>test</div>
+</div>
 
 
 <div class="container-fluid" id="video-section">
@@ -155,7 +214,7 @@
 
 
 
-<!--
+
 <div id="portfolio-carousel" class="carousel slide d-none d-md-block" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
@@ -186,7 +245,7 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
--->
+
 <div id="about-section" class="container-fluid">
     <div class="container">
         <h2>About</h2>
@@ -254,7 +313,7 @@
         <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
     </div>
 </div>
-
+-->
 
 
 {{ partial "footer.html" . }}

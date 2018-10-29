@@ -1,9 +1,15 @@
+body {
+  background-color: #254558; }
+
 .intro-background {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 200vh;
+  height: 220vh;
   background-color: #3A5768; }
+  @media only screen and (min-width: 992px) {
+    .intro-background {
+      height: 180vh; } }
   .intro-background #background-1 {
     z-index: 5;
     height: 100%;
@@ -20,7 +26,7 @@
       position: absolute;
       background-color: #9EACB4;
       width: 100%;
-      height: 100vh;
+      height: 110vh;
       bottom: 0; }
   .intro-background #background-2 {
     z-index: 6;
@@ -41,7 +47,7 @@
     text-align: left;
     padding: 0;
     position: absolute;
-    top: 16%;
+    top: 35vh;
     left: 20%;
     width: 60%;
     z-index: 7; }
@@ -51,42 +57,115 @@
   .intro-background #micro-summary {
     position: absolute;
     z-index: 7;
-    top: 50%;
+    top: 100vh;
     width: 100%;
     height: 500px;
     padding: 0 10%; }
     .intro-background #micro-summary h2 {
       color: #EAFC40;
       text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 70px; }
     .intro-background #micro-summary p {
       color: white; }
-    .intro-background #micro-summary .col-md-6 {
+    .intro-background #micro-summary .col-lg-6 {
       position: relative;
+      padding-bottom: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .intro-background #micro-summary .col-lg-6 .column-container {
+        position: relative; }
+        .intro-background #micro-summary .col-lg-6 .column-container img {
+          position: absolute; }
+        .intro-background #micro-summary .col-lg-6 .column-container #portfolio-shell-laptop {
+          position: relative;
+          width: 80%;
+          left: 10%;
+          bottom: 0;
+          z-index: 8;
+          margin: 0; }
+        .intro-background #micro-summary .col-lg-6 .column-container #portfolio-laptop {
+          width: 57%;
+          bottom: 0;
+          left: 15%;
+          z-index: 7; }
+        .intro-background #micro-summary .col-lg-6 .column-container #portfolio-shell-mobile {
+          width: 25%;
+          right: 5%;
+          bottom: 0;
+          z-index: 9; }
+        .intro-background #micro-summary .col-lg-6 .column-container #portfolio-mobile {
+          width: 18.5%;
+          bottom: 0;
+          right: 10.5%;
+          z-index: 8; }
+    .intro-background #micro-summary a:hover {
+      text-decoration: none; }
+    .intro-background #micro-summary #portfolio-button {
+      color: #254558;
+      font-size: 150%;
+      text-align: center;
+      width: 220px;
+      margin: 0 auto;
+      background-color: #EAFC40;
+      border-radius: 8px; }
+
+.features-and-about-background {
+  background-color: #EAFC40;
+  background-image: linear-gradient(to bottom right, #EAFC40, #254558); }
+  .features-and-about-background .feature-columns-row {
+    padding: 80px 0; }
+    .features-and-about-background .feature-columns-row img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: 0 auto; }
+    .features-and-about-background .feature-columns-row p, .features-and-about-background .feature-columns-row h3 {
+      text-align: center;
+      color: #254558; }
+    .features-and-about-background .feature-columns-row h3 {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .features-and-about-background .about-row {
+    padding-bottom: 80px;
+    text-align: center; }
+
+.contact-background {
+  background-color: #254558;
+  padding: 80px 0; }
+  .contact-background h2 {
+    color: #EAFC40; }
+  .contact-background form {
+    border: 1px solid red;
+    width: 80%;
+    margin: 0 auto; }
+    .contact-background form div {
+      padding: 10px 0;
+      border: 1px solid green;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .contact-background form label {
+      color: #EAFC40;
+      font-family: "Raleway", sans-serif;
+      width: 100px;
+      border: 1px solid red;
+      height: 100%;
+      margin: 0;
       padding: 0;
-      height: 300px; }
-      .intro-background #micro-summary .col-md-6 img {
-        position: absolute; }
-      .intro-background #micro-summary .col-md-6 #portfolio-shell-laptop {
-        width: 80%;
-        left: 10%;
-        bottom: 0;
-        z-index: 8; }
-      .intro-background #micro-summary .col-md-6 #portfolio-shell-mobile {
-        width: 25%;
-        right: 5%;
-        bottom: 0;
-        z-index: 9; }
-      .intro-background #micro-summary .col-md-6 #portfolio-laptop {
-        width: 57%;
-        bottom: 0;
-        left: 15%;
-        z-index: 7; }
-      .intro-background #micro-summary .col-md-6 #portfolio-mobile {
-        width: 18.5%;
-        bottom: 0;
-        right: 10.5%;
-        z-index: 8; }
+      display: block;
+      height: 100%;
+      flex-shrink: 0; }
+    .contact-background form input, .contact-background form textarea {
+      background-color: #f4f5f6;
+      border: none;
+      width: 80%;
+      color: #254558;
+      flex-shrink: 0; }
+    .contact-background form input {
+      height: 40px; }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -119,8 +198,7 @@ h3 {
   height: 0;
   width: 100%;
   position: relative;
-  z-index: 10;
-  background-color: #13C3C6; }
+  z-index: 10; }
   #menu-bar #logo {
     width: 240px;
     height: 90px;
@@ -133,41 +211,6 @@ h3 {
       left: 40px;
       top: 20px;
       width: 50%; }
-    #menu-bar #logo .logo-dot {
-      position: absolute;
-      top: 9px;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%; }
-    #menu-bar #logo .dot-1 {
-      left: 15px;
-      background-color: #13C3C6; }
-    #menu-bar #logo .dot-2 {
-      left: 43px;
-      background-color: #929292; }
-    #menu-bar #logo .dot-3 {
-      left: 71px;
-      background-color: #FF636B; }
-    #menu-bar #logo .dot-4 {
-      left: 99px;
-      background-color: #FFA963; }
-    #menu-bar #logo .logo-micro {
-      font-family: 'Montserrat', sans-serif;
-      color: #929292;
-      font-size: 28px;
-      letter-spacing: 10px;
-      position: absolute;
-      left: 13px;
-      top: 25px; }
-    #menu-bar #logo .logo-boutique-branding {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      letter-spacing: 3px;
-      color: #929292;
-      position: absolute;
-      left: 15px;
-      top: 58px; }
 
 #menu-list {
   display: none; }
@@ -182,27 +225,27 @@ h3 {
       text-decoration: none;
       color: white; }
       #menu-list .menu-list-items a:hover {
-        color: #13C3C6; }
+        color: #EAFC40; }
 
 .menu-toggle {
   position: absolute;
   z-index: 6;
   right: 20px;
-  top: 20px;
-  font-family: "Raleway", sans-serif;
-  font-size: 30px; }
+  top: 35px;
+  width: 30px; }
   .menu-toggle:hover {
     cursor: pointer; }
-
-.menu-toggle-close {
-  color: white;
-  right: 30px;
-  font-size: 40px; }
+  .menu-toggle img {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%; }
+  .menu-toggle #menu-close {
+    display: none; }
 
 #menu-checkbox {
   display: none; }
   #menu-checkbox:checked ~ #menu-list {
-    background-color: #929292;
+    background-color: #9EACB4;
     display: block;
     position: fixed;
     z-index: 5;
@@ -963,33 +1006,39 @@ input {
     border-color: #929292; }
 
 .services-intro {
-  background-color: #929292; }
+  background-color: #254558;
+  padding-top: 100px;
+  text-align: center; }
+  .services-intro h1 {
+    color: #EAFC40;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 50px; }
 
-.always-included {
-  text-align: left;
-  padding: 40px 0; }
-  .always-included h2 {
+.always-included-and-additional {
+  background-color: #254558; }
+  .always-included-and-additional h2 {
     text-align: center;
-    padding-bottom: 30px; }
-  .always-included .row {
+    padding: 40px 0;
+    color: #EAFC40; }
+  .always-included-and-additional .row {
     width: 100%;
     margin: 0;
     padding: 0; }
-  .always-included table {
+  .always-included-and-additional table {
     width: 320px;
     margin: 0 auto;
     font-family: "Raleway", sans-serif;
     font-size: 20px;
-    color: #4A4A4A;
+    color: white;
     font-weight: 200; }
-    .always-included table tr {
+    .always-included-and-additional table tr {
       padding: 0 0px; }
-      .always-included table tr .tick {
+      .always-included-and-additional table tr .tick {
         width: 40px; }
-
-.additional-features-heading {
-  padding: 40px 0 0 0; }
-  .additional-features-heading h2, .additional-features-heading p {
+      .always-included-and-additional table tr td:nth-of-type(2) {
+        padding-left: 10px; }
+  .always-included-and-additional p {
+    color: white;
     text-align: center; }
 
 .service-selection-scroll-container {
@@ -1018,6 +1067,7 @@ input {
     transform: rotate(45deg); }
 
 .service-selection-container {
+  background-color: #254558;
   width: 100%;
   height: 350px;
   overflow-x: auto;
@@ -1088,7 +1138,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-box-label .service-box-selected-image {
         z-index: 0; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(1):checked ~ #service-box-label-1 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(1):checked ~ #service-box-label-1 .service-box-image {
         background-color: white; }
@@ -1097,7 +1147,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(1):checked ~ #service-box-label-1 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(2):checked ~ #service-box-label-2 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(2):checked ~ #service-box-label-2 .service-box-image {
         background-color: white; }
@@ -1106,7 +1156,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(2):checked ~ #service-box-label-2 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(3):checked ~ #service-box-label-3 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(3):checked ~ #service-box-label-3 .service-box-image {
         background-color: white; }
@@ -1115,7 +1165,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(3):checked ~ #service-box-label-3 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(4):checked ~ #service-box-label-4 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(4):checked ~ #service-box-label-4 .service-box-image {
         background-color: white; }
@@ -1124,7 +1174,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(4):checked ~ #service-box-label-4 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(5):checked ~ #service-box-label-5 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(5):checked ~ #service-box-label-5 .service-box-image {
         background-color: white; }
@@ -1133,7 +1183,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(5):checked ~ #service-box-label-5 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(6):checked ~ #service-box-label-6 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(6):checked ~ #service-box-label-6 .service-box-image {
         background-color: white; }
@@ -1142,7 +1192,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(6):checked ~ #service-box-label-6 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(7):checked ~ #service-box-label-7 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(7):checked ~ #service-box-label-7 .service-box-image {
         background-color: white; }
@@ -1151,7 +1201,7 @@ input {
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(7):checked ~ #service-box-label-7 .service-box-label-content p {
         color: white; }
     .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(8):checked ~ #service-box-label-8 {
-      background-color: #FF636B;
+      background-color: #1ED2F4;
       box-shadow: inset 0 0 10px #4A4A4A; }
       .service-selection-container .service-selection-box-wrapper .service-checkbox:nth-of-type(8):checked ~ #service-box-label-8 .service-box-image {
         background-color: white; }
@@ -1166,19 +1216,18 @@ input {
   position: relative;
   bottom: 20px;
   z-index: 3;
-  background-color: white;
+  background-color: #254558;
   display: none; }
 
 .estimate-section {
-  background-color: white;
+  background-color: #254558;
   padding: 40px 0; }
   .estimate-section p {
-    color: #4A4A4A; }
+    color: white; }
   .estimate-section #price-estimate {
     display: none;
     text-align: center;
     font-size: 30px;
-    background-color: #FF636B;
     padding: 0 20px;
     border-radius: 10px;
     margin: 0 auto 20px auto;
@@ -1186,11 +1235,11 @@ input {
     max-width: 400px; }
 
 .faq-section {
-  background-color: #13C3C6;
+  background-color: #254558;
   padding: 40px 0; }
   .faq-section h2 {
     text-align: center;
-    color: white;
+    color: #EAFC40;
     padding-bottom: 30px; }
   .faq-section p {
     color: white; }
@@ -1201,10 +1250,7 @@ input {
     top: 2px;
     right: 15px;
     width: 20px;
-    height: 20px;
-    border-bottom: 4px solid #FFA963;
-    border-right: 4px solid #FFA963;
-    transform: rotate(45deg); }
+    transition: transform 0.5s; }
   .faq-section .answer {
     height: 0;
     overflow: hidden; }
@@ -1218,53 +1264,43 @@ input {
   .faq-section .question-checkbox {
     display: none; }
   .faq-section .question-checkbox:nth-of-type(1):checked ~ .question-label:nth-of-type(1) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(1):checked ~ .question-label:nth-of-type(1) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(2):checked ~ .question-label:nth-of-type(2) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(2):checked ~ .question-label:nth-of-type(2) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(3):checked ~ .question-label:nth-of-type(3) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(3):checked ~ .question-label:nth-of-type(3) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(4):checked ~ .question-label:nth-of-type(4) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(4):checked ~ .question-label:nth-of-type(4) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(5):checked ~ .question-label:nth-of-type(5) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(5):checked ~ .question-label:nth-of-type(5) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(6):checked ~ .question-label:nth-of-type(6) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(6):checked ~ .question-label:nth-of-type(6) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(7):checked ~ .question-label:nth-of-type(7) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(7):checked ~ .question-label:nth-of-type(7) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(8):checked ~ .question-label:nth-of-type(8) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(8):checked ~ .question-label:nth-of-type(8) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(9):checked ~ .question-label:nth-of-type(9) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(9):checked ~ .question-label:nth-of-type(9) .answer {
     height: auto; }
   .faq-section .question-checkbox:nth-of-type(10):checked ~ .question-label:nth-of-type(10) .expand-arrow {
-    transform: rotate(225deg);
-    top: 15px; }
+    transform: scale(1, -1); }
   .faq-section .question-checkbox:nth-of-type(10):checked ~ .question-label:nth-of-type(10) .answer {
     height: auto; }
 

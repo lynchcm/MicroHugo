@@ -2,57 +2,60 @@
 
 <div class="container-fluid page-intro services-intro">
     <div class="container">
-        <h1>{{ .Title }}</h1>
+        <h1 class="capitals">{{ .Title }}</h1>
         <p>No two businesses or organisations are the same. That's why we don't have set packages. Choose exactly what you need from the additional features menu below to get an immediate rough quote. If you're looking for something that's not mentioned or you've got no idea what you need, just complete the contact form and we'll get in touch for a chat.</p>
     </div>
 </div>
-<div class="container always-included">
-    <h2 class="capitals">Always Included</h2>
-    <div class="row">
-        <div class="col-md-6 no-padding">
-            <table>
-                <tr>
-                    <td class="tick"><img src="/images/tick.png"></td>
-                    <td>1&ndash;2 page site</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/tick.png"></td>
-                    <td>Website design</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/tick.png"></td>
-                    <td>Website build</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/tick.png"></td>
-                    <td>Free hosting</td>
-                </tr>
-            </table>
+
+<div class="container-fluid always-included-and-additional">
+    <div class="container">
+        <h2 class="capitals">Always Included</h2>
+        <div class="row">
+            <div class="col-md-6 no-padding">
+                <table>
+                    <tr>
+                        <td class="tick"><img src="/images/tick.svg"></td>
+                        <td>1&ndash;2 page site</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/tick.svg"></td>
+                        <td>Website design</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/tick.svg"></td>
+                        <td>Website build</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/tick.svg"></td>
+                        <td>Free hosting</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-6 no-padding">
+                <table>
+                    <tr>
+                        <td class="tick"><img src="/images/tick.svg"></td>
+                        <td>Security certificate</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/tick.svg"></td>
+                        <td>Search engine optimisation</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/tick.svg"></td>
+                        <td>Professional copywriting</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="col-md-6 no-padding">
-            <table>
-                <tr>
-                    <td class="tick"><img src="/images/tick.png"></td>
-                    <td>Security certificate</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/tick.png"></td>
-                    <td>Search engine optimisation</td>
-                </tr>
-                <tr>
-                    <td><img src="/images/tick.png"></td>
-                    <td>Professional copywriting</td>
-                </tr>
-            </table>
-        </div>
+
+
+        <h2 class="capitals">Select Additional Features</h2>
+        <p>Use the scroller below to select additional features and see your personalised quote below.</p>
+
     </div>
 </div>
-    
-<div class="container additional-features-heading">
-    <h2 class="capitals">Select Additional Features</h2>
-    <p>Use the scroller below to select additional features and see your personalised quote below.</p>
-</div>
-
+        
 <div class="service-selection-scroll-container">
     <div class="service-selection-scroll left-scroll"></div>
     <div class="service-selection-scroll right-scroll"></div>
@@ -111,7 +114,9 @@
                     <div class="question">
                         <p>{{ .Params.question }}</p>
                     </div>
-                    <div class="expand-arrow"></div>
+                    <div class="expand-arrow">
+                        <img src="/images/arrow.svg">
+                    </div>
                     <div class="answer">
                         <p>{{ .Params.answer }}</p>
                     </div>
