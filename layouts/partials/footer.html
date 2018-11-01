@@ -160,11 +160,15 @@
             
             var betaAngle, gammaAngle, alphaAngle;
             $(window).on('orientationchange', function() {
-                alphaAngle = 100 * event.alpha;
-                betaAngle = 100 * event.beta;
-                gammaAngle = 100 * event.gamma;
-                scaledPosFromCentre = [gammaAngle, betaAngle, 0];
-                $('#test').html(gammaAngle);
+                
+                setTimeout(function() {
+                    alphaAngle = 100 * event.alpha;
+                    betaAngle = 100 * event.beta;
+                    gammaAngle = 100 * event.gamma;
+                    scaledPosFromCentre = [gammaAngle, betaAngle, 0];
+                    $('#test').html(gammaAngle);
+                }, 1000);
+                    
             });
             
             setInterval(function() {
