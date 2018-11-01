@@ -49,7 +49,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 220vh;
+    height: 250vh;
     background-color: $MicroTealMid;
     
     @media only screen and (min-width: $large) {
@@ -177,6 +177,7 @@ body {
                 }
 
                 #portfolio-shell-mobile {
+                    position: absolute;
                     width: 25%;
                     right: 5%;
                     bottom: 0;

@@ -5,7 +5,7 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 220vh;
+  height: 250vh;
   background-color: #3A5768; }
   @media only screen and (min-width: 992px) {
     .intro-background {
@@ -101,6 +101,7 @@ body {
           left: 15%;
           z-index: 6; }
         .intro-background #micro-summary .col-lg-6 .column-container #portfolio-shell-mobile {
+          position: absolute;
           width: 25%;
           right: 5%;
           bottom: 0;
