@@ -1,7 +1,11 @@
 <div class="container-fluid footer-section">
     <div class="text-center">
-        <a href="https://twitter.com/Micro_Ltd" target="_blank"><img src="/images/twitter.png"></a>
-        <a href="mailto:hello@wearemicro.co"><img src="/images/email.png"></a>
+        <a href="https://twitter.com/Micro_Ltd" target="_blank">
+            {{ partial "twitter.svg" . }}
+        </a>
+        <a href="mailto:hello@wearemicro.co">
+            {{ partial "email.svg" . }}
+        </a>
     </div>
     <p id="copyright">&copy; 2018 by Micro Boutique Branding</p>
     <p>Registered address:<br>Micro Boutique Branding Ltd, Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX<br>Registered in England and Wales<br>Company number 10993015</p>
@@ -9,7 +13,7 @@
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
@@ -91,6 +95,45 @@
                     return false;
                 }
             });
+            
+            var mouseXpos = 0;
+            var positionOffset1 = 0.2;
+            var positionOffset2 = 0.05;
+            var mountainHeightMin = [40, 40, 40, 40];
+            var mountainHeightMax = [80, 100, 80, 80];
+            var mountainHeight = [80, 80, 80, 80];
+            var mountainPeakXPosVW = [5, 50, 65, 95];
+            var mountainPeakXPosPixels = [0, 0, 0, 0];
+            var maxMouseDistanceFromPeak = [0, 0, 0, 0];
+            var mountainColours = ['#EAFC40', '#9EACB4', '#1ED2F4', '#9EACB4']
+            
+            for (var i = 0; i < 4; i++) {
+                mountainPeakXPosPixels[i] = mountainPeakXPosVW[i] * $(window).width() / 100;
+                if (($(window).width() - mountainPeakXPosPixels[i]) > mountainPeakXPosPixels[i]) {
+                    maxMouseDistanceFromPeak[i] = ($(window).width() - mountainPeakXPosPixels[i]);
+                } else {
+                    maxMouseDistanceFromPeak[i] = mountainPeakXPosPixels[i];
+                }
+            }
+            $(document).on('mousemove', function() {
+                mouseXpos = event.pageX;
+                //alert(mouseXpos);
+            });
+            
+            setInterval(function() {
+                for (var i = 0; i < 4; i++) {
+                    var xPosString;
+                    mountainHeight[i] = mountainHeightMin[i] + ((mountainHeightMax[i] - mountainHeightMin[i]) * Math.abs(mouseXpos - mountainPeakXPosPixels[i]) / maxMouseDistanceFromPeak[i]);
+                    xPosString = mountainHeight[i] + 'vh solid ' + mountainColours[i];
+                    $('#mountain-' + (i + 1)).css('border-bottom', xPosString);
+                }
+                //$('#mountain-1' + (i + 1)).css('border-bottom', mountainHeight[0] + 'vh solid #EAFC40');
+                //$('#mountain-2').css('border-bottom', mountainHeight[1] + 'vh solid #EAFC40');
+                //alert(mountainHeight[0]);
+                    
+            }, 30);
+                
+          
 
         
             
@@ -143,6 +186,33 @@
                 $('#background-2').css('transform', 'rotate(' + rotateAmount + 'deg)');
             }, 30);
             
+            var portfolioLaptopImages = ['/images/lifeconsultancygroup-laptop.png', '/images/ckcoaching-laptop.png', '/images/5thelement-laptop.png', '/images/concept34-laptop.png', '/images/genneu-laptop.png'];
+            var portfolioMobileImages = ['/images/lifeconsultancygroup-mobile.png', '/images/ckcoaching-mobile.png', '/images/5thelement-mobile.png', '/images/concept34-mobile.png', '/images/genneu-mobile.png'];
+            var i = 1;
+            var j;
+            setInterval(function() {
+
+                $('#portfolio-mobile-animation').animate({
+                    top: '100%'
+                });
+                $('#portfolio-laptop-animation').animate({
+                    top: '100%'
+                }, function() {
+                    j = i % portfolioLaptopImages.length;
+                    //alert(i % portfolioImages.length);
+                    $('#portfolio-laptop-animation').attr('src', portfolioLaptopImages[j]);
+                    $('#portfolio-mobile-animation').attr('src', portfolioMobileImages[j]);
+                    $('#portfolio-laptop-animation').removeAttr('style');
+                    $('#portfolio-mobile-animation').removeAttr('style');
+                    i++;
+                    j = i % portfolioLaptopImages.length;
+                    //alert(j);
+                    $('#portfolio-laptop').attr('src', portfolioLaptopImages[j]);
+                    $('#portfolio-mobile').attr('src', portfolioMobileImages[j]);
+                })
+                //$('#portfolio-laptop').attr('src', '/images/concept34-laptop.png');
+                
+            }, 3000);
             
 {{ end }}
             

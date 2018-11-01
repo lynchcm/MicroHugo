@@ -1,7 +1,8 @@
 +++
 type = "portfolio"
 order = "5"
-img = "/images/genneu.png"
+laptopImg = "/images/genneu-laptop.png"
+mobileImg = "/images/genneu-mobile.png"
 company = "GenNeu"
 category = "Online Children's Store"
 linkName = "genneu.co.uk"

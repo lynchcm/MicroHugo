@@ -1,8 +1,6 @@
 {{ partial "head.html" . }}
 
-<div class="container portfolio-intro">
-    <h1>{{ .Title }}</h1>
-</div>
+
 <div class="container-fluid no-padding">
     <div class="slideshow testimonials-slideshow">
         <input type="radio" id="slide-1-radio" name="testimonials" class="slideshow-radio" checked="checked">
@@ -23,7 +21,7 @@
         <label for="slide-1-radio" class="slide-indicator slide-indicator-1"></label>
         <label for="slide-2-radio" class="slide-indicator slide-indicator-2"></label>
         <label for="slide-3-radio" class="slide-indicator slide-indicator-3"></label>
-        <h2>OUR HAPPY CLIENTS</h2>
+        <h1 class="capitals">{{ .Title }}</h1>
         <div class="slideshow-rail">
             <div class="slide slide-1">
                 <p>“I knew I needed a site to grow my freelancing business, but I’m not a technical person and had no idea where to start. Micro turned it round in four days and I love my site.”</p>
@@ -49,10 +47,15 @@
     
     
     <div class="row">
-        <div class="col-md-6">
-            <img class="img-fluid" src="{{ .Params.img }}">
+        <div class="col-lg-6">
+            <div class= column-container>
+                <img class="portfolio-shell-laptop" src="/images/portfolio-shell-laptop.svg">
+                <img class="portfolio-laptop" src="{{ .Params.laptopImg }}">
+                <img class="portfolio-shell-mobile" src="/images/portfolio-shell-mobile.svg">
+                <img class="portfolio-mobile" src="{{ .Params.mobileImg }}">
+            </div>
         </div>
-        <div class="col-md-6 portfolio-text">
+        <div class="col-lg-6 portfolio-text">
             <h2 class="capitals">{{ .Params.company }}</h2>
             <h2 class="capitals">{{ .Params.category }}</h2>
             <a href="{{ .Params.linkURL }}" target="_blank">{{ .Params.linkName }}</a>

@@ -1,7 +1,7 @@
 +++
 type = "service-image"
 order = "2"
-imgcoral = "/images/businesscard-coral.png"
+imgurl = "/images/business-card.svg"
 imgwhite = "/images/businesscard-white.png"
 text = "A business card that complements my website"
 +++

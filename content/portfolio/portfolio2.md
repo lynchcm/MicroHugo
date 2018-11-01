@@ -1,7 +1,8 @@
 +++
 type = "portfolio"
 order = "2"
-img = "/images/ck-coaching.png"
+laptopImg = "/images/ckcoaching-laptop.png"
+mobileImg = "/images/ckcoaching-mobile.png"
 company = "CK Coaching"
 category = "Executive Coach"
 linkName = "ckcoaching.life"

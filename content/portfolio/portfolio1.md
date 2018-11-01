@@ -1,7 +1,8 @@
 +++
 type = "portfolio"
 order = "1"
-img = "/images/life-consulting-group.png"
+laptopImg = "/images/lifeconsultancygroup-laptop.png"
+mobileImg = "/images/lifeconsultancygroup-mobile.png"
 company = "Life Consulting Group"
 category = "Consulting"
 linkName = "lifeconsultinggroup.solutions"

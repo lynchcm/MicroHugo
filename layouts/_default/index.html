@@ -19,10 +19,12 @@
             </div>
             <div class="col-lg-6">
                 <div class= column-container>
-                    <img id="portfolio-shell-laptop" src="/images/portfolio-shell-laptop.svg">
-                    <img id="portfolio-laptop" src="/images/life-consultancy-group-laptop.png">
+                    <div id="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
+                    <img id="portfolio-laptop" src="/images/ckcoaching-laptop.png">
+                    <img id="portfolio-laptop-animation" src="/images/lifeconsultancygroup-laptop.png">
                     <img id="portfolio-shell-mobile" src="/images/portfolio-shell-mobile.svg">
-                    <img id="portfolio-mobile" src="/images/life-consultancy-group-mobile.png">
+                    <img id="portfolio-mobile" src="/images/ckcoaching-mobile.png">
+                    <img id="portfolio-mobile-animation" src="/images/lifeconsultancygroup-mobile.png">
                 </div>
             </div>
         </div>
@@ -72,26 +74,8 @@
     </div>
 </div>
 
-<div class="container-fluid contact-background">
-    <div class="container">
-        <h2 class="capitals">Contact</h2>
-        <form>
-            <div>
-                <label>Name</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>Email</label>
-                <input type="email">
-            </div>
-            <div>
-                <label>Message</label>
-                <textarea rows="5"></textarea>
-            </div>
-            
-        </form>
-    </div>
-</div>
+
+{{ partial "contact.html" . }}
 
 
 <!--<div class="container-fluid" id="intro-banner">

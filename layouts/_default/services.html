@@ -76,17 +76,28 @@
             {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         
         <label for='service-{{ $.Scratch.Get "counter" }}' class='service-box-label' id='service-box-label-{{ $.Scratch.Get "counter" }}'>
-            <div class="service-box-label-content">
-                <div class="service-box-image">
-                    <img src="{{ .Params.imgcoral }}">
-                </div>
-                <div class="service-box-image service-box-selected-image">
-                    <img src="{{ .Params.imgwhite }}">
-                </div>
-                <div class="service-description">
-                    <p>{{ .Params.text }}</p>
-                </div>
+            <!--<div class="service-box-label-content">-->
+            
+            <div class="service-box-image">
+                
+                {{ if ne .Params.imgorcss "css" }}
+                <img src="{{ .Params.imgurl }}">
+                {{ end }}
+                
+                {{ if eq .Params.imgorcss "css" }}
+                <div class="{{ .Params.divclass }}"></div>
+                <div class="icon-content"><p>{{ .Content }}</p></div>
+                {{ end }}
             </div>
+            
+                
+            
+
+            <div class="service-description">
+                <p>{{ .Params.text }}</p>
+            </div>
+            
+            <!--</div>-->
         </label>
         
         {{ end }}
@@ -134,7 +145,9 @@
                     <div class="question">
                         <p>{{ .Params.question }}</p>
                     </div>
-                    <div class="expand-arrow"></div>
+                    <div class="expand-arrow">
+                        <img src="/images/arrow.svg">
+                    </div>
                     <div class="answer">
                         <p>{{ .Params.answer | safeHTML }}</p>
                     </div>
@@ -146,7 +159,10 @@
     </div>
 </div>
 
+<div class="moving-mountains-container">
+{{ partial "contact.html" . }}
 
+<!--
 <div class="container-fluid contact-section">
     <div class="container">
         <h2>Contact</h2>
@@ -175,5 +191,13 @@
     <div id="form-alert"></div>
     <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
 </div>
+-->
 
 {{ partial "footer.html" . }}
+    <div class="spacer"></div>
+
+    <div class="moving-mountains" id="mountain-1"></div>
+    <div class="moving-mountains" id="mountain-2"></div>
+    <div class="moving-mountains" id="mountain-3"></div>
+    <div class="moving-mountains" id="mountain-4"></div>
+</div>

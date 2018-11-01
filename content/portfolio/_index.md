@@ -1,5 +1,5 @@
 +++
-title = "Portfolio & Testimonials"
+title = "Portfolio"
 layout = "portfolio"
 
 +++

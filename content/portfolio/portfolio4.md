@@ -1,7 +1,8 @@
 +++
 type = "portfolio"
 order = "4"
-img = "/images/concept-34.png"
+laptopImg = "/images/concept34-laptop.png"
+mobileImg = "/images/concept34-mobile.png"
 company = "Concept 34"
 category = "Marketing Consultancy"
 linkName = "concept-34.com"

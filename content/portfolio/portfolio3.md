@@ -1,7 +1,8 @@
 +++
 type = "portfolio"
 order = "3"
-img = "/images/5th-element-integrative.png"
+laptopImg = "/images/5thelement-laptop.png"
+mobileImg = "/images/5thelement-mobile.png"
 company = "5th Element Integrative Coaching"
 category = "Holistic Coaching"
 linkName = "5thelementintegrative.com"
