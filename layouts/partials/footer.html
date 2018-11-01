@@ -158,6 +158,14 @@
                 //alert(scaledPosFromCentre[2]);
             });
             
+            var betaAngle, gammaAngle, alphaAngle;
+            $(document).on('orientationchange', function() {
+                alphaAngle = event.alpha;
+                betaAngle = event.beta;
+                gammaAngle = event.gamma;
+                scaledPosFromCentre = [alphaAngle, 0, 0];
+            });
+            
             setInterval(function() {
                 var xFromCentreString, yFromCentreString;
                 for (var i = 0; i < 3; i++) {
@@ -201,17 +209,21 @@
                     oddOrEven = 2;
                     evenOrOdd = 1;
                 }
-                //$('#portfolio-mobile-animation-' + oddOrEven).animate({
-                //    top: '100%'
-                //});
+                $('#portfolio-mobile-animation-' + oddOrEven).animate({
+                    top: '100%'
+                });
                 $('#portfolio-laptop-animation-' + oddOrEven).animate({
                     top: '100%'
                 }, function() {
                     
                     $('#portfolio-laptop-animation-' + oddOrEven).css('z-index', '5'); //move front image backwards
+                    $('#portfolio-mobile-animation-' + oddOrEven).css('z-index', '9');
                     $('#portfolio-laptop-animation-' + evenOrOdd).css('z-index', '7'); //move back image forwards
-                    $('#portfolio-laptop-animation-' + oddOrEven).attr('src', portfolioLaptopImages[j]); //change now hidden image to next image
+                    $('#portfolio-mobile-animation-' + evenOrOdd).css('z-index', '10');
+                    $('#portfolio-laptop-animation-' + oddOrEven).attr('src', portfolioLaptopImages[j]);
+                    $('#portfolio-mobile-animation-' + oddOrEven).attr('src', portfolioMobileImages[j]);//change now hidden image to next image
                     $('#portfolio-laptop-animation-' + oddOrEven).removeAttr('style'); //move changed image back inside frame ready to be revealed
+                    $('#portfolio-mobile-animation-' + oddOrEven).removeAttr('style');
                     i++;
                     //alert(j);
                 })
