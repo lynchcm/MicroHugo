@@ -189,26 +189,31 @@
             var portfolioLaptopImages = ['/images/lifeconsultancygroup-laptop.png', '/images/ckcoaching-laptop.png', '/images/5thelement-laptop.png', '/images/concept34-laptop.png', '/images/genneu-laptop.png'];
             var portfolioMobileImages = ['/images/lifeconsultancygroup-mobile.png', '/images/ckcoaching-mobile.png', '/images/5thelement-mobile.png', '/images/concept34-mobile.png', '/images/genneu-mobile.png'];
             var i = 1;
+            var oddOrEven;
+            var EvenOrOdd;
             var j;
             setInterval(function() {
-
-                $('#portfolio-mobile-animation').animate({
-                    top: '100%'
-                });
-                $('#portfolio-laptop-animation').animate({
+                j = i % portfolioLaptopImages.length;
+                oddOrEven = i % 2;
+                if (oddOrEven == 1) {
+                    evenOrOdd = 2;
+                } else {
+                    oddOrEven = 2;
+                    evenOrOdd = 1;
+                }
+                //$('#portfolio-mobile-animation-' + oddOrEven).animate({
+                //    top: '100%'
+                //});
+                $('#portfolio-laptop-animation-' + oddOrEven).animate({
                     top: '100%'
                 }, function() {
-                    j = i % portfolioLaptopImages.length;
-                    //alert(i % portfolioImages.length);
-                    $('#portfolio-laptop-animation').attr('src', portfolioLaptopImages[j]);
-                    $('#portfolio-mobile-animation').attr('src', portfolioMobileImages[j]);
-                    $('#portfolio-laptop-animation').removeAttr('style');
-                    $('#portfolio-mobile-animation').removeAttr('style');
+                    
+                    $('#portfolio-laptop-animation-' + oddOrEven).css('z-index', '5'); //move front image backwards
+                    $('#portfolio-laptop-animation-' + evenOrOdd).css('z-index', '7'); //move back image forwards
+                    $('#portfolio-laptop-animation-' + oddOrEven).attr('src', portfolioLaptopImages[j]); //change now hidden image to next image
+                    $('#portfolio-laptop-animation-' + oddOrEven).removeAttr('style'); //move changed image back inside frame ready to be revealed
                     i++;
-                    j = i % portfolioLaptopImages.length;
                     //alert(j);
-                    $('#portfolio-laptop').attr('src', portfolioLaptopImages[j]);
-                    $('#portfolio-mobile').attr('src', portfolioMobileImages[j]);
                 })
                 //$('#portfolio-laptop').attr('src', '/images/concept34-laptop.png');
                 
