@@ -1,7 +1,7 @@
 +++
 type = "service-image"
 order = "5"
-imgcoral = "/images/social-coral.png"
-imgwhite = "/images/social-white.png"
+imgtype = "svg"
+svg = "instagram-icon.svg"
 text = "Latest social media posts to appear on the site"
 +++

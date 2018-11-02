@@ -5,7 +5,7 @@ $MicroCoral: #FF636B;
 $MicroOrange: #FFA963;
 $transparentWhite: #FFFFFFA0;
 $MicroColours: (#9EACB4, #EAFC40, #1ED2F4);//(#13C3C6, #929292, #FF636B, #FFA963);
-$hoverGrey: #eaeaea;
+$hoverGrey: #c0c9ce;
 
 $MicroTealDark: #254558;
 $MicroTealMid: #3A5768;
@@ -49,12 +49,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 250vh;
     background-color: $MicroTealMid;
-    
-    @media only screen and (min-width: $large) {
-        height: 180vh;
-    }
 
     #background-1 {
         z-index: 5;
@@ -96,30 +91,46 @@ body {
         }
     }
     
-    #intro-line {
-        font-family: $IntroFont;
-        font-size: 6vw;
-        color: $MicroLimeGreen;
-        text-align: left;
-        padding: 0;
-        position: absolute;
-        top: 35vh;
-        left: 20%;
-        width: 60%;
-        z-index: 7;
+    .intro-line-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        #intro-line {
+            font-family: $IntroFont;
+            font-size: 6vw;
+            color: $MicroLimeGreen;
+            text-align: left;
+            padding: 0;
+            position: relative;
+            //top: 35vh;
+            //left: 20%;
+            width: 60%;
+            z-index: 7;
+            margin: 0 auto;
 
-        @media only screen and (min-width: 768px) {
-            font-size: 40px;
+            @media only screen and (min-width: 768px) {
+                font-size: 40px;
+            }
         }
     }
     
+    
     #micro-summary {
-        position: absolute;
+        position: relative;
         z-index: 7;
-        top: 100vh;
         width: 100%;
-        height: 500px;
-        padding: 0 10%;
+        //height: 500px;
+        padding: 0 10px;
+        
+        
+        @media only screen and (min-width: $small) {
+            padding: 0 10%;
+        }
         
         h2 {
             color: $MicroLimeGreen;
@@ -140,9 +151,19 @@ body {
             font-size: 150%;
             text-align: center;
             width: 220px;
-            margin: 0 auto;
+            margin: 0 auto 100px auto;
             background-color: $MicroLimeGreen;
             border-radius: 8px;
+        }
+        
+        .text-column {
+            //padding-left: 10%;
+            //padding-right: 10%;
+            
+            p {
+                font-weight: 100;
+                font-size: 24px;
+            }
         }
         
         .col-lg-6 {
@@ -162,17 +183,16 @@ body {
 
                 #portfolio-shell-laptop {
                     position: relative;
-                    width: 80%;
-                    left: 10%;
+                    width: 100%;
                     bottom: 0;
                     z-index: 8;
                     margin: 0;
                 }
 
                 #portfolio-laptop-animation-1, #portfolio-laptop-animation-2 {
-                    width: 57.1%;
+                    width: 78.5%;
                     bottom: 0;
-                    left: 15.1%;
+                    left: 7.1%;
                 }
                 
                 #portfolio-laptop-animation-1 {
@@ -185,16 +205,16 @@ body {
 
                 #portfolio-shell-mobile {
                     position: absolute;
-                    width: 25%;
-                    right: 5%;
+                    width: 27%;
+                    right: 1%;
                     bottom: 0;
                     z-index: 11;
                 }
 
                 #portfolio-mobile-animation-1, #portfolio-mobile-animation-2 {
-                    width: 18.8%;
+                    width: 21%;
                     bottom: 0;
-                    right: 10.5%;
+                    right: 6.2%;
                 }
                 
                 #portfolio-mobile-animation-1 {
@@ -209,9 +229,8 @@ body {
     }
 }
 
-.features-and-about-background {
+.features-background {
     background-color: $MicroLimeGreen;
-    background-image: linear-gradient(to bottom right, $MicroLimeGreen, $MicroTealDark);
     
     .feature-columns-row {
         padding: 80px 0;
@@ -234,60 +253,144 @@ body {
             align-items: center;
             justify-content: center;
         }
+    }
+}
+
+.features-and-about-background {
+    background-color: $MicroLimeGreen;
+    background-image: linear-gradient($MicroLimeGreen, $MicroTealDark);
+    
+    h2 {
+        color: $MicroSelected;
+        text-align: center;
         
+        @media only screen and (min-width: $large) {
+            display: none;
+        }
     }
     
     .about-row {
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                width: 100%;
+                max-width: 487px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                margin-bottom: 40px;
+            }
+        }
+        
+        padding-top: 40px;
         padding-bottom: 80px;
-        text-align: center;
+        text-align: left;
+        
+        h2 {
+            text-align: left;
+            display: none;
+            
+            @media only screen and (min-width: $large) {
+                display: block;
+            }
+        }
+        
+        p {
+            color: white;
+            text-align: center;
+            
+            @media only screen and (min-width: $small) {
+                width: 80%;
+                margin-left: 10%;
+            }
+            
+            @media only screen and (min-width: $large) {
+                text-align: left;
+                width: 95%;
+                margin-left: 0%;
+            }
+        }
+        
+            
     }
 }
 
 .contact-background {
-    background-color: $MicroTealDark;
+    //background-color: $MicroTealDark;
     padding: 80px 0;
     
     h2 {
-        color: $MicroLimeGreen;
+        color: $MicroSelected;
+        text-align: center;
     }
     
     form {
-        border: 1px solid red;
         width: 80%;
         margin: 0 auto;
+        position: relative;
         
-        div {
-            padding: 10px 0;
-            border: 1px solid green;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .form-input {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        
+        .form-label {
+            position: absolute;
+            left: 5%;
+            top: -40px;
         }
         
         label {
             color: $MicroLimeGreen;
+            text-align: left;
             font-family: $MainFont;
-            width: 100px;
-            border: 1px solid red;
-            height: 100%;
-            margin: 0;
-            padding: 0;
+            font-size: 24px;
+            width: 130px;
+            margin: 4px 0 52px 0;
             display: block;
             height: 100%;
-            flex-shrink: 0;
         }
 
         input, textarea {
             background-color: #f4f5f6;
             border: none;
-            width: 80%;
+            width: 100%;
             color: $MicroTealDark;
-            flex-shrink: 0;
+            margin-bottom: 50px;
         }
 
         input {
             height: 40px;
         }
+        
+        @media only screen and (min-width: $large) {
+            .form-input {
+                width: 80%;
+                margin-top: auto;
+            }
+
+            .form-label {
+                left: auto;
+                right: 90%;
+                top: auto;
+            }
+            
+            label {
+                text-align: right;
+                margin: 4px 0 12px 0;
+                padding-right: 10px;
+            }
+            
+            input, textarea {
+                margin-bottom: 10px;
+            }
+        }
+            
+        
+
     }
 }
 
@@ -295,7 +398,7 @@ body {
 p {
     font-family: $MainFont;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 100;
     //padding-left: 30px; removed when working on resource centre article styling
     //padding-right: 30px; removed when working on resource centre article styling
     //padding-bottom: 30px;
@@ -335,27 +438,20 @@ h3 {
 }
 
 #menu-bar {
-    height: 0;
+    //height: 0;
     width: 100%;
     position: relative;
     z-index: 10;
     
     #logo {
-        width: 240px;
-        height: 90px;
+        width: 80px;
         position: absolute;
         z-index: 8;
-        top: 6px;
-        left: 0;
-        //border-top-right-radius: 45px;
-        //border-bottom-right-radius: 45px;
-        //background-color: #ffffffd0;
+        top: 30px;
+        left: 30px;
         
-        img {
-            position: relative;
-            left: 40px;
-            top: 20px;
-            width: 50%;
+        @media only screen and (min-width: $medium) {
+            width: 120px;
         }
     }
 }
@@ -384,7 +480,7 @@ h3 {
 
 .menu-toggle {
     position: absolute;
-    z-index: 6;
+    z-index: 20;
     right: 20px;
     top: 35px;
     width: 30px;
@@ -952,7 +1048,7 @@ input {
 }
 
 .footer-section {
-    background-color: $MicroTealDark;
+    //background-color: $MicroTealDark;
     padding: 30px 5px;
     
     p {
@@ -1504,55 +1600,105 @@ input {
     
     .col-lg-6 {
         position: relative;
-        padding-bottom: 80px;
+        padding: 0 0 80px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border: 1px solid green;
 
         .column-container {
             position: relative;
+            border: 1px solid red;
+            padding: 0;
 
             img {
                 position: absolute;
+                padding: 0;
             }
 
             .portfolio-shell-laptop {
                 position: relative;
-                width: 80%;
-                left: 10%;
+                width: 100%; //was80
+                //left: 10%;
                 bottom: 0;
                 z-index: 8;
                 margin: 0;
             }
 
             .portfolio-laptop {
-                width: 57%;
+                width: 78%;
                 bottom: 0;
-                left: 15.1%;
+                left: 7.1%;
                 z-index: 7;
             }
 
             .portfolio-shell-mobile {
-                width: 25%;
-                right: 5%;
+                position: absolute;
+                width: 27%;
+                right: 1%;
                 bottom: 0;
                 z-index: 9;
             }
 
             .portfolio-mobile {
-                width: 18.7%;
+                width: 21%;
                 bottom: 0;
-                right: 10.5%;
+                right: 6.2%;
                 z-index: 8;
             }
         }
     }
 }
 
+.services-background {
+    background-color: $MicroTealMid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+    
+    .services-background-1 {
+        width: 100%;
+        height: 120vh;
+        border-top: 120vh solid transparent;
+        border-right: 100vw solid $MicroTealDark;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .services-background-2 {
+        width: 100%;
+        position: absolute;
+        top: 120vh;
+        height: 30vh;
+        background-color: $MicroTealDark;
+        z-index: 0;
+    }  
+    
+    .services-background-3 {
+        width: 100%;
+        height: 110vh;
+        border-bottom: 120vh solid transparent;
+        border-right: 110vw solid $MicroTealDark;
+        position: absolute;
+        z-index: 0;
+        top: 149.9vh;
+        left: 0;
+    }
+
+  
+}
+
+
 .services-intro {
-    background-color: $MicroTealDark;
-    padding-top: 100px;
+    
+    padding-top: 200px;
     text-align: center;
+    position: relative;
+    z-index: 3;
     
     h1 {
         color: $MicroLimeGreen;
@@ -1562,18 +1708,19 @@ input {
 }
 
 .always-included-and-additional {
-    background-color: $MicroTealDark;
+    position: relative;
+    z-index: 3;
     
     h2 {
         text-align: center;
-        padding: 40px 0;
+        padding: 50px 0 20px 0;
         color: $MicroLimeGreen
     }
     
     .row {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 0 0 30px 0;
     }
     
     table {
@@ -1582,7 +1729,7 @@ input {
         font-family: $MainFont;
         font-size: 20px;
         color: white;
-        font-weight: 200;
+        font-weight: 100;
         tr {
             padding: 0 0px;
             .tick {
@@ -1606,6 +1753,7 @@ input {
     position: relative;
     height: 0;
     width: 100%;
+    z-index: 4;
         
     .service-selection-scroll {
         
@@ -1616,13 +1764,13 @@ input {
         height: 50px;
         border-width: 5px 5px 0 0;
         border-style: solid;
-        border-color: $MicroBlue;
+        border-color: $MicroLimeGreen;
         margin-top: -($slideshowControlSize / 2);
         display: none;
         
         &:hover {
             cursor: pointer;
-            border-color: $MicroOrange;
+            border-color: white;
         }
     }
     
@@ -1639,20 +1787,20 @@ input {
 }
 
 .service-selection-container {
-    background-color: $MicroTealDark;
     width: 100%;
     height: 350px;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 0;
     position: relative;
+    z-index: 3;
 
     .service-selection-box-wrapper {
         width: ($edgePageGapAddFeaturesCard * 2) + (($numberOfAddFeatures - 1) * $midPageGapAddFeaturesCard) + ($numberOfAddFeatures * $widthOfAddFeaturesCard);
         height: 400px;
         position: relative;
         padding: 0;
-        //overflow-y: hidden;
+        //overflow-x: hidden;
   
         .service-checkbox {
             display: none;
@@ -1674,7 +1822,7 @@ input {
             border-radius: 10px;
             padding: $addFeaturesCardPadding;
             margin: 0;
-            box-shadow: 0 0 5px 1px $MicroGrey;
+            //box-shadow: 0 0 5px 1px $MicroGrey;
 
             &:hover {
                 cursor: pointer;
@@ -1692,7 +1840,7 @@ input {
                     align-items: center;
                     
                     p {
-                        color: $MicroDarkGrey;
+                        color: $MicroLimeGreen;
                         font-size: 18px;
                         text-align: center;
                     }
@@ -1705,7 +1853,10 @@ input {
                 left: (($widthOfAddFeaturesCard - $addFeaturesCardImgWidth) / 2);
                 z-index: 1;
                 width: $addFeaturesCardImgWidth;
-                //border: 1px solid green;
+                height: $addFeaturesCardImgWidth;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 
                 img {
                     width: 100%;
@@ -1716,11 +1867,10 @@ input {
                     z-index: 3;
                     top: 30px;
                     width: 100%;
-                    border: 1px solid red;
                     
                     p {
                         text-align: center;
-                        color: $MicroTealLight;
+                        color: $MicroSelected;
                         font-size: 24px;
                     }
                 }
@@ -1728,7 +1878,6 @@ input {
                 .design-a-logo {
                     z-index: 2;
                     position: relative;
-                    top: 30px;
                     margin: 0 auto;
                     width: $addFeaturesCardImgWidth;
                     height: (0.866 * $addFeaturesCardImgWidth);
@@ -1765,7 +1914,7 @@ input {
         @for $i from 1 through $numberOfAddFeatures {
             .service-checkbox:nth-of-type(#{$i}):checked ~ #service-box-label-#{$i} {
                 background-color: $MicroSelected;
-                box-shadow: inset 0 0 10px $MicroDarkGrey;
+                //box-shadow: inset 0 0 10px $MicroDarkGrey;
                 
    
                 
@@ -1788,8 +1937,9 @@ input {
 }
 
 .estimate-section {
-    background-color: $MicroTealDark;
     padding: 40px 0;
+    position: relative;
+    z-index: 3;
     
     p {
         color: white;
@@ -1799,7 +1949,6 @@ input {
         display: none;
         text-align: center;
         font-size: 30px;
-        //background-color: $MicroCoral;
         padding: 0 20px;
         border-radius: 10px;
         margin: 0 auto 20px auto;
@@ -1809,7 +1958,6 @@ input {
 }
 
 .faq-section {
-    background-color: $MicroTealDark;
     padding: 40px 0;
     
     h2 {
@@ -1834,6 +1982,7 @@ input {
         width: 20px;
         //height: 20px;
         transition: transform 0.5s;
+        cursor: pointer;
         //border-bottom: 4px solid $MicroSelected;
         //border-right: 4px solid $MicroSelected;
         //transform: rotate(45deg);
@@ -1880,12 +2029,17 @@ input {
     }
 }
 
+.services-footer {
+    width: 100%;
+    background-color: $MicroTealMid;
+}
+
 .moving-mountains-container {
     position: relative;
     width: 100%;
     //height: 500px;
     overflow-x: hidden;
-    border: 1px solid red;
+    //border: 1px solid red;
     
     .spacer {
         width: 100%;
@@ -1900,19 +2054,19 @@ input {
     
     #mountain-1 {
         left: 0;
-        width: 20vw;
+        width: 25vw;
         border-color: $MicroLimeGreen;
         border-bottom: 80vh;
         border-left: 5vw solid transparent;
-        border-right: 15vw solid transparent;
+        border-right: 20vw solid transparent;
     }
     
     #mountain-2 {
         left: 20vw;
         width: 40vw;
         border-bottom: 40vh solid $MicroTealLight;
-        border-left: 30vw solid transparent;
-        border-right: 10vw solid transparent;
+        border-left: 20vw solid transparent;
+        border-right: 20vw solid transparent;
     }
     
     #mountain-3 {

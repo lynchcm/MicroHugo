@@ -49,9 +49,9 @@
     <div class="row">
         <div class="col-lg-6">
             <div class= column-container>
-                <img class="portfolio-shell-laptop" src="/images/portfolio-shell-laptop.svg">
+                <div class="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
                 <img class="portfolio-laptop" src="{{ .Params.laptopImg }}">
-                <img class="portfolio-shell-mobile" src="/images/portfolio-shell-mobile.svg">
+                <div class="portfolio-shell-mobile">{{ partial "portfolio-shell-mobile.svg" . }}</div>
                 <img class="portfolio-mobile" src="{{ .Params.mobileImg }}">
             </div>
         </div>

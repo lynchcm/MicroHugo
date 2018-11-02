@@ -1,7 +1,7 @@
 +++
 type = "service-image"
 order = "1"
-imgorcss = "css"
+imgtype = "css"
 divclass = "design-a-logo"
 imgcoral = "/images/logo-coral.png"
 imgwhite = "/images/logo-white.png"

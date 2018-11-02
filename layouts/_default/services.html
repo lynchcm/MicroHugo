@@ -1,203 +1,211 @@
 {{ partial "head.html" . }}
 
-<div class="container-fluid page-intro services-intro">
-    <div class="container">
-        <h1 class="capitals">{{ .Title }}</h1>
-        <p>No two businesses or organisations are the same. That's why we don't have set packages. Choose exactly what you need from the additional features menu below to get an immediate rough quote. If you're looking for something that's not mentioned or you've got no idea what you need, just complete the contact form and we'll get in touch for a chat.</p>
-    </div>
-</div>
-
-<div class="container-fluid always-included-and-additional">
-    <div class="container">
-        <h2 class="capitals">Always Included</h2>
-        <div class="row">
-            <div class="col-md-6 no-padding">
-                <table>
-                    <tr>
-                        <td class="tick"><img src="/images/tick.svg"></td>
-                        <td>1&ndash;2 page site</td>
-                    </tr>
-                    <tr>
-                        <td><img src="/images/tick.svg"></td>
-                        <td>Website design</td>
-                    </tr>
-                    <tr>
-                        <td><img src="/images/tick.svg"></td>
-                        <td>Website build</td>
-                    </tr>
-                    <tr>
-                        <td><img src="/images/tick.svg"></td>
-                        <td>Free hosting</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-6 no-padding">
-                <table>
-                    <tr>
-                        <td class="tick"><img src="/images/tick.svg"></td>
-                        <td>Security certificate</td>
-                    </tr>
-                    <tr>
-                        <td><img src="/images/tick.svg"></td>
-                        <td>Search engine optimisation</td>
-                    </tr>
-                    <tr>
-                        <td><img src="/images/tick.svg"></td>
-                        <td>Professional copywriting</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+<div class="services-background">
+    <div class="services-background-1"></div>
+    <div class="services-background-2"></div>
+    <div class="services-background-3"></div>
 
 
-        <h2 class="capitals">Select Additional Features</h2>
-        <p>Use the scroller below to select additional features and see your personalised quote below.</p>
-
-    </div>
-</div>
-        
-<div class="service-selection-scroll-container">
-    <div class="service-selection-scroll left-scroll"></div>
-    <div class="service-selection-scroll right-scroll"></div>
-</div>
-<div class="container-fluid service-selection-container">
-    <div class="service-selection-box-wrapper">
-        <input type="checkbox" class="service-checkbox" id="service-1">
-        <input type="checkbox" class="service-checkbox" id="service-2">
-        <input type="checkbox" class="service-checkbox" id="service-3">
-        <input type="checkbox" class="service-checkbox" id="service-4">
-        <input type="checkbox" class="service-checkbox" id="service-5">
-        <input type="checkbox" class="service-checkbox" id="service-6">
-        <input type="checkbox" class="service-checkbox" id="service-7">
-        <input type="checkbox" class="service-checkbox" id="service-8">
-        
-        {{ $.Scratch.Set "counter" 0 }}
-        {{ range where (.Pages.ByParam "order") "Params.type" "service-image" }}
-            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-        
-        <label for='service-{{ $.Scratch.Get "counter" }}' class='service-box-label' id='service-box-label-{{ $.Scratch.Get "counter" }}'>
-            <!--<div class="service-box-label-content">-->
-            
-            <div class="service-box-image">
-                
-                {{ if ne .Params.imgorcss "css" }}
-                <img src="{{ .Params.imgurl }}">
-                {{ end }}
-                
-                {{ if eq .Params.imgorcss "css" }}
-                <div class="{{ .Params.divclass }}"></div>
-                <div class="icon-content"><p>{{ .Content }}</p></div>
-                {{ end }}
-            </div>
-            
-                
-            
-
-            <div class="service-description">
-                <p>{{ .Params.text }}</p>
-            </div>
-            
-            <!--</div>-->
-        </label>
-        
-        {{ end }}
-        
-    </div>
-</div>
-<div class="hide-scrollbar"></div>
-<div class="container-fluid estimate-section">
-    <div class="container">
-        <p id="price-estimate" class="capitals"></p>
-        <p>The above quote is a rough estimate based on the information you've given us. We'd love to hear about your project in more detail: complete the contact form below and we'll be in touch to set up a 15-minute intro call.</p>
-    </div>
-</div>
-<div class="container-fluid faq-section">
-    <div class="container">
-        <h2 class="capitals">FAQs</h2>
-        <div class="row">
-            <div class="col-lg-6">
-                
-                {{ $.Scratch.Set "counter" 0 }}
-                {{ range where (.Pages.ByParam "order") "Params.type" "faq-col-1" }}
-                    {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-                <input type="checkbox" class="question-checkbox" id='question-{{ $.Scratch.Get "counter" }}'>
-                <label for='question-{{ $.Scratch.Get "counter" }}' class="question-label">
-                    <div class="question">
-                        <p>{{ .Params.question }}</p>
-                    </div>
-                    <div class="expand-arrow">
-                        <img src="/images/arrow.svg">
-                    </div>
-                    <div class="answer">
-                        <p>{{ .Params.answer }}</p>
-                    </div>
-                </label>
-                {{ end }}
-                
-            </div>
-            <div class="col-lg-6">
-                
-                {{ $.Scratch.Set "counter" 5 }}
-                {{ range where (.Pages.ByParam "order") "Params.type" "faq-col-2" }}
-                    {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-                <input type="checkbox" class="question-checkbox" id='question-{{ $.Scratch.Get "counter" }}'>
-                <label for='question-{{ $.Scratch.Get "counter" }}' class="question-label">
-                    <div class="question">
-                        <p>{{ .Params.question }}</p>
-                    </div>
-                    <div class="expand-arrow">
-                        <img src="/images/arrow.svg">
-                    </div>
-                    <div class="answer">
-                        <p>{{ .Params.answer | safeHTML }}</p>
-                    </div>
-                </label>
-                {{ end }}
-                
-            </div>
+    <div class="container-fluid page-intro services-intro">
+        <div class="container">
+            <h1 class="capitals">{{ .Title }}</h1>
+            <p>No two businesses or organisations are the same. That's why we don't have set packages. Choose exactly what you need from the additional features menu below to get an immediate rough quote. If you're looking for something that's not mentioned or you've got no idea what you need, just complete the contact form and we'll get in touch for a chat.</p>
         </div>
     </div>
-</div>
 
-<div class="moving-mountains-container">
-{{ partial "contact.html" . }}
+    <div class="container-fluid always-included-and-additional">
+        <div class="container">
+            <h2 class="capitals">Always Included</h2>
+            <div class="row">
+                <div class="col-md-6 no-padding">
+                    <table>
+                        <tr>
+                            <td class="tick"><img src="/images/tick.svg"></td>
+                            <td>1&ndash;2 page site</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/tick.svg"></td>
+                            <td>Website design</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/tick.svg"></td>
+                            <td>Website build</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/tick.svg"></td>
+                            <td>Free hosting</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6 no-padding">
+                    <table>
+                        <tr>
+                            <td class="tick"><img src="/images/tick.svg"></td>
+                            <td>Security certificate</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/tick.svg"></td>
+                            <td>Search engine optimisation</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/tick.svg"></td>
+                            <td>Professional copywriting</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
 
-<!--
-<div class="container-fluid contact-section">
-    <div class="container">
-        <h2>Contact</h2>
-        <p></p>
+
+            <h2 class="capitals">Select Additional Features</h2>
+            <p>Use the scroller below to select additional features and see your personalised quote below.</p>
+
+        </div>
     </div>
-</div>
-<div id="contact-form-container" class="container-fluid contact-section">
-    <form id="contact-form" method="post">
-        <div class="row">
-            <div class="col-md-3 offset-md-3">
-                <input id="name-input" type="text" name="name-input" placeholder="Name">
-            </div>
-            <div class="col-md-3">
-                <input id="email-input" type="email" name="email-address" placeholder="Email">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <textarea id="message-input" rows="3" name="message-input" placeholder="Message"></textarea>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center">
-            <button id="sendButton">SEND</button>
-        </div>
-    </form>
-    <div id="form-alert"></div>
-    <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
-</div>
--->
 
-{{ partial "footer.html" . }}
-    <div class="spacer"></div>
+    <div class="service-selection-scroll-container">
+        <div class="service-selection-scroll left-scroll"></div>
+        <div class="service-selection-scroll right-scroll"></div>
+    </div>
+    <div class="container-fluid service-selection-container">
+        <div class="service-selection-box-wrapper">
+            <input type="checkbox" class="service-checkbox" id="service-1">
+            <input type="checkbox" class="service-checkbox" id="service-2">
+            <input type="checkbox" class="service-checkbox" id="service-3">
+            <input type="checkbox" class="service-checkbox" id="service-4">
+            <input type="checkbox" class="service-checkbox" id="service-5">
+            <input type="checkbox" class="service-checkbox" id="service-6">
+            <input type="checkbox" class="service-checkbox" id="service-7">
+            <input type="checkbox" class="service-checkbox" id="service-8">
 
-    <div class="moving-mountains" id="mountain-1"></div>
-    <div class="moving-mountains" id="mountain-2"></div>
-    <div class="moving-mountains" id="mountain-3"></div>
-    <div class="moving-mountains" id="mountain-4"></div>
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ range where (.Pages.ByParam "order") "Params.type" "service-image" }}
+                {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+
+            <label for='service-{{ $.Scratch.Get "counter" }}' class='service-box-label' id='service-box-label-{{ $.Scratch.Get "counter" }}'>
+                <!--<div class="service-box-label-content">-->
+
+                <div class="service-box-image">
+
+                    {{ if eq .Params.imgtype "svg" }}
+                        {{ partial .Params.svg . }}
+                    {{ end }}
+
+                    {{ if eq .Params.imgtype "css" }}
+                    <div class="{{ .Params.divclass }}"></div>
+                    <div class="icon-content"><p>{{ .Content }}</p></div>
+                    {{ end }}
+                </div>
+
+
+
+
+                <div class="service-description">
+                    <p>{{ .Params.text }}</p>
+                </div>
+
+                <!--</div>-->
+            </label>
+
+            {{ end }}
+
+        </div>
+    </div>
+    <!--<div class="hide-scrollbar"></div>-->
+    <div class="container-fluid estimate-section">
+        <div class="container">
+            <p id="price-estimate" class="capitals"></p>
+            <p>The above quote is a rough estimate based on the information you've given us. We'd love to hear about your project in more detail: complete the contact form below and we'll be in touch to set up a 15-minute intro call.</p>
+        </div>
+    </div>
+    <div class="container-fluid faq-section">
+        <div class="container">
+            <h2 class="capitals">FAQs</h2>
+            <div class="row">
+                <div class="col-lg-6">
+
+                    {{ $.Scratch.Set "counter" 0 }}
+                    {{ range where (.Pages.ByParam "order") "Params.type" "faq-col-1" }}
+                        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+                    <input type="checkbox" class="question-checkbox" id='question-{{ $.Scratch.Get "counter" }}'>
+                    <label for='question-{{ $.Scratch.Get "counter" }}' class="question-label">
+                        <div class="question">
+                            <p>{{ .Params.question }}</p>
+                        </div>
+                        <div class="expand-arrow">
+                            <img src="/images/arrow.svg">
+                        </div>
+                        <div class="answer">
+                            <p>{{ .Params.answer }}</p>
+                        </div>
+                    </label>
+                    {{ end }}
+
+                </div>
+                <div class="col-lg-6">
+
+                    {{ $.Scratch.Set "counter" 5 }}
+                    {{ range where (.Pages.ByParam "order") "Params.type" "faq-col-2" }}
+                        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+                    <input type="checkbox" class="question-checkbox" id='question-{{ $.Scratch.Get "counter" }}'>
+                    <label for='question-{{ $.Scratch.Get "counter" }}' class="question-label">
+                        <div class="question">
+                            <p>{{ .Params.question }}</p>
+                        </div>
+                        <div class="expand-arrow">
+                            <img src="/images/arrow.svg">
+                        </div>
+                        <div class="answer">
+                            <p>{{ .Params.answer | safeHTML }}</p>
+                        </div>
+                    </label>
+                    {{ end }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="moving-mountains-container">
+    {{ partial "contact.html" . }}
+
+    <!--
+    <div class="container-fluid contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p></p>
+        </div>
+    </div>
+    <div id="contact-form-container" class="container-fluid contact-section">
+        <form id="contact-form" method="post">
+            <div class="row">
+                <div class="col-md-3 offset-md-3">
+                    <input id="name-input" type="text" name="name-input" placeholder="Name">
+                </div>
+                <div class="col-md-3">
+                    <input id="email-input" type="email" name="email-address" placeholder="Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <textarea id="message-input" rows="3" name="message-input" placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button id="sendButton">SEND</button>
+            </div>
+        </form>
+        <div id="form-alert"></div>
+        <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
+    </div>
+    -->
+        <div class="services-footer">
+    {{ partial "footer.html" . }}
+        </div>
+        <div class="spacer"></div>
+
+        <div class="moving-mountains" id="mountain-1"></div>
+        <div class="moving-mountains" id="mountain-2"></div>
+        <div class="moving-mountains" id="mountain-3"></div>
+        <div class="moving-mountains" id="mountain-4"></div>
+    </div>
 </div>

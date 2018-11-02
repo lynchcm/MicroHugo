@@ -1,7 +1,7 @@
 +++
 type = "service-image"
 order = "3"
-imgcoral = "/images/popup-coral.png"
-imgwhite = "/images/popup-white.png"
+imgtype = "svg"
+svg = "callout-icon.svg"
 text = "A pop up to showcase an offer"
 +++
