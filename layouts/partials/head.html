@@ -5,7 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200|Poppins:200|Lato:200|Josefin+Sans:100,300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,400|Poppins:200|Lato:200|Josefin+Sans:100,300" rel="stylesheet">
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -26,8 +26,12 @@
         </div>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="menu-toggle">
-            <img id="menu-burger" src="/images/menu-burger.svg">
-            <img id="menu-close" src="/images/menu-close.svg">
+            <div class="menu-toggle-button" id="menu-burger">
+                {{ partial "menu-burger.svg" . }}
+            </div>
+            <div class="menu-toggle-button" id="menu-close">
+                {{ partial "menu-close.svg" . }}
+            </div>
         </label>
         <ul id="menu-list">
             <div class="menu-list-items">

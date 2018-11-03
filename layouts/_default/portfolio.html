@@ -1,69 +1,82 @@
 {{ partial "head.html" . }}
 
+<div class="services-background">
+    <div class="services-background-1"></div>
+    <div class="services-background-2"></div>
+    <div class="services-background-3"></div>
 
-<div class="container-fluid no-padding">
-    <div class="slideshow testimonials-slideshow">
-        <input type="radio" id="slide-1-radio" name="testimonials" class="slideshow-radio" checked="checked">
-        <input type="radio" id="slide-2-radio" name="testimonials" class="slideshow-radio">
-        <input type="radio" id="slide-3-radio" name="testimonials" class="slideshow-radio">
-        <div class="slideshow-controls" id="slide-1-controls">
-            <label for="slide-3-radio" class="slide-control prev-slide"></label>
-            <label for="slide-2-radio" class="slide-control next-slide"></label>
+
+    <div class="container-fluid page-intro portfolio-intro">
+        <div class="container">
+            <h1 class="capitals">{{ .Title }}</h1>
         </div>
-        <div class="slideshow-controls" id="slide-2-controls">
-            <label for="slide-1-radio" class="slide-control prev-slide"></label>
-            <label for="slide-3-radio" class="slide-control next-slide"></label>
-        </div>
-        <div class="slideshow-controls" id="slide-3-controls">
-            <label for="slide-2-radio" class="slide-control prev-slide"></label>
-            <label for="slide-1-radio" class="slide-control next-slide"></label>
-        </div>
-        <label for="slide-1-radio" class="slide-indicator slide-indicator-1"></label>
-        <label for="slide-2-radio" class="slide-indicator slide-indicator-2"></label>
-        <label for="slide-3-radio" class="slide-indicator slide-indicator-3"></label>
-        <h1 class="capitals">{{ .Title }}</h1>
-        <div class="slideshow-rail">
-            <div class="slide slide-1">
-                <p>“I knew I needed a site to grow my freelancing business, but I’m not a technical person and had no idea where to start. Micro turned it round in four days and I love my site.”</p>
+    </div>
+
+    <div class="container-fluid no-padding">
+        <div class="slideshow testimonials-slideshow">
+            <input type="radio" id="slide-1-radio" name="testimonials" class="slideshow-radio" checked="checked">
+            <input type="radio" id="slide-2-radio" name="testimonials" class="slideshow-radio">
+            <input type="radio" id="slide-3-radio" name="testimonials" class="slideshow-radio">
+            <div class="slideshow-controls" id="slide-1-controls">
+                <label for="slide-3-radio" class="slide-control prev-slide"></label>
+                <label for="slide-2-radio" class="slide-control next-slide"></label>
             </div>
-            <div class="slide slide-2">
-                <p>“Starting a small business is a huge undertaking, and branding took a backseat until Micro came into the picture. They made it so easy and seamless with logo ideation, website design and business cards in days, not weeks or months.”</p>
+            <div class="slideshow-controls" id="slide-2-controls">
+                <label for="slide-1-radio" class="slide-control prev-slide"></label>
+                <label for="slide-3-radio" class="slide-control next-slide"></label>
             </div>
-            <div class="slide slide-3">
-                <p>“Starting a small business is a huge undertaking, and branding took a backseat until Micro came into the picture. They made it so easy and seamless with logo ideation, website design and business cards in days, not weeks or months.”</p>
+            <div class="slideshow-controls" id="slide-3-controls">
+                <label for="slide-2-radio" class="slide-control prev-slide"></label>
+                <label for="slide-1-radio" class="slide-control next-slide"></label>
+            </div>
+            <label for="slide-1-radio" class="slide-indicator slide-indicator-1"></label>
+            <label for="slide-2-radio" class="slide-indicator slide-indicator-2"></label>
+            <label for="slide-3-radio" class="slide-indicator slide-indicator-3"></label>
+            <div class="slideshow-rail">
+                <div class="slide slide-1">
+                    <p>“I knew I needed a site to grow my freelancing business, but I’m not a technical person and had no idea where to start. Micro turned it round in four days and I love my site.”</p>
+                    <p class="quote-person">Barry, L.A.</p>
+                </div>
+                <div class="slide slide-2">
+                    <p>“Starting a small business is a huge undertaking, and branding took a backseat until Micro came into the picture. They made it so easy and seamless with logo ideation, website design and business cards in days, not weeks or months.”</p>
+                    <p class="quote-person">Barry, L.A.</p>
+                </div>
+                <div class="slide slide-3">
+                    <p>“Starting a small business is a huge undertaking, and branding took a backseat until Micro came into the picture. They made it so easy and seamless with logo ideation, website design and business cards in days, not weeks or months.”</p>
+                    <p class="quote-person">Barry, L.A.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container portfolio">
-    
-    {{ $.Scratch.Set "counter" 0 }}
-    {{ range where (.Pages.ByParam "order") "Params.type" "portfolio" }}
-        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-    
-        {{ if gt ($.Scratch.Get "counter") 1 }}
-    <hr>
+    <div class="container portfolio">
+
+        {{ $.Scratch.Set "counter" 0 }}
+        {{ range where (.Pages.ByParam "order") "Params.type" "portfolio" }}
+            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+
+            {{ if gt ($.Scratch.Get "counter") 1 }}
+        <hr>
+            {{ end }}
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class= column-container>
+                    <div class="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
+                    <img class="portfolio-laptop" src="{{ .Params.laptopImg }}">
+                    <div class="portfolio-shell-mobile">{{ partial "portfolio-shell-mobile.svg" . }}</div>
+                    <img class="portfolio-mobile" src="{{ .Params.mobileImg }}">
+                </div>
+            </div>
+            <div class="col-lg-6 portfolio-text">
+                <h2 class="capitals">{{ .Params.company }}</h2>
+                <a href="{{ .Params.linkURL }}" target="_blank">{{ .Params.linkName }}</a>
+                <p>{{ .Params.description }}</p>
+            </div>
+        </div>
         {{ end }}
-    
-    
-    <div class="row">
-        <div class="col-lg-6">
-            <div class= column-container>
-                <div class="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
-                <img class="portfolio-laptop" src="{{ .Params.laptopImg }}">
-                <div class="portfolio-shell-mobile">{{ partial "portfolio-shell-mobile.svg" . }}</div>
-                <img class="portfolio-mobile" src="{{ .Params.mobileImg }}">
-            </div>
-        </div>
-        <div class="col-lg-6 portfolio-text">
-            <h2 class="capitals">{{ .Params.company }}</h2>
-            <h2 class="capitals">{{ .Params.category }}</h2>
-            <a href="{{ .Params.linkURL }}" target="_blank">{{ .Params.linkName }}</a>
-            <p>{{ .Params.description }}</p>
-        </div>
-    </div>
-    {{ end }}
- 
-</div>
 
-{{ partial "footer.html" . }}
+    </div>
+    {{ partial "contact.html" . }}
+    {{ partial "footer.html" . }}
+</div>

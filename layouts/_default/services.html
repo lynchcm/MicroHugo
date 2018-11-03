@@ -66,54 +66,51 @@
         <div class="service-selection-scroll left-scroll"></div>
         <div class="service-selection-scroll right-scroll"></div>
     </div>
-    <div class="container-fluid service-selection-container">
-        <div class="service-selection-box-wrapper">
-            <input type="checkbox" class="service-checkbox" id="service-1">
-            <input type="checkbox" class="service-checkbox" id="service-2">
-            <input type="checkbox" class="service-checkbox" id="service-3">
-            <input type="checkbox" class="service-checkbox" id="service-4">
-            <input type="checkbox" class="service-checkbox" id="service-5">
-            <input type="checkbox" class="service-checkbox" id="service-6">
-            <input type="checkbox" class="service-checkbox" id="service-7">
-            <input type="checkbox" class="service-checkbox" id="service-8">
+    <div class="service-selection-scrollbar-hide">
+        <div class="container-fluid service-selection-container">
+            <div class="service-selection-box-wrapper">
+                <input type="checkbox" class="service-checkbox" id="service-1">
+                <input type="checkbox" class="service-checkbox" id="service-2">
+                <input type="checkbox" class="service-checkbox" id="service-3">
+                <input type="checkbox" class="service-checkbox" id="service-4">
+                <input type="checkbox" class="service-checkbox" id="service-5">
+                <input type="checkbox" class="service-checkbox" id="service-6">
+                <input type="checkbox" class="service-checkbox" id="service-7">
+                <input type="checkbox" class="service-checkbox" id="service-8">
 
-            {{ $.Scratch.Set "counter" 0 }}
-            {{ range where (.Pages.ByParam "order") "Params.type" "service-image" }}
-                {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+                {{ $.Scratch.Set "counter" 0 }}
+                {{ range where (.Pages.ByParam "order") "Params.type" "service-image" }}
+                    {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
 
-            <label for='service-{{ $.Scratch.Get "counter" }}' class='service-box-label' id='service-box-label-{{ $.Scratch.Get "counter" }}'>
-                <!--<div class="service-box-label-content">-->
+                <label for='service-{{ $.Scratch.Get "counter" }}' class='service-box-label' id='service-box-label-{{ $.Scratch.Get "counter" }}'>
+                    <div class="service-box-image">
+                        {{ if eq .Params.imgtype "svg" }}
+                            {{ partial .Params.svg . }}
+                        {{ end }}
 
-                <div class="service-box-image">
+                        {{ if eq .Params.imgtype "css" }}
+                        <div class="{{ .Params.divclass }}"></div>
+                        <div class="icon-content"><p>{{ .Content }}</p></div>
+                        {{ end }}
+                    </div>
+                    <div class="service-description">
+                        <p>{{ .Params.text }}</p>
+                    </div>
+                </label>
 
-                    {{ if eq .Params.imgtype "svg" }}
-                        {{ partial .Params.svg . }}
-                    {{ end }}
+                {{ end }}
 
-                    {{ if eq .Params.imgtype "css" }}
-                    <div class="{{ .Params.divclass }}"></div>
-                    <div class="icon-content"><p>{{ .Content }}</p></div>
-                    {{ end }}
-                </div>
-
-
-
-
-                <div class="service-description">
-                    <p>{{ .Params.text }}</p>
-                </div>
-
-                <!--</div>-->
-            </label>
-
-            {{ end }}
-
+            </div>
         </div>
     </div>
     <!--<div class="hide-scrollbar"></div>-->
     <div class="container-fluid estimate-section">
         <div class="container">
-            <p id="price-estimate" class="capitals"></p>
+            <div class="price-estimate">
+                <p class="capitals">Your estimate:</p>
+                <p id="estimate-value"></p>
+                <div class="price-estimate-colour-box"></div>
+            </div>
             <p>The above quote is a rough estimate based on the information you've given us. We'd love to hear about your project in more detail: complete the contact form below and we'll be in touch to set up a 15-minute intro call.</p>
         </div>
     </div>
@@ -168,36 +165,6 @@
     <div class="moving-mountains-container">
     {{ partial "contact.html" . }}
 
-    <!--
-    <div class="container-fluid contact-section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p></p>
-        </div>
-    </div>
-    <div id="contact-form-container" class="container-fluid contact-section">
-        <form id="contact-form" method="post">
-            <div class="row">
-                <div class="col-md-3 offset-md-3">
-                    <input id="name-input" type="text" name="name-input" placeholder="Name">
-                </div>
-                <div class="col-md-3">
-                    <input id="email-input" type="email" name="email-address" placeholder="Email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <textarea id="message-input" rows="3" name="message-input" placeholder="Message"></textarea>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <button id="sendButton">SEND</button>
-            </div>
-        </form>
-        <div id="form-alert"></div>
-        <div id="form-success" class="alert alert-success" role="alert">Thank you, we will be in contact very soon!</div>
-    </div>
-    -->
         <div class="services-footer">
     {{ partial "footer.html" . }}
         </div>

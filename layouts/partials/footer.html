@@ -40,28 +40,34 @@
             //calculate price of additional features
             var basic = 599;
             var total = 599;
-            var service = [100, 150, 50, 100, 200]
-            var priceStringText = 'Your estimate: £';
+            var service = [100, 150, 50, 100, 200, 100, 200, 50]
+            var priceStringText = '£';
             var priceString = '';
 
             $('.service-checkbox').on('click touch', function() {
                 total = basic;
-                for (i = 0; i < 5 ; i++) {
+                for (i = 0; i < 8 ; i++) {
                     if (document.getElementById('service-' + (i + 1)).checked) {
                         total += service[i];
                     }
                 }
                 priceString = priceStringText + total;
-                $('#price-estimate').text(priceString);
-                $('#price-estimate').show();
+                $('#estimate-value').text(priceString);
+                $('.price-estimate').show();
+                //$('.price-estimate').addClass('price-estimate-update');
+                $('.price-estimate-colour-box').css('opacity', '1');
+                setTimeout( function() {
+                    $('.price-estimate-colour-box').fadeTo("medium", 0);
+                }, 1);
             });
 
             priceString = priceStringText + total;
-            $('#price-estimate').text(priceString);
-            $('#price-estimate').css('display', 'block');
+            $('#estimate-value').text(priceString);
+            $('.price-estimate').css('display', 'block');
 
             //hide scrollbar if user has JS
-            $('.service-selection-container').css('overflow-x', 'hidden');
+            //$('.service-selection-container').css('overflow-x', 'hidden');
+            $('.service-selection-scrollbar-hide').css('height', '340');
             $('.service-selection-scroll').css('display', 'block');
 
             //click arrows to scroll horizontally through additional features
@@ -130,6 +136,7 @@
                 
             if ($(window).width() < 576) {
                 $('.moving-mountains').css('display', 'none');
+                $('.spacer').hide();
             }
             
           
