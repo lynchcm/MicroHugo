@@ -1299,7 +1299,7 @@ input {
         position: absolute;
         top: 40px;
         left: 62.5px;
-        z-index: 1;
+        z-index: 3;
         width: 125px;
         height: 125px;
         display: flex;
