@@ -20,19 +20,19 @@
                 <div class="col-md-6 no-padding">
                     <table>
                         <tr>
-                            <td class="tick"><img src="/images/tick.svg"></td>
+                            <td class="tick">{{ partial "tick.svg" . }}</td>
                             <td>1&ndash;2 page site</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/tick.svg"></td>
+                            <td>{{ partial "tick.svg" . }}</td>
                             <td>Website design</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/tick.svg"></td>
+                            <td>{{ partial "tick.svg" . }}</td>
                             <td>Website build</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/tick.svg"></td>
+                            <td>{{ partial "tick.svg" . }}</td>
                             <td>Free hosting</td>
                         </tr>
                     </table>
@@ -40,15 +40,15 @@
                 <div class="col-md-6 no-padding">
                     <table>
                         <tr>
-                            <td class="tick"><img src="/images/tick.svg"></td>
+                            <td class="tick">{{ partial "tick.svg" . }}</td>
                             <td>Security certificate</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/tick.svg"></td>
+                            <td>{{ partial "tick.svg" . }}</td>
                             <td>Search engine optimisation</td>
                         </tr>
                         <tr>
-                            <td><img src="/images/tick.svg"></td>
+                            <td>{{ partial "tick.svg" . }}</td>
                             <td>Professional copywriting</td>
                         </tr>
                     </table>
@@ -63,8 +63,12 @@
     </div>
 
     <div class="service-selection-scroll-container">
-        <div class="service-selection-scroll left-scroll"></div>
-        <div class="service-selection-scroll right-scroll"></div>
+        <div class="service-selection-scroll-touch-area touch-area-left">
+            <div class="service-selection-scroll left-scroll"></div>
+        </div>
+        <div class="service-selection-scroll-touch-area touch-area-right">
+            <div class="service-selection-scroll right-scroll"></div>
+        </div>
     </div>
     <div class="service-selection-scrollbar-hide">
         <div class="container-fluid service-selection-container">
@@ -129,7 +133,7 @@
                             <p>{{ .Params.question }}</p>
                         </div>
                         <div class="expand-arrow">
-                            <img src="/images/arrow.svg">
+                            {{ partial "arrow.svg" . }}
                         </div>
                         <div class="answer">
                             <p>{{ .Params.answer }}</p>
@@ -149,7 +153,7 @@
                             <p>{{ .Params.question }}</p>
                         </div>
                         <div class="expand-arrow">
-                            <img src="/images/arrow.svg">
+                            {{ partial "arrow.svg" . }}
                         </div>
                         <div class="answer">
                             <p>{{ .Params.answer | safeHTML }}</p>

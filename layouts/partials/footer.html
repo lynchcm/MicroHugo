@@ -76,7 +76,7 @@
 
             var timeout;
             var scrolling;
-            $('.right-scroll').on('mousedown touchstart', function(){
+            $('.touch-area-right').on('mousedown touchstart', function(){
                 scrolling = true;
                 timeout = setInterval(function(){
                     scrollPosition = $('.service-selection-container').scrollLeft();
@@ -85,7 +85,7 @@
                 return false;
             });
 
-            $('.left-scroll').on('mousedown touchstart', function(){
+            $('.touch-area-left').on('mousedown touchstart', function(){
                 scrolling = true;
                 timeout = setInterval(function(){
                     scrollPosition = $('.service-selection-container').scrollLeft();

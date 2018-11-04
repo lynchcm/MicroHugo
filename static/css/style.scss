@@ -70,8 +70,8 @@ body {
             position: absolute;
             background-color: $MicroTealLight;
             width: 100%;
-            height: 70vh;//was 110
-            bottom: 0;
+            height: 80vh;//was 110
+            bottom: -10vh;
         }
     }
 
@@ -235,7 +235,7 @@ body {
     .feature-columns-row {
         padding: 80px 0;
         
-        img {
+        .svg-img {
             width: 200px;
             height: 200px;
             display: block;
@@ -257,7 +257,6 @@ body {
 }
 
 .features-and-about-background {
-    background-color: $MicroLimeGreen;
     background-image: linear-gradient($MicroLimeGreen, $MicroTealDark);
     
     h2 {
@@ -1794,36 +1793,54 @@ input {
     height: 0;
     width: 100%;
     z-index: 4;
-        
-    .service-selection-scroll {
-        
+    
+    .service-selection-scroll-touch-area {
         position: absolute;
         z-index: 3;
-        top: 170px;
-        width: 50px;
-        height: 50px;
-        border-width: 5px 5px 0 0;
-        border-style: solid;
-        border-color: $MicroLimeGreen;
-        margin-top: -($slideshowControlSize / 2);
-        display: none;
+        top: 125px;
+        width: 75px;
+        height: 100px;
         
         &:hover {
             cursor: pointer;
+        }
+        
+        &:hover > .service-selection-scroll {
             border-color: white;
+        }
+        
+        .service-selection-scroll {
+            position: relative;
+            z-index: 3;
+            top: 40px;
+            width: 50px;
+            height: 50px;
+            border-width: 5px 5px 0 0;
+            border-style: solid;
+            border-color: $MicroLimeGreen;
+            margin-top: -($slideshowControlSize / 2);
+            display: none;
         }
     }
     
-    .left-scroll {
+    .touch-area-left {
         left: 30px;
+    }
+    
+    .touch-area-right {
+        right: 30px;
+    }
+    
+        
+
+    .left-scroll {
+        left: 25px;
         transform: rotate(-135deg);
     }
-    
+
     .right-scroll {
-        right: 30px;
         transform: rotate(45deg);
-    }
-    
+    }        
 }
 
 .service-selection-scrollbar-hide {
