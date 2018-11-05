@@ -172,13 +172,14 @@
             });
             
             
-            var betaAngle, gammaAngle, alphaAngle;
+            var betaAngle = "false";
+            var gammaAngle = "false";
+            var xFromCentreString, yFromCentreString;
             window.addEventListener("deviceorientation", handleOrientation, true);
             
             function handleOrientation(event) {
-                    alphaAngle = event.alpha;
-                    betaAngle = event.beta;
-                    gammaAngle = event.gamma;
+                    newPosFromCentre[0] = event.gamma * maxPosFromCentre[0] / 30;
+                    newPosFromCentre[1] = (event.beta * maxPosFromCentre[1] / 30) - 200;
                 }
             
  
@@ -187,17 +188,26 @@
                 
                 
                 
-                $('#intro-line').html(alphaAngle + ', ' + betaAngle + ', ' + gammaAngle);
+                $('#intro-line').html(betaAngle + ', ' + gammaAngle);
                 
-                var xFromCentreString, yFromCentreString;
-                for (var i = 0; i < 3; i++) {
-                    newPosFromCentre[i] = lastPosFromCentre[i] + (0.1 * (scaledPosFromCentre[i] - lastPosFromCentre[i]));
-                    lastPosFromCentre[i] = newPosFromCentre[i];
-                    if (newPosFromCentre[i] > maxPosFromCentre[i]) {
-                        newPosFromCentre[i] = maxPosFromCentre[i];
+                if (betaAngle = "false") {
+                    for (var i = 0; i < 3; i++) {
+                        newPosFromCentre[i] = lastPosFromCentre[i] + (0.1 * (scaledPosFromCentre[i] - lastPosFromCentre[i]));
+                        lastPosFromCentre[i] = newPosFromCentre[i];
+                        if (newPosFromCentre[i] > maxPosFromCentre[i]) {
+                            newPosFromCentre[i] = maxPosFromCentre[i];
+                        }
+                    }
+                } else {
+                    for (var i = 0; i < 3; i++) {
+                        newPosFromCentre[i] = lastPosFromCentre[i] + (0.1 * (scaledPosFromCentre[i] - lastPosFromCentre[i]));
+                        lastPosFromCentre[i] = newPosFromCentre[i];
+                        if (newPosFromCentre[i] > maxPosFromCentre[i]) {
+                            newPosFromCentre[i] = maxPosFromCentre[i];
+                        }
                     }
                 }
-                
+                   
                 
                 if (newPosFromCentre[0] > 0) {
                     xFromCentreString = '-' + newPosFromCentre[0] + 'px, ';
@@ -218,7 +228,7 @@
                 
                 var rotateAmount = newPosFromCentre[2] / 10;
                 $('#background-2').css('transform', 'rotate(' + rotateAmount + 'deg)');
-            }, 1000);
+            }, 30);
             
             var portfolioLaptopImages = ['/images/lifeconsultancygroup-laptop.png', '/images/ckcoaching-laptop.png', '/images/5thelement-laptop.png', '/images/concept34-laptop.png', '/images/genneu-laptop.png'];
             var portfolioMobileImages = ['/images/lifeconsultancygroup-mobile.png', '/images/ckcoaching-mobile.png', '/images/5thelement-mobile.png', '/images/concept34-mobile.png', '/images/genneu-mobile.png'];
