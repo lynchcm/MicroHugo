@@ -26,7 +26,7 @@ $large: 992px;
 $numberOfHomepagePortfolios: 3;
 $numberOfTestimonials: 3;
 $numberOfPortfolioEntries: 6;
-$numberOfAddFeatures: 8;
+$numberOfAddFeatures: 10;
 $widthOfAddFeaturesCard: 250px;
 $widthOfAddFeaturesCardText: 200px;
 $edgePageGapAddFeaturesCard: 100px;
@@ -251,6 +251,11 @@ body {
         p, h3 {
             text-align: center;
             color: $MicroTealDark;
+            margin-bottom: 50px;
+            
+            @media only screen and (min-width: $large) {
+                margin: auto;
+            }
         }
         
         h3 {
@@ -258,6 +263,11 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 0;
+            
+            @media only screen and (min-width: $large) {
+                margin: 20px 0;
+            }
         }
     }
 }
@@ -316,9 +326,16 @@ body {
                 width: 95%;
                 margin-left: 0%;
             }
-        }
-        
             
+            a {
+                color: $MicroSelected;
+                text-decoration: none;
+                
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
 
