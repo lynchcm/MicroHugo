@@ -179,8 +179,8 @@
             
             function handleOrientation(event) {
                 betaAngle = "true";
-                scaledPosFromCentre[0] = event.gamma * maxPosFromCentre[0] / 30;
-                scaledPosFromCentre[1] = (event.beta * maxPosFromCentre[1] / 30) - 200;
+                scaledPosFromCentre[0] = event.gamma * maxPosFromCentre[0] / 60;
+                scaledPosFromCentre[1] = (event.beta * maxPosFromCentre[1] / 60) - 100;
             }
             
  
@@ -227,7 +227,7 @@
                 //var newPosFromCentreX = newPosFromCentre[2]; // - ($(window).width() * 0.25);
                 $('#background-1').css('transform', 'translate(' + newPosFromCentre[2] + 'px, ' + newPosFromCentre[2] + 'px)');
                 
-                $('#intro-line').html(yFromCentreString + ', ' + newPosFromCentre[1]);
+                //$('#intro-line').html(yFromCentreString + ', ' + newPosFromCentre[1]);
                 
                 var rotateAmount = newPosFromCentre[2] / 10;
                 $('#background-2').css('transform', 'rotate(' + rotateAmount + 'deg)');
