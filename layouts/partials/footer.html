@@ -187,7 +187,7 @@
                 
                 
                 
-                $('#intro-line').html(alphaAngle);
+                $('#intro-line').html(alphaAngle + ', ' + betaAngle + ', ' + gammaAngle);
                 
                 var xFromCentreString, yFromCentreString;
                 for (var i = 0; i < 3; i++) {
@@ -218,7 +218,7 @@
                 
                 var rotateAmount = newPosFromCentre[2] / 10;
                 $('#background-2').css('transform', 'rotate(' + rotateAmount + 'deg)');
-            }, 30);
+            }, 1000);
             
             var portfolioLaptopImages = ['/images/lifeconsultancygroup-laptop.png', '/images/ckcoaching-laptop.png', '/images/5thelement-laptop.png', '/images/concept34-laptop.png', '/images/genneu-laptop.png'];
             var portfolioMobileImages = ['/images/lifeconsultancygroup-mobile.png', '/images/ckcoaching-mobile.png', '/images/5thelement-mobile.png', '/images/concept34-mobile.png', '/images/genneu-mobile.png'];
