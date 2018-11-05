@@ -73,7 +73,6 @@
             //click arrows to scroll horizontally through additional features
             var scrollPosition;
 
-
             var timeout;
             var scrolling;
             $('.touch-area-right').on('mousedown touchstart', function(){
@@ -154,6 +153,7 @@
             var scaledPosFromCentre = [0, 0, 0];
             var lastPosFromCentre = [0, 0, 0];
             var newPosFromCentre = [0, 0, 0];
+            var maxPosFromCentre = [200, 200, 200];
             var positionOffset1 = 0.2;
             var positionOffset2 = 0.05;
             var mouseX, mouseY;
@@ -180,8 +180,12 @@
                 var xFromCentreString, yFromCentreString;
                 for (var i = 0; i < 3; i++) {
                     newPosFromCentre[i] = lastPosFromCentre[i] + (0.1 * (scaledPosFromCentre[i] - lastPosFromCentre[i]));
-                    lastPosFromCentre[i] = newPosFromCentre[i]
+                    lastPosFromCentre[i] = newPosFromCentre[i];
+                    if (newPosFromCentre[i] > maxPosFromCentre[i]) {
+                        newPosFromCentre[i] = maxPosFromCentre[i];
+                    }
                 }
+                
                 
                 if (newPosFromCentre[0] > 0) {
                     xFromCentreString = '-' + newPosFromCentre[0] + 'px, ';

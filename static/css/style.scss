@@ -1824,11 +1824,19 @@ input {
     }
     
     .touch-area-left {
-        left: 30px;
+        left: 0;
+        
+        @media only screen and (min-width: $small) {
+            left: 30px;
+        }
     }
     
     .touch-area-right {
-        right: 30px;
+        right: 0;
+        
+        @media only screen and (min-width: $small) {
+            right: 30px;
+        }
     }
     
         
@@ -1851,6 +1859,7 @@ input {
     width: 100%;
     height: 360px;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
     padding: 0;
     position: relative;
