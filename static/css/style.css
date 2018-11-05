@@ -136,7 +136,10 @@ body {
       width: 200px;
       height: 200px;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
     .features-background .feature-columns-row p, .features-background .feature-columns-row h3 {
       text-align: center;
       color: #254558; }
@@ -1460,7 +1463,7 @@ input {
     .faq-section .answer p {
       font-size: 18px; }
     .faq-section .answer a {
-      color: #FFA963; }
+      color: #EAFC40; }
   .faq-section .question-label {
     position: relative;
     margin: 0 10px; }
