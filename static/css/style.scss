@@ -102,18 +102,21 @@ body {
         
         #intro-line {
             font-family: $IntroFont;
-            font-size: 6vw;
+            font-size: 8vw;
             color: $MicroLimeGreen;
             text-align: left;
             padding: 0;
             position: relative;
-            //top: 35vh;
-            //left: 20%;
-            width: 60%;
+            width: 80%;
             z-index: 7;
             margin: 0 auto;
 
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: $small) {
+                font-size: 6vw;
+                width: 60%;
+            }
+            
+            @media only screen and (min-width: $medium) {
                 font-size: 40px;
             }
         }
@@ -323,6 +326,7 @@ body {
     h2 {
         color: $MicroSelected;
         text-align: center;
+        padding-bottom: 40px;
     }
     
     form {
@@ -1063,18 +1067,17 @@ input {
     p {
         text-align: center;
         font-size: 14px;
-        color: $MicroTealLight;
+        color: white;
         font-weight: 200;
         margin-bottom: 0;
     }
     #copyright {
         font-size: 18px;
-        color: $MicroTealLight;
         padding-top: 20px;
     }
     
     img, svg {
-        width: 24px;
+        width: 40px;
     }
     
     .background-circle {
@@ -1573,6 +1576,11 @@ input {
     h1 {
         color: $MicroLimeGreen;
         font-family: $SecondaryFont;
+        padding-bottom: 20px;
+        
+        @media only screen and (min-width: $small) {
+            padding-bottom: 0;
+        }
     }
 }
 
