@@ -178,9 +178,10 @@
             window.addEventListener("deviceorientation", handleOrientation, true);
             
             function handleOrientation(event) {
-                    newPosFromCentre[0] = event.gamma * maxPosFromCentre[0] / 30;
-                    newPosFromCentre[1] = (event.beta * maxPosFromCentre[1] / 30) - 200;
-                }
+                betaAngle = "true";
+                newPosFromCentre[0] = event.gamma * maxPosFromCentre[0] / 30;
+                newPosFromCentre[1] = (event.beta * maxPosFromCentre[1] / 30) - 200;
+            }
             
  
             
