@@ -175,17 +175,17 @@
             var betaAngle, gammaAngle, alphaAngle;
             window.addEventListener("deviceorientation", handleOrientation, true);
             
-            
+            function handleOrientation(event) {
+                    alphaAngle = event.alpha;
+                    betaAngle = event.beta;
+                    gammaAngle = event.gamma;
+                }
             
  
             
             setInterval(function() {
                 
-                function handleOrientation(event) {
-                    alphaAngle = event.alpha;
-                    betaAngle = event.beta;
-                    gammaAngle = event.gamma;
-                }
+                
                 
                 $('#intro-line').html(alphaAngle);
                 
