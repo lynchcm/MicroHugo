@@ -189,7 +189,7 @@
                 
                 
                 
-                $('#intro-line').html(betaAngle + ', ' + newPosFromCentre[1]);
+                
                 
                 if (betaAngle = "false") {
                     for (var i = 0; i < 3; i++) {
@@ -221,11 +221,13 @@
                     yFromCentreString =  ((-1) * newPosFromCentre[1]) + 'px)';
                 }
                 
-                var mousePosString = 'x: ' + scaledPosFromCentre[0] + ' y: ' + scaledPosFromCentre[1];
-                $('#mouse-position').html(mousePosString);
+                //var mousePosString = 'x: ' + scaledPosFromCentre[0] + ' y: ' + scaledPosFromCentre[1];
+                //$('#mouse-position').html(mousePosString);
                 $('#intro-line').css('transform', 'translate(' + xFromCentreString + yFromCentreString);
-                var newPosFromCentreX = newPosFromCentre[2]; // - ($(window).width() * 0.25);
+                //var newPosFromCentreX = newPosFromCentre[2]; // - ($(window).width() * 0.25);
                 $('#background-1').css('transform', 'translate(' + newPosFromCentre[2] + 'px, ' + newPosFromCentre[2] + 'px)');
+                
+                $('#intro-line').html(yFromCentreString + ', ' + newPosFromCentre[1]);
                 
                 var rotateAmount = newPosFromCentre[2] / 10;
                 $('#background-2').css('transform', 'rotate(' + rotateAmount + 'deg)');
