@@ -180,6 +180,7 @@
             }
             
             window.addEventListener("orientationchange", function() {
+                window.removeEventListener("deviceorientation", handleOrientation, false);
                 scaledPosFromCentre[0] = 0;
                 scaledPosFromCentre[1] = 0;
             }); 
@@ -223,7 +224,7 @@
                 
                 //var mousePosString = 'x: ' + scaledPosFromCentre[0] + ' y: ' + scaledPosFromCentre[1];
                 //$('#mouse-position').html(mousePosString);
-                $('#intro-line').css('transform', 'translate(' + xFromCentreString + yFromCentreString);
+                $('#intro-line-movement').css('transform', 'translate(' + xFromCentreString + yFromCentreString);
                 //var newPosFromCentreX = newPosFromCentre[2]; // - ($(window).width() * 0.25);
                 $('#background-1').css('transform', 'translate(' + newPosFromCentre[2] + 'px, ' + newPosFromCentre[2] + 'px)');
                 

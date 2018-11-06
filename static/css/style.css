@@ -44,23 +44,28 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column; }
-    .intro-background .intro-line-container #intro-line {
-      font-family: "Poppins", sans-serif;
-      font-size: 8vw;
-      color: #EAFC40;
-      text-align: left;
-      padding: 0;
-      position: relative;
+    .intro-background .intro-line-container #intro-line-movement {
       width: 80%;
+      position: relative;
       z-index: 7;
       margin: 0 auto; }
       @media only screen and (min-width: 576px) {
-        .intro-background .intro-line-container #intro-line {
-          font-size: 6vw;
+        .intro-background .intro-line-container #intro-line-movement {
           width: 60%; } }
-      @media only screen and (min-width: 768px) {
-        .intro-background .intro-line-container #intro-line {
-          font-size: 40px; } }
+      .intro-background .intro-line-container #intro-line-movement #intro-line {
+        font-family: "Poppins", sans-serif;
+        font-size: 8vw;
+        color: #EAFC40;
+        text-align: left;
+        padding: 0;
+        width: 100%;
+        margin: 0; }
+        @media only screen and (min-width: 576px) {
+          .intro-background .intro-line-container #intro-line-movement #intro-line {
+            font-size: 6vw; } }
+        @media only screen and (min-width: 768px) {
+          .intro-background .intro-line-container #intro-line-movement #intro-line {
+            font-size: 40px; } }
   .intro-background #micro-summary {
     position: relative;
     z-index: 7;
