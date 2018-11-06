@@ -443,7 +443,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $SecondaryFont;
     font-weight: 300;
     color: $MicroDarkGrey;
     //padding-left: 30px; removed when working on resource centre article styling
@@ -453,8 +453,8 @@ h2 {
 h3 {
     margin: 20px 0;
 //    font-family: 'Lato', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 200;
+    font-family: $SecondaryFont;
+    font-weight: 300;
     font-size: 28px;
     color: $MicroDarkGrey;
     //text-align: center; removed - probably not needed
@@ -546,7 +546,7 @@ h3 {
         li {
             color: white;
             font-family: $MainFont;
-            font-weight: 100;
+            font-weight: 200;
             font-size: 12vw;
             
             @media only screen and (min-width: $medium) {
@@ -1796,7 +1796,7 @@ input {
         font-family: $MainFont;
         font-size: 20px;
         color: white;
-        font-weight: 100;
+        font-weight: 200;
         tr {
             padding: 0 0px;
             .tick {

@@ -175,7 +175,14 @@
             var betaAngle = "false";
             var gammaAngle = "false";
             var xFromCentreString, yFromCentreString;
-            window.addEventListener("deviceorientation", handleOrientation, true);
+            if ($(window).width() < 568) {
+                window.addEventListener("deviceorientation", handleOrientation, true);
+            }
+            
+            window.addEventListener("orientationchange", function() {
+                scaledPosFromCentre[0] = 0;
+                scaledPosFromCentre[1] = 0;
+            }); 
             
             function handleOrientation(event) {
                 betaAngle = "true";
@@ -183,14 +190,7 @@
                 scaledPosFromCentre[1] = (event.beta * maxPosFromCentre[1] / 120) - 50;
             }
             
- 
-            
             setInterval(function() {
-                
-                
-                
-                
-                
                 if (betaAngle = "false") {
                     for (var i = 0; i < 3; i++) {
                         newPosFromCentre[i] = lastPosFromCentre[i] + (0.1 * (scaledPosFromCentre[i] - lastPosFromCentre[i]));

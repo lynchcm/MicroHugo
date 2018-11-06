@@ -269,14 +269,14 @@ h1 {
   h1 {
     font-size: 50px; } }
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: #4A4A4A; }
 
 h3 {
   margin: 20px 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 200;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
   font-size: 28px;
   color: #4A4A4A; }
 
@@ -345,7 +345,7 @@ h3 {
     #menu-checkbox:checked ~ #menu-list li {
       color: white;
       font-family: "Raleway", sans-serif;
-      font-weight: 100;
+      font-weight: 200;
       font-size: 12vw; }
       @media only screen and (min-width: 768px) {
         #menu-checkbox:checked ~ #menu-list li {
@@ -1221,7 +1221,7 @@ input {
     font-family: "Raleway", sans-serif;
     font-size: 20px;
     color: white;
-    font-weight: 100; }
+    font-weight: 200; }
     .always-included-and-additional table tr {
       padding: 0 0px; }
       .always-included-and-additional table tr .tick {
