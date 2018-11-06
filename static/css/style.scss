@@ -132,7 +132,6 @@ body {
         }
     }
     
-    
     #micro-summary {
         position: relative;
         margin-top: 100px;
@@ -150,7 +149,11 @@ body {
         h2 {
             color: $MicroLimeGreen;
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 40px;
+            
+            @media only screen and (min-width: $large) {
+                margin-bottom: 70px;
+            }
         }
         
         p {

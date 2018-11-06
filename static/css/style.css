@@ -79,7 +79,10 @@ body {
     .intro-background #micro-summary h2 {
       color: #EAFC40;
       text-align: center;
-      margin-bottom: 70px; }
+      margin-bottom: 40px; }
+      @media only screen and (min-width: 992px) {
+        .intro-background #micro-summary h2 {
+          margin-bottom: 70px; } }
     .intro-background #micro-summary p {
       color: white; }
     .intro-background #micro-summary a:hover {
