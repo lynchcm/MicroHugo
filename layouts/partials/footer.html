@@ -180,7 +180,7 @@
             }
             
             window.addEventListener("orientationchange", function() {
-                window.removeEventListener("deviceorientation", handleOrientation, false);
+                window.removeEventListener("deviceorientation", handleOrientation, true);
                 scaledPosFromCentre[0] = 0;
                 scaledPosFromCentre[1] = 0;
             }); 
