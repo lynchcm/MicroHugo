@@ -68,12 +68,14 @@ body {
             font-size: 40px; } }
   .intro-background #micro-summary {
     position: relative;
+    margin-top: 100px;
     z-index: 7;
     width: 100%;
     padding: 0 10px; }
     @media only screen and (min-width: 576px) {
       .intro-background #micro-summary {
-        padding: 0 10%; } }
+        padding: 0 10%;
+        margin-top: auto; } }
     .intro-background #micro-summary h2 {
       color: #EAFC40;
       text-align: center;
