@@ -1845,6 +1845,29 @@ input {
         color: white;
         text-align: center;
     }
+    
+    .price-estimate {
+        position: relative;
+        
+        max-width: 300px;
+        margin: 50px auto 0 auto;
+        padding: 0;
+        display: none;
+        z-index: 3;
+        
+        p {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            letter-spacing: 3px;
+            color: $MicroSelected;
+        }
+    }
 }
 
 
