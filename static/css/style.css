@@ -258,7 +258,8 @@ body {
       width: 100px;
       height: 45px;
       margin: 0 auto;
-      display: block; }
+      display: block;
+      text-align: center; }
     @media only screen and (min-width: 992px) {
       .contact-background form .form-input {
         width: 80%;
