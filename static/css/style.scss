@@ -106,13 +106,13 @@ body {
             z-index: 7;
             margin: 0 auto;
             
-            @media only screen and (min-width: $small) {
+            @media only screen and (min-width: 568px) {
                 width: 60%;
             }
         
             #intro-line {
                 font-family: $IntroFont;
-                font-size: 8vw;
+                font-size: 30px;
                 color: $MicroLimeGreen;
                 text-align: left;
                 padding: 0;
@@ -120,11 +120,7 @@ body {
                 width: 100%;
                 //z-index: 7;
                 margin: 0;
-
-                @media only screen and (min-width: $small) {
-                    font-size: 6vw;
-                }
-
+                
                 @media only screen and (min-width: $medium) {
                     font-size: 40px;
                 }
