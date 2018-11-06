@@ -1,16 +1,18 @@
 <div class="container-fluid contact-background">
     <a name="contact"></a>
     <h2 class="capitals">Contact</h2>
-    <form>
+    <form action="https://formspree.io/hello@wearemicro.co" method="POST">
         <div class="form-label">
             <label>NAME</label>
             <label>EMAIL</label>
             <label>MESSAGE</label>
         </div>
         <div class="form-input">
-            <input type="text">
-            <input type="email">
-            <textarea rows="5"></textarea>
+            <input type="text" name="name">
+            <input type="email" name="email">
+            <textarea rows="5" name="message"></textarea>
+            <button type="sumbit">SEND</button>
+            <input type="hidden" name="_next" value="https://wearemicro.co/thankyou">
         </div>
     </form>
 </div>

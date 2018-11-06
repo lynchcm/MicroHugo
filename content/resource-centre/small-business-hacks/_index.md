@@ -1,4 +1,5 @@
 +++
+draft = "true"
 title = "Small Business Hacks"
 layout = "article-list"
 article_list_h1 = "Small Business Hacks"

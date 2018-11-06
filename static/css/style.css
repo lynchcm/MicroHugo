@@ -248,6 +248,17 @@ body {
       margin-bottom: 50px; }
     .contact-background form input {
       height: 40px; }
+    .contact-background form button {
+      background-color: #EAFC40;
+      font-family: "Raleway", sans-serif;
+      font-size: 24px;
+      color: #254558;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      height: 45px;
+      margin: 0 auto;
+      display: block; }
     @media only screen and (min-width: 992px) {
       .contact-background form .form-input {
         width: 80%;
@@ -356,7 +367,7 @@ h3 {
       color: white;
       font-family: "Raleway", sans-serif;
       font-weight: 200;
-      font-size: 12vw; }
+      font-size: 40px; }
       @media only screen and (min-width: 768px) {
         #menu-checkbox:checked ~ #menu-list li {
           font-size: 6vw; } }
@@ -374,11 +385,16 @@ h3 {
   padding: 6px; }
 
 .page-intro {
-  padding: 30px 0; }
-  .page-intro h1, .page-intro p {
+  padding: 200px 0 30px 0;
+  text-align: center;
+  position: relative;
+  z-index: 3; }
+  .page-intro p {
     color: white; }
   .page-intro h1 {
-    font-weight: 300; }
+    font-weight: 300;
+    color: #EAFC40;
+    font-family: "Josefin Sans", sans-serif; }
 
 #intro-banner {
   background-color: #3A5768;
@@ -1092,14 +1108,8 @@ input {
         margin-bottom: 50px; } }
 
 .portfolio-intro {
-  padding-top: 200px;
-  padding-bottom: 0px;
-  text-align: center;
-  position: relative;
-  z-index: 3; }
+  padding-bottom: 0px; }
   .portfolio-intro h1 {
-    color: #EAFC40;
-    font-family: "Josefin Sans", sans-serif;
     padding-bottom: 20px; }
     @media only screen and (min-width: 576px) {
       .portfolio-intro h1 {
@@ -1171,14 +1181,14 @@ input {
         right: 6.2%;
         z-index: 8; }
 
-.services-background {
+.template-background {
   background-color: #3A5768;
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 0;
   overflow-x: hidden; }
-  .services-background .services-background-1 {
+  .template-background .template-background-1 {
     width: 100%;
     height: 120vh;
     border-top: 120vh solid transparent;
@@ -1187,14 +1197,14 @@ input {
     z-index: 2;
     top: 0;
     left: 0; }
-  .services-background .services-background-2 {
+  .template-background .template-background-2 {
     width: 100%;
     position: absolute;
     top: 120vh;
     height: 30vh;
     background-color: #254558;
     z-index: 0; }
-  .services-background .services-background-3 {
+  .template-background .template-background-3 {
     width: 100%;
     height: 110vh;
     border-bottom: 120vh solid transparent;
@@ -1203,16 +1213,24 @@ input {
     z-index: 0;
     top: 149.9vh;
     left: 0; }
+  .template-background .thankyou-background-1 {
+    width: 100%;
+    height: 80vh;
+    border-bottom: 80vh solid transparent;
+    border-left: 100vw solid #3A5768;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0; }
 
-.services-intro {
-  padding-top: 200px;
-  text-align: center;
-  position: relative;
-  z-index: 3; }
-  .services-intro h1 {
-    color: #EAFC40;
-    font-family: "Josefin Sans", sans-serif;
-    margin-bottom: 50px; }
+.services-background {
+  background-color: #3A5768; }
+
+.thankyou-background {
+  background-color: #254558; }
+
+.services-intro h1 {
+  margin-bottom: 50px; }
 
 .always-included-and-additional {
   position: relative;
@@ -1592,7 +1610,14 @@ input {
 .portfolio-shell-secondary-colour {
   fill: #9FC5E8; }
 
-.thankyou-page p {
-  text-align: center; }
+.thankyou-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .thankyou-page p {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

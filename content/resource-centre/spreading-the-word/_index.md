@@ -1,4 +1,5 @@
 +++
+draft = "true"
 title = "Spreading the Word"
 layout = "article-list"
 article_list_h1 = "Spreading the Word"

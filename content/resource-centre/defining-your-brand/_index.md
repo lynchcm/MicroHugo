@@ -1,4 +1,5 @@
 +++
+draft = "true"
 title = "Defining Your Brand"
 layout = "article-list"
 article_list_h1 = "Defining Your Brand"

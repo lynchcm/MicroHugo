@@ -1,5 +1,5 @@
 +++
-date = "2018-09-26 15:22:18 +0000"
+draft = "true"
 row1image = "/uploads/idea.jpg"
 row2image = "/uploads/meeting-client.jpg"
 row3image = "/uploads/getting-online.jpg"
