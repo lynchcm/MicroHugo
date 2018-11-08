@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = "true"
 type = "portfolio"
 order = "1"
 laptopImg = "/images/lifeconsultancygroup-laptop.png"
