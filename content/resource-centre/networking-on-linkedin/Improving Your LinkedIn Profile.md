@@ -1,4 +1,6 @@
 +++
+sitemap_exclude = true
+draft = true
 title = "Improving Your LinkedIn Profile"
 layout = "article"
 article_h1 = "How to Improve Your LinkedIn Profile"

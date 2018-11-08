@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 draft = "true"
 row1image = "/uploads/idea.jpg"
 row2image = "/uploads/meeting-client.jpg"

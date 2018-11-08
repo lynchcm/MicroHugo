@@ -1,4 +1,6 @@
 +++
+sitemap_exclude = true
+draft = true
 title = "Start Marketing a New Business"
 layout = "article"
 article_h1 = "How to Start Marketing a New Business"

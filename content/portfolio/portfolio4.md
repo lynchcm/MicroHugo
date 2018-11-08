@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "portfolio"
 order = "4"
 laptopImg = "/images/concept34-laptop.png"

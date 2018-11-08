@@ -1,4 +1,6 @@
 +++
+sitemap_exclude = true
+draft = true
 title = "8 Free Tools for Running Your Business"
 layout = "article"
 article_h1 = "The 8 Must-Have Free Tools for Running Your Own Business"

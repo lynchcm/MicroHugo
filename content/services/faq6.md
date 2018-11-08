@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "faq-col-2"
 order = "1"
 question = "Can we update the site? Do we need to come back to you?"

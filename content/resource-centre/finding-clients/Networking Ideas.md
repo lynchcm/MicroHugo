@@ -1,4 +1,6 @@
 +++
+sitemap_exclude = true
+draft = true
 title = "Networking Ideas"
 layout = "article"
 article_h1 = "Networking Ideas for Finding New Clients and Customers"

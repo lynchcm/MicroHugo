@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "faq-col-2"
 order = "4"
 question = "How much will it cost?"

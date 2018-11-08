@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "faq-col-1"
 order = "4"
 question = "Will the site be found on Google?"

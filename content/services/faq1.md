@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "faq-col-1"
 order = "1"
 question = "Do you use templates?"

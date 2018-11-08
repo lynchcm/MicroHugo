@@ -1,4 +1,6 @@
 +++
+sitemap_exclude = true
+draft = true
 title = "Identifying Your Target Market"
 layout = "article"
 article_h1 = "How to Identify Your Target Market"

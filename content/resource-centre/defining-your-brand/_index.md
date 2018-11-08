@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 draft = "true"
 title = "Defining Your Brand"
 layout = "article-list"

@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 draft = "true"
 title = "Small Business Hacks"
 layout = "article-list"

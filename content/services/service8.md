@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "service-image"
 order = "8"
 imgtype = "svg"

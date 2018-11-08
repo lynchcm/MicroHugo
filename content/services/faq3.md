@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "faq-col-1"
 order = "3"
 question = "What about domain/hosting?"

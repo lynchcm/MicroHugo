@@ -1,3 +1,4 @@
 baseURL = "https://wearemicro.co"
 languageCode = "en-uk"
 title = "Micro Boutique Branding"
+[taxonomies]

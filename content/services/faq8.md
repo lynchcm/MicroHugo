@@ -1,4 +1,5 @@
 +++
+sitemap_exclude = true
 type = "faq-col-2"
 order = "3"
 question = "Who writes the content?"
