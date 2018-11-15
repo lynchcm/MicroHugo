@@ -376,6 +376,7 @@ body {
         
         .form-label {
             position: absolute;
+            z-index: 1;
             left: 5%;
             top: -40px;
         }
@@ -389,6 +390,7 @@ body {
             margin: 4px 0 52px 0;
             display: block;
             height: 100%;
+            
         }
 
         input, textarea {
@@ -397,6 +399,8 @@ body {
             width: 100%;
             color: $MicroTealDark;
             margin-bottom: 50px;
+            position: relative;
+            z-index: 2;
         }
 
         input {
