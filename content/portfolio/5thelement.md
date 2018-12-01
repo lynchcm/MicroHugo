@@ -1,7 +1,7 @@
 +++
 sitemap_exclude = true
 type = "portfolio"
-order = "3"
+order = "4"
 laptopImg = "/images/5thelement-laptop.png"
 mobileImg = "/images/5thelement-mobile.png"
 company = "5th Element Integrative Coaching"

@@ -1,7 +1,7 @@
 +++
 sitemap_exclude = true
 type = "portfolio"
-order = "2"
+order = "4"
 laptopImg = "/images/ckcoaching-laptop.png"
 mobileImg = "/images/ckcoaching-mobile.png"
 company = "CK Coaching"

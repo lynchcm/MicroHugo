@@ -1,7 +1,7 @@
 +++
 sitemap_exclude = true
 type = "portfolio"
-order = "1"
+order = "3"
 laptopImg = "/images/lifeconsultancygroup-laptop.png"
 mobileImg = "/images/lifeconsultancygroup-mobile.png"
 company = "Life Consulting Group"
