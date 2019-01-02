@@ -8,3 +8,5 @@ fields:
   label: test
   hidden: true
   default: test default value
+pages:
+- content/test.md
