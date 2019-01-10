@@ -24,7 +24,7 @@ $medium: 768px;
 $large: 992px;
 
 $numberOfHomepagePortfolios: 3;
-$numberOfTestimonials: 3;
+$numberOfTestimonials: 6;
 $numberOfPortfolioEntries: 6;
 $numberOfAddFeatures: 10;
 $widthOfAddFeaturesCard: 250px;
@@ -1628,8 +1628,12 @@ input {
         }
         
         p {
-            font-size: 24px;
+            font-size: 20px;
             padding-bottom: 20px;
+            
+            @media only screen and (min-width: 1200px) {
+                font-size: 24px;
+            }
         }
 
         h2 {
