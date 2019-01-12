@@ -2316,3 +2316,23 @@ input {
         text-align: center;
     }
 }
+
+.follow-us {
+    color: $MicroBlue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.social-media {
+//    border: 1px solid red;
+    
+    @media only screen and (min-width: $large) {
+        display: flex;
+    }
+    
+    .social-col {
+        width: 100%;
+//        border: 1px solid green;
+        padding: 10px;
+    }
+}
