@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-type = "service-image"
+type = "old-service-image"
 order = "2"
 imgtype = "svg"
 svg = "business-card.svg"

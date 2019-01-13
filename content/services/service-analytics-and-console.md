@@ -1,8 +1,8 @@
 +++
 sitemap_exclude = true
 type = "service-image"
-order = "7"
+order = "6"
 imgtype = "svg"
 svg = "pie-chart-icon.svg"
-text = "Know who’s on your site and where they came from (Google Analytics)"
+text = "Google Analytics & Search Console set up and intro"
 +++

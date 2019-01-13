@@ -1,7 +1,7 @@
 +++
 sitemap_exclude = true
 type = "service-image"
-order = "1"
+order = "2"
 imgtype = "css"
 divclass = "design-a-logo"
 imgcoral = "/images/logo-coral.png"
