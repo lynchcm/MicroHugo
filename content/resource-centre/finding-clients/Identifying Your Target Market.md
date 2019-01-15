@@ -1,7 +1,7 @@
 +++
 article_h1 = "How to Identify Your Target Market"
 article_image = "/uploads/target.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "Time is a limited resource - particularly when you’re running a business. That’s why you can’t afford to waste time pursuing leads that aren’t a great fit. Here’s how to narrow down exactly who it is you need to be talking to."
 layout = "article"
 order = 1
 sitemap_exclude = true
