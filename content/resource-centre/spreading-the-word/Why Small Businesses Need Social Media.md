@@ -1,7 +1,7 @@
 +++
 article_h1 = "10 Reasons Why Small Businesses Need Social Media"
 article_image = "/uploads/social-media.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "There’s so much to do when you start a new business that social media can seem like a low priority. Actually, as a small business you can’t afford to ignore it. Here’s why social media should be top of your to do list."
 layout = "article"
 order = 2
 sitemap_exclude = true
