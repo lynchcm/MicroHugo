@@ -1,7 +1,7 @@
 +++
 article_h1 = "How to Refine Your Business Proposition"
 article_image = "/uploads/woman-presenting.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "Whether it’s marketing or building services, if you claim you can do ‘a bit of everything’ you haven’t got a hope of competing with more established brands. Here’s how to narrow your focus and position yourself as an expert."
 layout = "article"
 order = 2
 sitemap_exclude = true
