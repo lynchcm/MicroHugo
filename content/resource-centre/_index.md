@@ -1,13 +1,11 @@
 +++
-sitemap_exclude = true
-draft = "false"
+resource_centre_h1 = "Resource Centre"
 row1image = "/uploads/idea.jpg"
 row2image = "/uploads/meeting-client.jpg"
 row3image = "/uploads/getting-online.jpg"
 row4image = "/uploads/spread-word.jpg"
 row5image = "/uploads/networking.jpg"
 row6image = "/uploads/freelance.jpg"
-resource_centre_h1 = "Resource Centre (CMS)"
 section_1_subtitle = "Pinpoint and articulate what makes you different"
 section_1_title = "Defining Your Brand"
 section_2_subtitle = "Identify and approach the right people in the right way"
@@ -20,6 +18,7 @@ section_5_subtitle = "Make sure your profile reflects where you want to be"
 section_5_title = "Networking on LinkedIn"
 section_6_subtitle = "Save time and stay sane while running your own business"
 section_6_title = "Freelance Life Hacks"
+sitemap_exclude = true
 title = "Resource Centre"
 
 +++
