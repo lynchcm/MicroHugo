@@ -1,7 +1,7 @@
 +++
 article_h1 = "Are You Making These Common LinkedIn Profile Mistakes?"
 article_image = "/uploads/matrix.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "Still using your job title as your tagline? Know which parts of your profile are visible to recruiters? Use our LinkedIn profile evaluation matrix to quickly figure out which parts of your profile are letting you down."
 layout = "article"
 order = 1
 sitemap_exclude = true
