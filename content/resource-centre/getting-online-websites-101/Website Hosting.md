@@ -1,7 +1,7 @@
 +++
 article_h1 = "What is Website Hosting?"
 article_image = "/uploads/cables.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "This jargon-busting article takes you through exactly what hosting is, why you need it, what to look for in a hosting provider, and how much you can expect to pay for it when setting up your own website."
 layout = "article"
 order = 1
 sitemap_exclude = true
