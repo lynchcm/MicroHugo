@@ -1,7 +1,7 @@
 +++
 article_h1 = "5 Ways to Make Your Small Business Look More Professional"
 article_image = "/uploads/handshake.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "First impressions really are everything, especially when you’re trying to win over new clients as a small business. Make sure you come across as a real expert by nailing these five small details."
 layout = "article"
 order = 2
 sitemap_exclude = true
