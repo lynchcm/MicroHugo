@@ -1,7 +1,7 @@
 +++
 article_h1 = "How to Start Marketing a New Business"
 article_image = "/uploads/facebook.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "Your website is up and the business cards are hot off the press… now what? This guide to modern inbound marketing techniques will make sure you know where to focus your attention those first few weeks after launch."
 layout = "article"
 order = 1
 sitemap_exclude = true
