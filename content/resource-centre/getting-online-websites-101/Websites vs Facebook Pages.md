@@ -8,81 +8,94 @@ sitemap_exclude = true
 title = "Websites vs Facebook Pages"
 
 +++
-Much like picking your business name, it can be tricky to decide on the right domain for your new website. Not only that, there are lots of other factors to take into account, like cost and availability.
+With all the work getting your business off the ground and running it on a day-to-day basis, it’s easy for making a website to slip to the bottom of the list or get ruled out for being too expensive.
 
-This article walks you through what a domain is, your ownership rights when you buy a domain, and how much you can expect to pay.
+After all, why pay for a website when having a Facebook page is free? Well, there’s more to it. Here are just a few of the reasons why having your own website can really help you small business establish a strong online presence and reach more customers.
 
-## At-a-Glance Summary
+## **1) Get found by people on Google** 
 
-* A domain tells search engines where to find the files that make up your website
-* You can’t own a domain outright; the maximum you can buy it for is 10 years, but most renew on an annual basis. 
-* All domains must be registered with WHOIS; some providers handle this for you. 
-* Make sure you’re buying a domain from an ICANN-accredited domain registrar 
-* Budget £1-2 for the first year, then around £10-15 per year. 
-* Domains can be moved to another provider, but it usually means some downtime for your site and a small cost. 
+When people search for information on a particular topic, Google uses the words on a website to assess whether or not to show that page to the searcher.
 
-## What is a domain?
+It crawls websites for key terms that people have searched for and the better the match, the higher up the ranking the site will show.
 
-If your website is your house, your domain is your address. It tells search engines where to look for the files that make up your website.
+Without a website, Google doesn’t have any of this information about your business. People right down the street from your cafe could be searching for ‘coffee shop’ and Google wouldn’t know to suggest your business to them.
 
-It’s made up of two parts: the bit before the dot which is unique and created by you and the bit after the dot which is common to many different websites.
+Having a Google My Business listing will help with this if people are using Google Maps, but to reach new customers by getting found in Google searches, having a website is essential.
 
-This second part of the domain is called a generic top-level domain, or gTLD. Though there were originally only five different types of gTLD, there are now many different types.
+## **2) You’re in control, not Facebook**
 
-You’ll find anything from ‘.company’, to ‘.life’, ‘.guru’, and ‘.wedding’. Some are intended for certain purposes (e.g. ‘.edu’ for educational institutions), but most are open to everyone.
+You might be pretty happy with your business’s Facebook page at the moment, but what if you woke up tomorrow morning and Facebook had changed the format of the business pages? Or they suddenly made businesses pay to have a page? Or they restricted what content you could include?
 
-## What kind of domain should I buy? 
+Without your own online presence, you’re entirely at Facebook’s mercy. Any changes they make could have a huge impact on your business and number of customers. The same is true of Etsy, Ebay, and other third party sites.
 
-The two biggest factors when it comes to buying a domain are the the cost and personal preference.
+Having your own website allows you to safeguard your business against changes third party platforms make to their site and rules.
 
-The ‘.com’ addresses tend to be the most in demand and the most expensive as they’re well established and give a site a certain level of credibility. Unlike country-specific gTLDs, e.g. ‘.co.uk’ or ‘.fr’, ‘.com’ domains are popular with companies that intend to operate in several countries.
+## **3) Show your company’s personality more** 
 
-As there are so many more gTLDs available now, it’s worth being flexible about which gTLD you’d like and checking different domain name providers to see which they have.
+Because all Facebook business pages have the same structure, it’s really hard to make your company stand out. After all, it’s Facebook’s branding, not yours.
 
-Using one of the newer gTLDs gives you an opportunity to be more descriptive or specific about what you’re offering and is often cheaper. For example, .co is now popular with tech companies (which is why we picked it)!
+If you’re in a competitive area or there are other similar businesses locally, your own website can really help you stand out from the crowd.
 
-## Do you own a domain forever?
+After all, a website isn’t just about giving people information. It’s the first impression many potential customers will have of your business. It gives them an idea not only of what you do, but of what it would be like to be your customer.
 
-It’s not possible to purchase a domain outright or own it forever. Purchasing a domain is similar to renting a flat: you don’t own it and there are ongoing costs associated with using it.
+If you make incredible bespoke cakes, you should have a website that’s equally unique. If you’re a fun loving sports coach, a website can let you show how you’re different with bold graphics and interactive elements.
 
-You can choose how often you renew your domain registration. Most domain providers do this on an annual basis but you can pay for more years upfront up to a maximum of ten years to secure a low price.
+With your own website, you get to choose every aspect, from how it looks to the content you include. It shows your customers what you’re about and helps them remember you.
 
-## Do I have to register my domain? What is WHOIS? 
+## **4) Facebook is determined to make companies pay** 
 
-WHOIS is a giant directory of all the domains that exist and who owns them. It lists the domain name as well as details such as when it was created and the server IP addresses, right down to contact details for the domain owner.
+When business pages on Facebook first started, they were a great way to get your content seen by a wide number of people.
 
-The details you provide need to be correct: WHOIS confirms registrations using the email address provided and giving false details could result in your domain being taken off you.
+But as Facebook has focused more and more on monetising the platform, they’ve been asking businesses to pay for that publicity.
 
-Take care of your domain registration login details. Losing them can make it very hard to renew your domain and you may risk losing it.
+Because you’ve told Facebook you’re a business when you created the page, it knows there’s a monetary benefit to you for using the platform. And they want to make you pay for that.
 
-However, if you want to limit how much of your personal information is publicly available, look for a domain provider that includes privacy protection.
+What does this mean in practice? If you haven’t paid to boost your content or paid for an ad, Facebook are showing your content to fewer and fewer people.
 
-## How much is a domain? 
+Businesses that used to see thousands of views on their posts have seen that fall dramatically until they start paying for ads.
 
-Domain registrars usually offer a cheap initial price with a significant price increase in the second year.
+With more and more focus on stock prices, it’s likely Facebook will continue to monetise the platform by making businesses pay for perks that were once free.
 
-Domain prices are often shown excluding tax, so make sure you check whether you’re looking at ex- or inc-VAT prices when comparing different offers.
+## **5) Reach more people**
 
-Another fee to watch out for is the ICANN fees. ICANN charges $0.18 per domain per year as well as for domain transfers and renewals. Though it’s a small amount, it’s worth checking whether your domain provider covers these ICANN fees or not.
+Though it may seem like the whole world is on Facebook, that’s not that case. About 44% of the UK’s population that are online use Facebook daily, and [1 in 5](https://www.statista.com/statistics/553538/predicted-number-of-facebook-users-in-the-united-kingdom-uk/) UK adults that use the internet don’t use Facebook at all.
 
-## Who should I buy a domain from? 
+On top of that, Facebook remains skewed towards a younger demographic. The age bracket with the highest number of Facebook users is people aged 25 to 34. Those age 45 to 54 have the lowest number of Facebook users.
 
-Domains are purchased from certified domain registrars. Only 3000 of these registrars exist — not many if you consider the size of the internet!
+If you’re relying solely on Facebook to reach new customers, you could be missing out on customers who aren’t so focused on social media.
 
-This is because there’s a lot of time, effort, and costs involved with becoming a domain registrar.
+## **6) A website makes your business appear more established**
 
-The Internet Corporation for Assigned Names and Numbers (or ICANN) is a non-profit that’s in charge of the application and accreditation processes for domain registrars.
+When you’re asking people to hand over their money, you need them to believe in you. You need them to think you’re great at what you do and you’re worth the price you’re asking.
 
-Before you pick a domain, double check the provider is on the [list of all ICANN accredited registrars](https://www.icann.org/registrar-reports/accredited-list.html).
+When people see that a business is popular and successful and they’re more likely to try it — it’s called social proof, and it’s an incredibly important way of attracting and converting new customers.
 
-Reliable, well-known domain providers include sites like [godaddy](https://uk.godaddy.com/), [Domain Discount 24](https://www.domaindiscount24.com/en), and [Google](https://domains.google/#/) now also offers domains.
+Without your own website, people may assume you can’t afford one — maybe you don’t have enough customers to make it worthwhile. This won’t inspire new customers to take a risk on you and make a purchase or use your service.
 
-## Can you move a domain to another provider? 
+Having your own website implies that you need one. It implies that you take your business seriously — it’s not something temporary that can be represented by a quick Facebook page, it’s established and thriving. That’s the message you want to send to potential customers.
 
-It’s possible to buy a domain from one provider and switch to another provider later. People usually do this when their domain is about to renew (after a year or so) and they’re shopping around for the best price.
+## **7) More space to tell your story** 
 
-There are a few limits in place, for example, you can’t change provider within the first 60 days of purchasing your domain.
+We live in a time where people are obsessed with online research. Whether it’s a health problem or finding the perfect present, people spend a lot of time researching online before acting.
 
-Keep in mind that it’s not a quick process. A full registrar transfer process can take 1 to 2 weeks.
+The same is true of small businesses: [70-80%](https://www.bluecorona.com/blog/29-small-business-digital-marketing-statistics) of people research a small business online before visiting their store or making a purchase.
 
-There’s sometimes a transfer fee, so check with your provider how much this will be before making a decision on which option is the best value.
+The problem with a Facebook page is that you’re limited to just that one page. You can’t preempt consumer concerns or questions with an FAQ section or show off your industry expertise with a blog on a Facebook page.
+
+A website allows you to give potential customers much more information about your service that might be the difference between showing a passing interest and making a sale.
+
+## **8) Most of your competitors have one** 
+
+More and more businesses are online every day. It’s gone from being optional to essential if you want to get found and grow your business.
+
+When people are searching for the service you provide, it’s inevitable that your competitors will come up too.
+
+If other companies have a website and you don’t, you’re immediately at a disadvantage: people will go where they can find more information.
+
+We know firsthand how much of a difference it can make having your own website. After all, you’re here on ours right now because we have the space to include a helpful blog that draws people to the site.
+
+But getting a website doesn’t have to be as expensive or time consuming as you think. Take a look at our [services](/services) page to get an estimate. We can get your site up and running in less than a week!
+
+Worried about managing it longer term? We use platforms and tools that make sure small businesses can stand on their own two feet — no need to keep coming back to us. You can edit the text or add information yourself with just a few clicks.
+
+You can find out more on the services page. If you’ve got questions or would like to know more, just drop us an email at [hello@wearemicro.co](mailto:hello@wearemicro.co). We’re not going to give you the hard sell and we’d love to hear about your business and where you want to take it.
