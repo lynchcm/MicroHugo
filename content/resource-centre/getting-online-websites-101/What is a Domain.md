@@ -1,7 +1,7 @@
 +++
 article_h1 = "What is a Domain?"
 article_image = "/uploads/signposts.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "From how much to budget to where to buy them from, this guide covers everything you need to keep in mind when choosing and buying a domain for your new business website."
 layout = "article"
 order = 2
 sitemap_exclude = true
