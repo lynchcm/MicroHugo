@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = "true"
+draft = "false"
 row1image = "/uploads/idea.jpg"
 row2image = "/uploads/meeting-client.jpg"
 row3image = "/uploads/getting-online.jpg"

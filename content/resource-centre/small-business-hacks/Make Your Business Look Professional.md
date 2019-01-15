@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "Make Your Business Look Professional"
 layout = "article"
 article_h1 = "5 Ways to Make Your Small Business Look More Professional"

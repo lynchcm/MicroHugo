@@ -1,7 +1,17 @@
 {{ partial "head.html" . }}
 
+<div class="container article-breadcrumbs">
+    <p class="capitals"><a href="/resource-centre">Resource Centre</a> &gt; <a href="/{{ .Dir }}">{{ humanize (strings.TrimPrefix "resource-centre" (replace .Dir "/" "")) }}</a></p>
+</div>
+
 <div class="container article-formatting">
     <h1>{{ .Params.article_h1 }}</h1>
+    {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.article_image) }}
+    {{ $resizedSmall := $resource.Resize "400x" }}
+    {{ $resizedMed := $resource.Resize "800x" }}
+    <img class="headline-img" srcset="{{$resizedSmall.Permalink}} 400w,
+                 {{$resizedMed.Permalink}} 800w"
+         src="{{$resource.Permalink}}">
     <p>{{ .Content }}</p>
 </div>
 

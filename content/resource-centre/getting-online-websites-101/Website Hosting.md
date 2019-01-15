@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "Website Hosting"
 layout = "article"
 article_h1 = "What is Website Hosting?"

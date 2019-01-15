@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "Common LinkedIn Profile Mistakes"
 layout = "article"
 article_h1 = "Are You Making These Common LinkedIn Profile Mistakes?"

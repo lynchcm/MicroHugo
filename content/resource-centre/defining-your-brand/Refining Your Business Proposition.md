@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "Refining Your Business Proposition"
 layout = "article"
 article_h1 = "How to Refine Your Business Proposition"

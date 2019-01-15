@@ -1,28 +1,61 @@
 {{ partial "head.html" . }}
 
-<div class="container">
-    <h1>{{ .Params.article_list_h1 }}</h1>
-    <p>{{ .Content }}</p>
-</div>
+<div class="template-background resource-centre-background">
+    <div class="resource-centre-diagonal"></div>
     
-{{ range .Pages.ByParam "order" }}
-<div class="container article-list-item-wrapper">
-    <a href="{{ .Permalink }}">
-        <div class="article-list-image">
-            {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.article_image) }}
-            {{ $resizedSmall := $resource.Resize "400x" }}
-            {{ $resizedMed := $resource.Resize "800x" }}
-            <img srcset="{{$resizedSmall.Permalink}} 400w,
-                         {{$resizedMed.Permalink}} 800w"
-                 src="{{$resource.Permalink}}">
+    <div class="container resource-centre-categories-bar">
+        <div class="icon-bar">
+            <div class="icon-box">
+                <p><a href="/resource-centre">RESOURCE<br>CENTRE<br>HOME</a></p>
+            </div>
+            
+                {{ range where (.Site.Pages.ByParam "order") "Params.layout" "article-list" }}
+            <div class="icon-box">
+                <a href="{{ .Permalink }}">
+                {{ partial .Params.section_image . }}
+                </a>
+            </div>
+                {{ end }}
+            
+        </div>
+        <div class="category-breadcrumbs">
+            <p class="capitals"><a href="/resource-centre">RESOURCE CENTRE</a> &gt; {{ humanize (strings.TrimPrefix "resource-centre" (replace .Dir "/" "")) }}</p>
+        </div>
+    </div>
+    
+    <div class="container article-list-intro">
+        <h1 class="capitals">{{ .Params.article_list_h1 }}</h1>
+        <p>{{ .Content }}</p>
+    </div>
 
-        </div>
-        <div class="article-list-text">
-            <h2 class="capitals">{{ .Params.article_h1 }}</h2>
-            <p>{{ .Params.article_summary }}</p>
-        </div>
-    </a>
+    {{ range .Pages.ByParam "order" }}
+    <div class="container article-list-item-wrapper">
+        <a href="{{ .Permalink }}">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="article-list-image">
+                        {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.article_image) }}
+                        {{ $resizedSmall := $resource.Resize "400x" }}
+                        {{ $resizedMed := $resource.Resize "800x" }}
+                        <img srcset="{{$resizedSmall.Permalink}} 400w,
+                                     {{$resizedMed.Permalink}} 800w"
+                             src="{{$resource.Permalink}}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="article-list-text">
+                        <h2>{{ .Params.article_h1 }}</h2>
+                        <p>{{ .Params.article_summary }}</p>
+                    </div>
+                </div>
+            </div>
+                    
+                    
+
+        </a>
+    </div>
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+    
 </div>
-{{ end }}
-
-{{ partial "footer.html" . }}

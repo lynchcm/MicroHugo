@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "What is a Domain?"
 layout = "article"
 article_h1 = "What is a Domain?"

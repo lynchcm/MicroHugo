@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "Websites vs Facebook Pages"
 layout = "article"
 article_h1 = "Websites vs Facebook Pages"

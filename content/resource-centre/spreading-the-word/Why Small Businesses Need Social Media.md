@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "Why Small Businesses Need Social Media"
 layout = "article"
 article_h1 = "10 Reasons Why Small Businesses Need Social Media"

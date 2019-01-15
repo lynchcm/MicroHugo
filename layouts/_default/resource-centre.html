@@ -1,38 +1,43 @@
 {{ partial "head.html" . }}
 
-<div class="container-fluid">
-    <div class="container">
-        <h1>{{ .Params.resource_centre_h1 }}</h1>
-        <p>{{ .Content }}</p>
-    </div>
-</div>
-<div class="container" id="resource-centre-sections">
+<div class="template-background resource-centre-background">
+    <div class="resource-centre-diagonal"></div>
+<!--    <div class="template-background-2"></div>-->
+<!--    <div class="template-background-3"></div>-->
     
-    
-    {{ $.Scratch.Set "counter" 0 }}
-    
-    {{ range where (.Site.Pages.ByParam "order") "Params.layout" "article-list" }}
-        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-    <a href="{{ .Permalink }}">
-        <div class="row" id='row-{{ $.Scratch.Get "counter" }}'>
-            <div class="grey-hover-overlay"></div>
-            <div class='col-md-6 {{ if eq (mod ($.Scratch.Get "counter") 2) 1 }}order-md-last {{ end }}image-block'>
-                {{ $resource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.section_image) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
-                {{ $resizedMed := $resource.Resize "800x" }}
-                <img srcset="{{$resizedSmall.Permalink}} 400w,
-                             {{$resizedMed.Permalink}} 800w"
-                     src="{{$resource.Permalink}}">
-            </div>
-            <div class="col-md-6">
-                <h2>{{ .Params.article_list_h1 }}</h2>
-                <p>{{ .Params.article_list_summary }}</p>
-            </div>
+    <div class="container-fluid page-intro">
+        <div class="container">
+            <h1 class="capitals">{{ .Params.resource_centre_h1 }}</h1>
+            <p>{{ .Content }}</p>
         </div>
-        <div class="row spacer d-block d-md-none"></div>
-    </a>
-    {{ end }}
+    </div>
+    <div class="container" id="resource-centre-sections">
+
+
+        {{ $.Scratch.Set "counter" 0 }}
+
+        {{ range where (.Site.Pages.ByParam "order") "Params.layout" "article-list" }}
+            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        
+            {{ if eq (mod ($.Scratch.Get "counter") 2) 1 }}<div class="row">{{ end }}
+<!--                <div class="grey-hover-overlay"></div>-->
+                <div class='col-md-6{{ if gt ($.Scratch.Get "counter") 2 }} border-on-top{{ end }}{{ if eq ($.Scratch.Get "counter") 2 }} border-on-top-mobile{{ end }}{{ if eq (mod ($.Scratch.Get "counter") 2) 1 }} border-on-right{{ end }}'>
+                    <a href="{{ .Permalink }}">
+                        <div class="resource-centre-category-link-div">
+                            {{ partial .Params.section_image . }}
+                            <h2 class="capitals">{{ .Params.article_list_h1 }}</h2>
+                            <p>{{ .Params.article_list_summary }}</p>
+                        </div>
+                    </a>
+                </div>
+            {{ if eq (mod ($.Scratch.Get "counter") 2) 0 }}</div>{{ end }}
+        
+        {{ end }}
+
+    </div>
+
+    {{ partial "footer.html" . }}
     
 </div>
 
-{{ partial "footer.html" . }}
+{{ if eq (mod ($.Scratch.Get "counter") 2) 1 }}order-md-last {{ end }}

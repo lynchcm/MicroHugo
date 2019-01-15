@@ -1,6 +1,6 @@
 +++
 sitemap_exclude = true
-draft = true
+draft = false
 title = "LinkedIn Groups"
 layout = "article"
 article_h1 = "What are LinkedIn Groups?"
