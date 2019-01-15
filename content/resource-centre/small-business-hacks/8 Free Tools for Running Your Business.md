@@ -1,7 +1,7 @@
 +++
 article_h1 = "The 8 Must-Have Free Tools for Running Your Own Business"
 article_image = "/uploads/free.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "The one thing all small business have in common? There’s never enough time in the day! From keeping track of tasks and customers to tracking your time, here are the eight tools you need to keep everything running smoothly."
 layout = "article"
 order = 1
 sitemap_exclude = true
