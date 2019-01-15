@@ -1,7 +1,7 @@
 +++
 article_h1 = "Websites vs Facebook Pages"
 article_image = "/uploads/facebook-website.png"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "Everyone’s on Facebook right? Why pay for a website when you can have a free Facebook page? From getting your business found on search engines to telling your story in the right way, here’s why websites are so important."
 layout = "article"
 order = 3
 sitemap_exclude = true
