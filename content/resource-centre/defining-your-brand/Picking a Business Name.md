@@ -1,11 +1,10 @@
 +++
-sitemap_exclude = true
-draft = false
 article_h1 = "How to Pick a Business Name"
 article_image = "/uploads/blank-notebook.jpg"
-article_summary = "The idea of getting your own site can seem pretty daunting. From jargon busting common website terms to helping you decide whether your business needs a website, here’s what you need to know about taking your business online."
+article_summary = "Naming your baby business can be really tough. We run through the legal business naming requirements to keep in mind as well as four techniques for coming up with the perfect catchy company name."
 layout = "article"
 order = 1
+sitemap_exclude = true
 title = "Picking a Business Name"
 
 +++
