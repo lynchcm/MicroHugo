@@ -55,8 +55,6 @@ Here’s an example based on a Marketing Consultant:
 | Social media | 2 | 2 | 3 | 4 | 11 |
 | Marketing planning | 5 | 3 | 4 | 5 | 17 |
 
-![](/uploads/marketing-table.png)
-
 From this we can see that strong areas for this consultant to focus on would be launch event planning, closely followed by marketing planning.
 
 Click [here to download](https://docs.google.com/spreadsheets/d/e/2PACX-1vROv8Ub5fGbBP7-avjyxxLjuOxDKMnzGjNU9Wy8OycjnyADcjR5Q9n8PsFs3HccyZmzb4yKk7dzTsQo/pubhtml?gid=0&single=true) your table and get started. We’ll take the top two highest scoring options to the next step.
