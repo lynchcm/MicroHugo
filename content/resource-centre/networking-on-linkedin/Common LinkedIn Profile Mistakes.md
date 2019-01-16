@@ -21,7 +21,7 @@ Use the matrix below to get an idea of how strong your profile is overall and wh
 |     |     | YES | NO  |
 | --- | --- | --- | --- |
 | 1 | Do you know how to turn off network notifications before making changes to your profile? | | |
-| 2 | Is your tagline different to your current job title?<br>e.g. Your role might be Communications Manager but your tagline might be broader: Communications expert, branding nerd, and profile raiser | --- | --- |
+| 2 | Is your tagline different to your current job title?<br>e.g. Your role might be Communications Manager but your tagline might be broader: Communications expert, branding nerd, and profile raiser | | |
 | 3 | Do you have more than 200 connections? | | |
 | 4 | Do you have at least three of these six optional profile sections?<br><ul><li>Languages</li><li>Awards</li><li>Certifications</li><li>Publications</li><li>Volunteering</li><li>Patents</li></ul> | | |
 | 5 | Have you selected whether you want to let recruiters know you’re open to being approached?<br>In the dashboard area of your profile, you’ll see an option saying ‘Let recruiters know you’re open’ and a toggle switch. | | |
