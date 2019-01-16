@@ -23,16 +23,16 @@ Use the matrix below to get an idea of how strong your profile is overall and wh
 | 1 | Do you know how to turn off network notifications before making changes to your profile? | | |
 | 2 | Is your tagline different to your current job title?<br>e.g. Your role might be Communications Manager but your tagline might be broader: Communications expert, branding nerd, and profile raiser | --- | --- |
 | 3 | Do you have more than 200 connections? | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
-| 11 | | | |
-| 12 | | | |
-| 13 | | | |
+| 4 | Do you have at least three of these six optional profile sections?<br><ul><li>Languages</li><li>Awards</li><li>Certifications</li><li>Publications</li><li>Volunteering</li><li>Patents</li></ul> | | |
+| 5 | Have you selected whether you want to let recruiters know you’re open to being approached?<br>In the dashboard area of your profile, you’ll see an option saying ‘Let recruiters know you’re open’ and a toggle switch. | | |
+| 6 | Have you chosen which parts of your profile to make publicly visible? | | |
+| 7 | Are you a member of any groups? | | |
+| 8 | Does your profile picture meet all the criteria on this list:<br><ul><li>It was taken in the last two years</li><li>The lighting is good and the image is sharp</li><li>It’s not a selfie</li><li>No one has been cropped out of it</li><li>It’s in a professional/neutral setting, not taken on a night out/ at an event/wedding</li><li>You don’t use the same image elsewhere online for any non-professional purposes (e.g. dating profiles)</li></ul> | | |
+| 9 | Have you set a cover photo?<br>This is the large banner image behind your profile picture. | | |
+| 10 | Have you selected relevant skills and got endorsements for them? | | |
+| 11 | Have you added a link to your personal website and/or social media handles in the contact information section? | | |
+| 12 | Have you included a list of skills in your summary?<br>i.e. after your introduction, do you have a list of words that are your key skills? | | |
+| 13 | Did you write the content for your job descriptions?<br>e.g. If you copy and pasted any of your role descriptions from the company page or job description, tick no | | |
 | 14 | Are your role descriptions all less than 100 words? | | |
 | 15 | Is your profile free from the following buzzwords:<br><ul><li>Driven</li><li>Highly motivated</li><li>High performing</li><li>Results-oriented</li><li>Dynamic</li></ul>| | |
 | 16 | Have you added an image/links to any jobs in the experience section? | | |
