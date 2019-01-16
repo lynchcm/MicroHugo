@@ -1,9 +1,0 @@
----
-label: Home Page
-hide_body: false
-is_partial: false
-fields:
-- type: text
-  label: Banner Headline
-  name: banner_headline
-  description: H1 text placed on main banner with blue background.
