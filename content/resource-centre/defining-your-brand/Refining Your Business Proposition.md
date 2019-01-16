@@ -48,6 +48,13 @@ For example, for writing a book might be a time consuming task, but if it’s yo
 
 Here’s an example based on a Marketing Consultant:
 
+| Task | Experience | Speed | Enjoyment | Value | Result |
+| --- | --- | --- | --- | --- | --- |
+| Launch event planning | 5 | 4 | 5 | 4 | 18 |
+| Google AdWords | 3 | 3 | 1 | 3 | 10 |
+| Social media | 2 | 2 | 3 | 4 | 11 |
+| Marketing planning | 5 | 3 | 4 | 5 | 17 |
+
 ![](/uploads/marketing-table.png)
 
 From this we can see that strong areas for this consultant to focus on would be launch event planning, closely followed by marketing planning.
