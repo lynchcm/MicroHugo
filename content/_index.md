@@ -1,5 +1,6 @@
 +++
-banner_headline = "We’re Micro. We do more than just build websites. We create the brand behind them &mdash; whatever size your&nbsp;business."
 title = "Micro Boutique Branding"
+meta_description = "We're a Sheffield based web design company. We design and build affordable custom sites for small businesses. We’ll take care of the logo and copywriting too so you can focus on what you do best."
+meta_og_url = "https://wearemicro.co/"
 
 +++
