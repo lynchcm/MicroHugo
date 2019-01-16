@@ -8,9 +8,9 @@ sitemap_exclude = false
 title = "Networking Ideas"
 
 +++
-Finding clients is one of the hardest things about starting your own business. One of the oldest sales techniques, Networking is a great way for you to show how helpful you and your business can be to potential client.
+Finding clients is one of the hardest things about starting your own business. One of the oldest sales techniques, networking is a great way for you to show how helpful you and your business can be to potential client.
 
-It used to be that networking was only done face to face, but with the rise of professional networking platforms and Online forums, It's easier than ever to network without even leaving your home.
+It used to be that networking was only done face to face, but with the rise of professional networking platforms and online forums, it's easier than ever to network without even leaving your home.
 
 Whether it's in person or online, Make sure you don't see networking as an opportunity to pounce on you clients and shove your business in their face. Leave the hard sell in the 90s.
 
@@ -20,7 +20,7 @@ The best case? You'll find yourself a new client. But even if they're not ready 
 
 ## Face-to-Face Networking
 
-Before you head out to networking event, make sure you have a few essentials: plenty of business cards, a pen in case you need to take down anyone else’s details and they don’t have a card, and your website open on your phone so you could quickly show someone if needed.  
+Before you head out to networking event, make sure you have a few essentials: plenty of business cards, a pen in case you need to take down anyone else’s details and they don’t have a card, and your website open on your phone so you could quickly show someone if needed.
 
 ### Meetup
 
@@ -30,21 +30,21 @@ Meetup is a great way to search for events happening near you by topic.
 
 Pick your city and the topic you're interested in, for example entrepreneurship or business networking, and a selection of groups with events happening nearby will pop up.
 
-### University business schools
+### University Business Schools
 
 Business schools often host talks and lectures by guest speakers that are open to the general public as well as their students.
 
-Keep an eye on upcoming events by following the University on Facebook or subscribing to their mailing list.
+Keep an eye on upcoming events by following the university on Facebook or subscribing to their mailing list.
 
 If you see a topic that you know what appeal to your target audience, make the time to go along.
 
-### Alumni events
+### Alumni Events
 
 Your own university or business school can also be a good source of networking opportunities.
 
 Alumni events may conjure up images of an old boys club, sipping whiskey in a wood panelled room, but most universities now take a much more modern approach to engaging their alumni.
 
-Many universities will also have an alumni newsletter. This can be a great way to get your message out to a wider audience of people. 
+Many universities will also have an alumni newsletter. This can be a great way to get your message out to a wider audience of people.
 
 ### Conferences & Trade Shows
 
@@ -52,7 +52,7 @@ No matter what your industry, you're likely to find a conference or trade show t
 
 Think back to your buyer personas and the types of events you're most likely to find them at.
 
-Industry publications and blogs are a great way to find out about that coming shows, and you could also look at what’s coming up at popular venues like the NEC. 
+Industry publications and blogs are a great way to find out about that coming shows, and you could also look at what’s coming up at popular venues like the NEC.
 
 ### Community Events
 
