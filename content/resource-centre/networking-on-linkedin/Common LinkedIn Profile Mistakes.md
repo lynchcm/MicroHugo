@@ -33,12 +33,12 @@ Use the matrix below to get an idea of how strong your profile is overall and wh
 | 11 | | | |
 | 12 | | | |
 | 13 | | | |
-| 14 | | | |
-| 15 | | | |
-| 16 | | | |
-| 17 | | | |
-| 18 | | | |
-| 19 | | | |
+| 14 | Are your role descriptions all less than 100 words? | | |
+| 15 | Is your profile free from the following buzzwords:<br><ul><li>Driven</li><li>Highly motivated</li><li>High performing</li><li>Results-oriented</li><li>Dynamic</li></ul>| | |
+| 16 | Have you added an image/links to any jobs in the experience section? | | |
+| 17 | Do you have any recommendations from previous colleagues/managers? | | |
+| 18 | Does your profile have a custom URL?<br>i.e. You’ve edited your profile URL so that it’s ‘www.linkedin.com/in/yourname’ not www.linkedin.com/in/yourname-243785938| | |
+| 19 | Have you removed the ‘People also viewed’ section on the right hand side (scroll down) of your profile? | | |
 | 20 | Have you commented on a post in the last two weeks? | | |
 | 21 | Have you written an update or post in the last month? | | |
 
