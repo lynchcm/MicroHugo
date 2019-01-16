@@ -18,7 +18,9 @@ LinkedIn do have an assessment tool of their own: [https://www.linkedin.com/sale
 
 Use the matrix below to get an idea of how strong your profile is overall and which areas need improvement. You’ll find the score evaluation and recommended next steps at the bottom of this article.
 
-| | |YES|NO|
+|     |     | YES | NO  |
+| --- | --- | --- | --- |
+| 1   | Do you know how to turn off network notifications before making changes to your profile? | | |
 
 ## How Does Your LinkedIn Profile Measure Up?
 
