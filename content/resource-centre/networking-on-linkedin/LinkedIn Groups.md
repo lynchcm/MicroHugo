@@ -18,7 +18,7 @@ LinkedIn has pretty simple algorithms. For example, if someone writes an amazing
 
 The same is true in reverse: no matter how many times you post about your business or industry topics, only your connections will see it.
 
-This does include second and third degree connections, but even then it means there’s a limit to how many new customers you could reach.
+This does include second and third degree connections, but even then it means there’s a limit to how many new clients you could reach.
 
 That means just posting — even regularly — isn’t the best way to reach potential clients you aren’t already connected with.
 
@@ -26,11 +26,11 @@ That’s where LinkedIn Groups come in.
 
 While you usually have to be connected to someone to message them, you can directly contact members of the same group without being connected. You can also answer group members’ questions and raise your profile within your industry.
 
-## How to Find LinkedIn Groups 
+## How to Find LinkedIn Groups
 
 There are two ways to do this: with a search or by viewing the groups LinkedIn recommends for you.
 
-### Method 1: Searching for LinkedIn Groups 
+### Method 1: Searching for LinkedIn Groups
 
 To find groups yourself, go to the search bar at the top of your profile and enter the type of group you’re interested in, for example ‘marketing’.
 
@@ -42,15 +42,15 @@ Hit search and you’ll notice a bar that says ‘People, Jobs, Content, More’
 
 Select ‘Groups’ and it will filter all the results for marketing, or whatever topic you picked, to only show you groups rather than people or jobs.
 
-For something as broad as marketing you will get thousands of results, so try and pick a more specific search to narrow in on the people you want to reach.
+For something as broad as marketing, you will get thousands of results; try and pick a more specific search to narrow in on the people you want to reach.
 
 ### Method 2: LinkedIn Group Suggestions
 
-To find groups based on LinkedIn’s suggestions for you, look at the top navigation bar; next to the small image of you, you’ll see the ‘Work’ option.
+To find groups based on LinkedIn’s suggestions, look at the top navigation bar; next to the small image of you, you’ll see the ‘Work’ option.
 
 ![](/uploads/linkedin9.png)
 
-Under ‘Visit more LinkedIn products’ you’ll see the Groups icon.
+Under ‘Visit more LinkedIn products’ you’ll see the 'Groups' icon.
 
 ![](/uploads/linkedin10.png)
 
@@ -58,13 +58,13 @@ Click the Groups icon and LinkedIn will open another tab. If you’re already a 
 
 ![](/uploads/linkedin11.png)
 
-To find more Groups you might like, click ‘Discover’ on the top left to see LinkedIn’s top suggestions for you.
+To find more 'Groups' you might like, click ‘Discover’ on the top left to see LinkedIn’s top suggestions for you.
 
 ![](/uploads/linkedin12.png)
 
-## Can You Join a LinkedIn Group as a Company? 
+## Can You Join a LinkedIn Group as a Company?
 
-At the moment, LinkedIn only lets individuals join LinkedIn Groups, not companies. 
+At the moment, LinkedIn only lets individuals join LinkedIn Groups, not companies.
 
 If you want to interact with a group, you’ll need to join using your personal LinkedIn profile.
 
@@ -78,9 +78,9 @@ To check if the group is right for you, click on the group’s name and take a l
 
 ![](/uploads/linkedin13.png)
 
-Take a minute to also familiarise yourself with the group rules. Each group will vary, but direct sales pitches are almost always not allowed.
+Take a minute to familiarise yourself with the group rules. Each group will vary, but direct sales pitches are rarely allowed.
 
-## How to Make the Most of LinkedIn Groups 
+## How to Make the Most of LinkedIn Groups
 
 First things first: Don’t be that spammy person who joins, writes a post about their business, then never says anything again. No one is going to respond well to that and they’ll probably kick you out of the group.
 
