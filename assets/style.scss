@@ -854,13 +854,11 @@ h3 {
         left: 27px;
         top: 27px;
     }
-
     #micro-prices-image {
         position: relative;
         left: 40px;
         top: 27px;
     }
-
     #never-outsourced-image {
         position: relative;
         left: 36px;
@@ -1411,6 +1409,15 @@ input {
         
         @media only screen and (min-width: $medium) {
             width: 80%;
+        }
+    }
+    
+    table {
+        color: white;
+        font-family: $MainFont;
+        
+        th, td {
+            border: 1px solid white;
         }
     }
 }
