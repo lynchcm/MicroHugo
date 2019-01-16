@@ -18,32 +18,7 @@ LinkedIn do have an assessment tool of their own: [https://www.linkedin.com/sale
 
 Use the matrix below to get an idea of how strong your profile is overall and which areas need improvement. You’ll find the score evaluation and recommended next steps at the bottom of this article.
 
-    <table>
-    	<tr>
-        	<th></th>
-            <th></th>
-            <th>YES</th>
-            <th>NO</th>
-        </tr>
-        <tr>
-        	<td>1</td>
-            <td>Do you know how to turn off network notifications before making changes to your profile?</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-        	<td>2</td>
-            <td>Is your tagline different to your current job title? e.g. Your role might be Communications Manager but your tagline might be broader: Communications expert, branding nerd, and profile raiser</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-        	<td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+| | |YES|NO|
 
 ## How Does Your LinkedIn Profile Measure Up?
 
