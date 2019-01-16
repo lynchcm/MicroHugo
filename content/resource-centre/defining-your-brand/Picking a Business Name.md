@@ -18,7 +18,7 @@ If you’re really struggling, keep in mind that it’s not actually that hard t
 
 ## Legal Requirements for Naming Your Business
 
-There are a different rules about what names you can have depending on what type of company you’re registering as.
+There are different rules about what names you can have depending on what type of company you’re registering as.
 
 If you’re a sole trader, having an official business name is optional; you can just use your given name.
 
@@ -36,7 +36,7 @@ It doesn’t matter how much you love a particular name, if someone has already 
 
 If you’re UK based, you’ll need the Companies House [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability) open to do a quick check on any ideas before you get too attached to them.
 
-But it’s not just whether it’s legally available that matters: you’ll want to check if the domain is available too. It’s no use having registered the perfect name if you can’t get the website address to match.
+But it’s not just whether it’s legally available that matters: you’ll want to check a domain you like is available too. It’s no use having registered the perfect name if you can’t get the website address to match.
 
 As well as the [name availability checker](https://beta.companieshouse.gov.uk/company-name-availability), have a domain registrar like GoDaddy open in the next window.
 
@@ -50,7 +50,7 @@ Be open to variations. For example, our full registered business name is Micro B
 
 ### USING YOUR OWN NAME FOR YOUR BUSINESS
 
-Rather than the pressure to come up with something, using your name for your business can seem like an easy solution.
+Rather than dealing with the pressure to come up with something, using your name for your business can seem like an easy solution.
 
 There are two things to weigh up: is your name suitable as a brand name and what are your long-term plans for growing your business?
 
@@ -106,7 +106,7 @@ That’s where the third thing comes in. If you’re not familiar with [Urban Di
 
 What’s this got to do with your company name? Well, you need to check it doesn’t have any weird associations you’re not aware of.
 
-When we were running through names, we had a front runner… until Urban Dictionary educated us that an alternative meaning of ‘rhubarb’ was talking bullshit!
+When someone we work with was running through names, they had a front runner… until Urban Dictionary educated them that an alternative meaning of ‘rhubarb’ was talking bullshit!
 
 ![](/uploads/urban-dictionary.png)
 
