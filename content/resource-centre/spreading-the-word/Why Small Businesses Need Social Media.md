@@ -14,25 +14,25 @@ Why would you take time away from finding clients or working on that proposal to
 
 Time spent on social media is anything but wasted. If you’re thinking it’s a social thing that’s not for businesses, you’re out of touch. It’s a serious growth tool and lead generator that deserves a dedicated proportion of your time.
 
-Not convinced? Here are the ten reasons why small business have to be on social media. 
+Not convinced? Here are the ten reasons why small business have to be on social media.
 
 ## Level the Playing Field
 
-Let’s assume that like most other new companies, you have no marketing budget. A big TV marketing campaign is pie in the sky and it’s even hard to put aside a few pounds a day for google ads.
+Let’s assume that like most other new companies, you have no marketing budget. A big TV marketing campaign is pie in the sky and it’s even hard to put aside a few pounds a day for Google ads.
 
 While bigger companies will always be able to spend more on flashy campaigns and outbid you in Google ad auctions, social media depends on quality, not quantity, allowing little companies to compete.
 
-Direct engagement with potential customers for free in a way that allows you to compete with industry giants — what could be better! 
+Direct engagement with potential customers for free in a way that allows you to compete with industry giants — what could be better!
 
-## Create a Sales Funnel 
+## Create a Sales Funnel
 
 Content marketing is one of the most effective marketing strategies out there. Instead of pushing your message at people, you pull them in with helpful articles that give them a positive experience of your brand.
 
 But it’s no use having a great blog with interesting content unless you can make sure it’s seen. That’s where social media comes in. Great content gets circulated, and suddenly your business is in front of lots of people.
 
-If you don’t know too much about how content marketing fits into a modern sales funnel, take a look at our article on Marketing Your New Business. 
+If you don’t know too much about how content marketing fits into a modern sales funnel, take a look at our article on [Marketing Your New Business](/resource-centre/spreading-the-word/start-marketing-a-new-business/).
 
-## Drive Website Traffic 
+## Drive Website Traffic
 
 Theory is fine. But nothing beats having tried something in practice. That’s what we do with everything we recommend.
 
@@ -44,9 +44,9 @@ Since launch, almost 50% of our traffic has come from social media. Another 35% 
 
 Not only is 50% significant, I’d be willing to bet that a significant number of the people that knew about or searched for our website had heard of us from social media.
 
-That’s how much of an awareness and growth driver social media can be. 
+That’s how much of an awareness and growth driver social media can be.
 
-## Create a Quick feedback Loop
+## Create a Quick Feedback Loop
 
 Big, fancy market research panels are only affordable for the biggest companies. Luckily, you can road test your ideas in real time with social media.
 
@@ -54,7 +54,7 @@ From actively gauging interest in a particular topic to just watching what gener
 
 If you don’t get a good reaction, social media allows you to pick up on any potential problems early and pivot to something with a better chance of success.
 
-## Explain How You’re Different 
+## Explain How You’re Different
 
 Have you noticed how TV adverts have been getting gradually more and more wacky? There’s an incredible amount of competition out there, and it’s getting harder and harder to stand out.
 
@@ -62,21 +62,21 @@ Faced with loads of choice, who do consumers pick? The brands they like. The bra
 
 People are more likely to get all of that from a smaller business — that’s you!
 
-By combining your company’s authentic tone, unique offering, and the approachability of social media, you’ll be able to make your company stand out from the crowd. 
+By combining your company’s authentic tone, unique offering, and the approachability of social media, you’ll be able to make your company stand out from the crowd.
 
-## Improve Brand Recall 
+## Improve Brand Recall
 
 The advertising industry are always trying to balance reach and recall: they want to reach lots of people, but they also want the same people to see their advert about five times to make sure they remember the brand.
 
 Social media gives you a win on both fronts — without the expensive TV ads! By posting regularly, potential customers will start to not only take notice of but remember your brand.
 
-When they need the service you offer, you’ll be top of mind. 
+When they need the service you offer, you’ll be top of mind.
 
 ## Intrigue Pre-Purchase Researchers
 
 There’s not many things you buy now that you don’t heavily research before purchasing. Whether it’s a pair of shoes or a potential doctor, you turn to the internet not only for information but for public opinion.
 
-Social media allows you to share additional information that will help potential customers decide whether your service or product is right for them, and also answer any questions (aka doubts) they have in real time before you’re discounted. 
+Social media allows you to share additional information that will help potential customers decide whether your service or product is right for them, and also answer any questions (aka doubts) they have in real time before you’re discounted.
 
 ## Generate Free Coverage
 
@@ -96,10 +96,10 @@ It’s really likely that your competitors are already on social media. By ignor
 
 Being active on social media shows you to be an active, energetic modern company — all qualities potential customers value and want to work with.
 
-## Prepare for Paid Advertising 
+## Prepare for Paid Advertising
 
 When you do have a bit of spare revenue to put into marketing, a strong social media presence will help improve your return on investment.
 
 You’ll already have an established audience with a low level of awareness that you can build on with ads.
 
-You can also use the retargeting technologies built into many social platforms, like Facebook pixel, to identify and reach customers that were the most interested in your business, making sure your first paid campaign is a success.
+You can also use the retargeting technologies built into many social platforms, like Facebook Pixel, to identify and reach customers that were the most interested in your business, making sure your first paid campaign is a success.
