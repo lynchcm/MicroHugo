@@ -24,15 +24,15 @@ Getting your own professional email address with a custom domain that uses your 
 
 [G-suite](https://gsuite.google.co.uk/intl/en_uk/) is the one we use and recommend. If you already have a domain, it’ll cost just over £3 per month to get a ‘name@businessname’ style email address and 30GB of storage.
 
-## Set Up Your Email Signature 
+## Set Up Your Email Signature
 
 While we’re talking about email, another little thing that can make a big difference is setting up your email footer.
 
 As well as additional contact information such as your phone number, include your company name, registered company number, website, and logo.
 
-If applicable, you could also use this space to mention special offers or link to new content on your website. 
+If applicable, you could also use this space to mention special offers or link to new content on your website.
 
-## Make a Company LinkedIn Page 
+## Make a Company LinkedIn Page
 
 It’s quick and easy to set up a company LinkedIn page. What’s great is that once it’s set up, instead of just putting ‘freelance’ for your current company and having a greyed out picture, you’ll be able to select your actual company name and the logo will appear.
 
@@ -56,8 +56,6 @@ If you want something fancy, check out [moo.com](https://www.moo.com/uk/products
 
 ## Create a Cover for Documents
 
-Take inspiration from the fancy brochures that used to be the go-to for impressing potential clients and give it a modern twist with a digital front cover for your documents. 
+Take inspiration from the fancy brochures that used to be the go-to for impressing potential clients and give it a modern twist with a digital front cover for your documents.
 
 It could be as simple as a logo and your company name on a cover sheet, or you could get more creative with free online graphic design software like [Canva](https://www.canva.com/).
-
-(Psst — if you’re one of our clients and ask us really nicely we’ll chuck one in for free with our Instant Brand package!)
