@@ -12,16 +12,16 @@ title = "Website Hosting"
 +++
 When you start thinking about getting your own website, the number of options and all the jargon can seem a bit overwhelming.
 
-This article walks you through what website hosting is, what to look for when buying it, and how much you can expect to pay. 
+This article walks you through what website hosting is, what to look for when buying it, and how much you can expect to pay.
 
 ## At-a-Glance Summary
 
-* Your website is basically a bunch of files. Hosting is where these file are saved. 
-* Things to look at when picking a hosting service include up time, back up frequency, speed, storage, bandwidth, and SSL certificates. 
-* Look for 99.9% up time and daily back ups from your hosting provider. 
-* 1GB of storage and 5GB bandwidth should be enough for most websites.
+* Your website is basically a bunch of files. Hosting is where these file are saved.
+* Things to look at when picking a hosting service include up time, back up frequency, speed, storage, bandwidth, and SSL certificates.
+* Look for 99.9% up time and daily back ups from your hosting provider.
+* 1GB of storage and 5GB bandwidth should be enough for most small business websites.
 
-## What is website hosting? 
+## What is Website Hosting?
 
 Fundamentally an internet page is a file. Just like the files you have on your computer or phone, they need to be saved somewhere. This is what hosting is — where all the files that form your website are saved.
 
@@ -29,17 +29,17 @@ There’s a physical aspect too. Just like your computer has a hard drive where 
 
 Every site in the world needs and has hosting — even Google. Bigger companies will usually invest in their own servers to make sure they know exactly how much capacity they have and can always handle the number of people that want to visit their site.
 
-## What to consider when buying website hosting? 
+## What to Consider When Buying Website Hosting?
 
 There are many, many different hosting providers, ranging in both price and quality.
 
-The important things to look at when buying website hosting are: 
+The important things to look at when buying website hosting are:
 
-* Up time 
-* How often it’s backed up 
-* Speed 
-* Storage 
-* Bandwidth  
+* Up time
+* How often it’s backed up
+* Speed
+* Storage
+* Bandwidth
 * SSL
 
 ### Up time
@@ -60,7 +60,7 @@ Because servers are a physical thing, freak accidents can happen. If that server
 
 You know how when everyone is at home in the early evening, Netflix can get a little slow or pages take longer to load? A similar thing is true for servers.
 
-With Netflix or home internet browsing, it tends to be your personal internet speed at home that slows things down, but if the servers your hosting provider is using don’t have a fast enough internet connection, your page could take a long time to load. 
+With Netflix or home internet browsing, it tends to be your personal internet speed at home that slows things down, but if the servers your hosting provider is using don’t have a fast enough internet connection, your page could take a long time to load.
 
 ### Storage
 
@@ -68,7 +68,7 @@ Hosting providers will often have several different plans and prices. More stora
 
 So how much storage space do you need for your website? It depends on the content of your site. While words take up very little space, videos and images make pages bigger.
 
-If a hosting provider is offering you 1GB of storage, that’s the equivalent of over 330 average web page which should be fine for most sites.
+If a hosting provider is offering you 1GB of storage, that’s the equivalent of over 330 average web pages which should be fine for most sites.
 
 ### Bandwidth width?
 
@@ -88,14 +88,14 @@ In February 2018, Google Chrome made changes to the way it handles SSL certifica
 
 We’ll cover SSL certificates in detail in an upcoming post, but in short — whatever your website, whether you take payments or not, you need an SSL certificate. Several hosting providers now offer a free SSL certificate, but if it’s not included, you’ll need to budget around £50 a year.
 
-## How much should website hosting cost?
+## How Much Should Website Hosting Cost?
 
 It’s a huge range: from free hosting that puts ads on your site to dedicated hosting with your own servers for all the super sites out there.
 
-The main options are: 
+The main options are:
 
 * Shared hosting: Multiple websites being hosted on the same server.
-* Virtual Private Server (VPS): A handful of websites share the same server, but have greater access to and control over things like the operating system and any apps that are installed. 
+* Virtual Private Server (VPS): A handful of websites share the same server, but have greater access to and control over things like the operating system and any apps that are installed.
 * Dedicated: Your own servers exclusively for your website
 
 Shared hosting is the most common and affordable option for sites that are just getting started.
