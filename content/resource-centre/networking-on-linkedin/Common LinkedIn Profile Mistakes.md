@@ -20,7 +20,10 @@ Use the matrix below to get an idea of how strong your profile is overall and wh
 
 |     |     | YES | NO  |
 | --- | --- | --- | --- |
-| 1   | Do you know how to turn off network notifications before making changes to your profile? | | |
+| 1 | Do you know how to turn off network notifications before making changes to your profile? | | |
+| 2 | Is your tagline different to your current job title?<br?e.g. Your role might be Communications Manager but your tagline might be broader: Communications expert, branding nerd, and profile raiser | --- | --- |
+| 3 | Do you have more than 200 connections? | | |
+| 3 | Do you have more than 200 connections? | | |
 
 ## How Does Your LinkedIn Profile Measure Up?
 
