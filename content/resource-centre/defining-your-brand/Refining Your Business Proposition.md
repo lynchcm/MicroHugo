@@ -32,9 +32,7 @@ At this stage, it doesn’t really matter if you’ve only touched on them or yo
 
 ## Step 2: Filter
 
-Looking at all the things on the paper, identify and circle the eight to ten things you have done the most.
-
-It doesn’t matter if you have less than eight, but don’t go over this number.
+Looking at all the things on the paper, identify and circle around eight to ten things you have done the most.
 
 ## Step 3: Matrix
 
