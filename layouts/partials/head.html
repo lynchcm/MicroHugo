@@ -9,7 +9,7 @@
         
         <meta name="description" content="{{ .Params.meta_description }}">
         <meta property="og:url" content="{{ .Permalink }}" />
-        <meta property="og:title" content="Micro Boutique Branding - {{ .Title }}" />
+        <meta property="og:title" content='Micro Boutique Branding{{ if ne .Title ("Micro Boutique Branding")}} - {{ .Title }}{{ end }}' />
         <meta property="og:description" content="{{ .Params.meta_description }}" />
         <meta property="og:image" content="/images/micro-link-image.png" />
         

@@ -1,5 +1,5 @@
 +++
-meta_description = ""
+meta_description = "Wondering if you need a website when you’ve already got a Facebook page? We run through the reasons why having your own website is so important to your small business."
 article_h1 = "Websites vs Facebook Pages"
 article_image = "/uploads/facebook-website.png"
 article_summary = "Everyone’s on Facebook right? Why pay for a website when you can have a free Facebook page? From getting your business found on search engines to telling your story in the right way, here’s why websites are so important."
