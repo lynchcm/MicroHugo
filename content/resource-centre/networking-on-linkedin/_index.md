@@ -1,6 +1,8 @@
 +++
 sitemap_exclude = false
 draft = false
+meta_description = "LinkedIn can be a great tool for small businesses. We cover how to make sure your LinkedIn profile is up to scratch and making the most of features like LinkedIn Groups."
+meta_og_url = "https://wearemicro.co/resource-centre/networking-on-linkedin/"
 title = "Networking on LinkedIn"
 layout = "article-list"
 article_list_h1 = "Networking on LinkedIn"

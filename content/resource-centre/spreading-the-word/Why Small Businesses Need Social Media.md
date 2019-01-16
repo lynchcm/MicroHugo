@@ -1,4 +1,5 @@
 +++
+meta_description = "Think small businesses don't need social media? We look at exactly how social media benefits small companies and how you can use it to affordably spread awareness and grow your business."
 article_h1 = "10 Reasons Why Small Businesses Need Social Media"
 article_image = "/uploads/social-media.jpg"
 article_summary = "There’s so much to do when you start a new business that social media can seem like a low priority. Actually, as a small business you can’t afford to ignore it. Here’s why social media should be top of your to do list."

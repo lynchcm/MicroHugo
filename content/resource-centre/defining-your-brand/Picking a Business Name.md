@@ -1,4 +1,6 @@
 +++
+meta_description = "Wondering how to pick a name for your business? In need of some business name inspiration? This article goes through 4 tips for choosing your company name as well as the legal requirements."
+meta_og_url = "https://wearemicro.co/resource-centre/defining-your-brand/picking-a-business-name/"
 article_h1 = "How to Pick a Business Name"
 article_image = "/uploads/blank-notebook.jpg"
 article_summary = "Naming your baby business can be really tough. We run through the legal business naming requirements to keep in mind as well as four techniques for coming up with the perfect catchy company name."

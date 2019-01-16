@@ -1,4 +1,5 @@
 +++
+meta_description = "It's not enough to launch your business, you've got to tell people about it. We look at small budget friendly marketing tips that will help your company grow."
 sitemap_exclude = false
 draft = false
 title = "Spreading the Word"

@@ -1,6 +1,7 @@
 +++
 sitemap_exclude = false
 draft = false
+meta_description = "Thinking about setting up a website? Our websites 101 guide covers all the jargon and things you'll need to think about comparing the best options for small businesses."
 title = "Getting Online: Websites 101"
 layout = "article-list"
 article_list_h1 = "Getting Online: Websites 101"

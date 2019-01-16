@@ -1,4 +1,6 @@
 +++
+meta_description = "The way the LinkedIn algorithm works means sharing updates isn't enough to market your small business. Here's how LinkedIn Groups can help you find clients on LinkedIn."
+meta_og_url = "https://wearemicro.co/resource-centre/networking-on-linkedin/linkedin-groups/"
 article_h1 = "What are LinkedIn Groups?"
 article_image = "/uploads/linkedin-group.jpg"
 article_summary = "From what they are to how to join them, here’s everything you need to know about making the most of LinkedIn Groups to help grow your small business or reach new freelance clients."

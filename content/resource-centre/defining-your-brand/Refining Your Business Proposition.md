@@ -1,4 +1,6 @@
 +++
+meta_description = "To compete with the big companies, small businesses need to establish themselves as experts. Here's how to refine your business proposition and ensure you're the go-to person in your industry."
+meta_og_url = "https://wearemicro.co/resource-centre/defining-your-brand/refining-your-business-proposition/"
 article_h1 = "How to Refine Your Business Proposition"
 article_image = "/uploads/woman-presenting.jpg"
 article_summary = "Whether it’s marketing or building services, if you claim you can do ‘a bit of everything’ you haven’t got a hope of competing with more established brands. Here’s how to narrow your focus and position yourself as an expert."

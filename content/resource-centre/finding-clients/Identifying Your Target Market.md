@@ -1,4 +1,6 @@
 +++
+meta_description = "We look at how to focus your marketing budget to get strong leads by identifying your target market with practical tips for breaking down your audience and figuring out who your strongest leads are."
+meta_og_url = "https://wearemicro.co/resource-centre/finding-clients/identifying-your-target-market/"
 article_h1 = "How to Identify Your Target Market"
 article_image = "/uploads/target.jpg"
 article_summary = "Time is a limited resource - particularly when you’re running a business. That’s why you can’t afford to waste time pursuing leads that aren’t a great fit. Here’s how to narrow down exactly who it is you need to be talking to."

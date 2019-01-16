@@ -1,4 +1,5 @@
 +++
+meta_description = "When you're a small company, it's really important to make a great first impression. We cover five quick and easy tips on how to make your small business look professional and stand out from the crowd."
 article_h1 = "5 Ways to Make Your Small Business Look More Professional"
 article_image = "/uploads/handshake.jpg"
 article_summary = "First impressions really are everything, especially when you’re trying to win over new clients as a small business. Make sure you come across as a real expert by nailing these five small details."

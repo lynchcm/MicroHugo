@@ -1,6 +1,8 @@
 +++
 sitemap_exclude = false
 draft = false
+meta_description = ""
+meta_og_url = "https://wearemicro.co/resource-centre/finding-clients/"
 title = "Finding Clients"
 layout = "article-list"
 article_list_h1 = "Finding Clients"

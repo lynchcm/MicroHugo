@@ -1,4 +1,5 @@
 +++
+meta_description = "We share our tried and tested, firsthand small business hacks from founding and running two businesses. From free tools to faking it til you make it."
 sitemap_exclude = false
 draft = false
 title = "Small Business Hacks"
