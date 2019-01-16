@@ -1,5 +1,5 @@
 +++
-sitemap_exclude = true
+sitemap_exclude = false
 draft = false
 title = "Finding Clients"
 layout = "article-list"

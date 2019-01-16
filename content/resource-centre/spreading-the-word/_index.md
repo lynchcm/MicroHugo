@@ -1,5 +1,5 @@
 +++
-sitemap_exclude = true
+sitemap_exclude = false
 draft = false
 title = "Spreading the Word"
 layout = "article-list"

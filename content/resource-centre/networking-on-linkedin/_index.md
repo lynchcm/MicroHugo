@@ -1,5 +1,5 @@
 +++
-sitemap_exclude = true
+sitemap_exclude = false
 draft = false
 title = "Networking on LinkedIn"
 layout = "article-list"

@@ -6,13 +6,14 @@
     <div class="container resource-centre-categories-bar">
         <div class="icon-bar">
             <div class="icon-box">
-                <p><a href="/resource-centre">RESOURCE<br>CENTRE<br>HOME</a></p>
+                <p id="icon-bar-grey-text"><a href="/resource-centre">RESOURCE<br>CENTRE<br>HOME</a></p>
             </div>
-            
+                {{ $title := .Title }}
                 {{ range where (.Site.Pages.ByParam "order") "Params.layout" "article-list" }}
-            <div class="icon-box">
+            <div class="icon-box{{ if eq $title .Title }} icon-bar-svg-stroke-active icon-bar-svg-fill-active{{ end }}">
                 <a href="{{ .Permalink }}">
-                {{ partial .Params.section_image . }}
+                    {{ partial .Params.section_image . }}
+                    <p class="icon-bar-lime-text capitals">{{ .Title }}</p>
                 </a>
             </div>
                 {{ end }}

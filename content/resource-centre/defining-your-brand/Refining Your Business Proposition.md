@@ -4,7 +4,7 @@ article_image = "/uploads/woman-presenting.jpg"
 article_summary = "Whether it’s marketing or building services, if you claim you can do ‘a bit of everything’ you haven’t got a hope of competing with more established brands. Here’s how to narrow your focus and position yourself as an expert."
 layout = "article"
 order = 2
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Refining Your Business Proposition"
 
 +++

@@ -4,7 +4,7 @@ article_image = "/uploads/facebook.jpg"
 article_summary = "Your website is up and the business cards are hot off the press… now what? This guide to modern inbound marketing techniques will make sure you know where to focus your attention those first few weeks after launch."
 layout = "article"
 order = 1
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Start Marketing a New Business"
 
 +++

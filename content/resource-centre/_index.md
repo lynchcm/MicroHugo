@@ -18,7 +18,7 @@ section_5_subtitle = "Make sure your profile reflects where you want to be"
 section_5_title = "Networking on LinkedIn"
 section_6_subtitle = "Save time and stay sane while running your own business"
 section_6_title = "Freelance Life Hacks"
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Resource Centre"
 
 +++

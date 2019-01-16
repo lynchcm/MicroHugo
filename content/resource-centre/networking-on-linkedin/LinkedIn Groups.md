@@ -4,7 +4,7 @@ article_image = "/uploads/linkedin-group.jpg"
 article_summary = "From what they are to how to join them, here’s everything you need to know about making the most of LinkedIn Groups to help grow your small business or reach new freelance clients."
 layout = "article"
 order = 3
-sitemap_exclude = true
+sitemap_exclude = false
 title = "LinkedIn Groups"
 
 +++

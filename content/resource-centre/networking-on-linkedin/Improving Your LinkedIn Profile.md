@@ -4,7 +4,7 @@ article_image = "/uploads/checklist.jpg"
 article_summary = "Following on from our LinkedIn evaluation matrix, here’s how to fix those common LinkedIn profile mistakes and take your profile from run of the mill to all star with a few simple tips and tweaks."
 layout = "article"
 order = 2
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Improving Your LinkedIn Profile"
 
 +++

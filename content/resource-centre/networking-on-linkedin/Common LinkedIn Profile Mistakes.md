@@ -4,7 +4,7 @@ article_image = "/uploads/matrix.jpg"
 article_summary = "Still using your job title as your tagline? Know which parts of your profile are visible to recruiters? Use our LinkedIn profile evaluation matrix to quickly figure out which parts of your profile are letting you down."
 layout = "article"
 order = 1
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Common LinkedIn Profile Mistakes"
 
 +++

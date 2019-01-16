@@ -4,7 +4,7 @@ article_image = "/uploads/free.jpg"
 article_summary = "The one thing all small business have in common? There’s never enough time in the day! From keeping track of tasks and customers to tracking your time, here are the eight tools you need to keep everything running smoothly."
 layout = "article"
 order = 1
-sitemap_exclude = true
+sitemap_exclude = false
 title = "8 Free Tools for Running Your Business"
 
 +++

@@ -4,7 +4,7 @@ article_image = "/uploads/social-media.jpg"
 article_summary = "There’s so much to do when you start a new business that social media can seem like a low priority. Actually, as a small business you can’t afford to ignore it. Here’s why social media should be top of your to do list."
 layout = "article"
 order = 2
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Why Small Businesses Need Social Media"
 
 +++

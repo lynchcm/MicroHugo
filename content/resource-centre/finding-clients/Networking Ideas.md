@@ -4,7 +4,7 @@ article_image = "/uploads/networking-handshake.jpg"
 article_summary = "Getting out there and finding new clients is essential to grow your business. But sometimes you don’t even have to leave the house to make new connections. Take a look at our guide to face-to-face and virtual networking for small businesses."
 layout = "article"
 order = 2
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Networking Ideas"
 
 +++

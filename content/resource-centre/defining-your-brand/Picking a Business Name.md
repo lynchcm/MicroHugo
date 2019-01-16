@@ -4,7 +4,7 @@ article_image = "/uploads/blank-notebook.jpg"
 article_summary = "Naming your baby business can be really tough. We run through the legal business naming requirements to keep in mind as well as four techniques for coming up with the perfect catchy company name."
 layout = "article"
 order = 1
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Picking a Business Name"
 
 +++

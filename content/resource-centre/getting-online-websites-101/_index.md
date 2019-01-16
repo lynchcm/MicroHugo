@@ -1,5 +1,5 @@
 +++
-sitemap_exclude = true
+sitemap_exclude = false
 draft = false
 title = "Getting Online: Websites 101"
 layout = "article-list"

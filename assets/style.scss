@@ -518,6 +518,12 @@ h3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+//        line-height: 1.2;
+        
+        li {
+            line-height: 100%;
+            padding: 15px 0;
+        }
         
         a {
             text-decoration: none;
@@ -1253,6 +1259,14 @@ input {
     
     .resource-centre-category-link-div {
         padding: 30px 20px;
+        
+        .icon-bar-svg-fill {
+            fill: $MicroLimeGreen;
+        }
+        
+        .icon-bar-svg-stroke {
+            stroke: $MicroLimeGreen;
+        }
     }
 
     
@@ -1415,9 +1429,17 @@ input {
     table {
         color: white;
         font-family: $MainFont;
+        font-weight: 200;
+        font-size: 18px;
+        margin: 0 auto 20px auto;
+        
+        li {
+            font-size: 18px;
+        }
         
         th, td {
             border: 1px solid white;
+            padding: 0 4px;
         }
     }
 }
@@ -2391,7 +2413,7 @@ input {
 }
 
 .border-on-top {
-    border-top: 2px solid $MicroTealLight;
+    border-top: 1px solid $MicroTealLight;
     width: 90%;
     margin: 0 auto;
 }
@@ -2408,7 +2430,7 @@ input {
 
 .border-on-right {
     @media only screen and (min-width: $medium) {
-        border-right: 2px solid $MicroTealLight;
+        border-right: 1px solid $MicroTealLight;
     }
 }
 
@@ -2428,9 +2450,56 @@ input {
             height: 100%;
             border-radius: 5px;
             padding: 5px 0;
+            position: relative;
             
             &:hover {
-                background-color: #FFFFFF55;
+                background-color: #FFFFFF33;
+                
+                .icon-bar-lime-text {
+                    display: block;
+                }
+                
+                .icon-bar-svg-stroke {
+                    stroke: transparent;
+                }
+
+                .icon-bar-svg-fill {
+                    fill: transparent;
+                }
+            }
+            
+            .icon-bar-svg-stroke {
+                stroke: $MicroTealLight;
+            }
+
+            .icon-bar-svg-fill {
+                fill: $MicroTealLight;
+            }
+            
+            #icon-bar-grey-text {
+                color: $MicroTealLight;
+            }
+            
+            .icon-bar-lime-text {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: none;
+                transform: translateY(-50%);
+                margin: 0;
+            }
+            
+        }
+        
+        .icon-bar-svg-stroke-active {
+            .icon-bar-svg-stroke {
+                stroke: $MicroLimeGreen;
+            }
+        }
+
+        .icon-bar-svg-fill-active {
+            .icon-bar-svg-fill {
+                fill: $MicroLimeGreen;
             }
         }
         
@@ -2440,9 +2509,10 @@ input {
         }
         
         p {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 24px;
             margin: 0 10px;
+            
         }
     }
     
@@ -2469,6 +2539,7 @@ input {
             
             &:hover {
                 text-decoration: none;
+                color: $MicroLimeGreen;
             }
         }
     }

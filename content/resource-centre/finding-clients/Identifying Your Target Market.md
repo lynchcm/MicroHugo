@@ -4,7 +4,7 @@ article_image = "/uploads/target.jpg"
 article_summary = "Time is a limited resource - particularly when you’re running a business. That’s why you can’t afford to waste time pursuing leads that aren’t a great fit. Here’s how to narrow down exactly who it is you need to be talking to."
 layout = "article"
 order = 1
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Identifying Your Target Market"
 
 +++

@@ -4,7 +4,7 @@ article_image = "/uploads/signposts.jpg"
 article_summary = "From how much to budget to where to buy them from, this guide covers everything you need to keep in mind when choosing and buying a domain for your new business website."
 layout = "article"
 order = 2
-sitemap_exclude = true
+sitemap_exclude = false
 title = "What is a Domain?"
 
 +++

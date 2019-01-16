@@ -4,7 +4,7 @@ article_image = "/uploads/facebook-website.png"
 article_summary = "Everyone’s on Facebook right? Why pay for a website when you can have a free Facebook page? From getting your business found on search engines to telling your story in the right way, here’s why websites are so important."
 layout = "article"
 order = 3
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Websites vs Facebook Pages"
 
 +++

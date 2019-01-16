@@ -4,7 +4,7 @@ article_image = "/uploads/cables.jpg"
 article_summary = "This jargon-busting article takes you through exactly what hosting is, why you need it, what to look for in a hosting provider, and how much you can expect to pay for it when setting up your own website."
 layout = "article"
 order = 1
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Website Hosting"
 
 +++

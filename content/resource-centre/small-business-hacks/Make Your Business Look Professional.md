@@ -4,7 +4,7 @@ article_image = "/uploads/handshake.jpg"
 article_summary = "First impressions really are everything, especially when you’re trying to win over new clients as a small business. Make sure you come across as a real expert by nailing these five small details."
 layout = "article"
 order = 2
-sitemap_exclude = true
+sitemap_exclude = false
 title = "Make Your Business Look Professional"
 
 +++
