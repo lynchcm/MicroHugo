@@ -46,8 +46,8 @@
 {{ if eq .Title "Services" }}
         
             //calculate price of additional features
-            var basic = 699;
-            var total = 699;
+            var basic = parseInt({{ .Site.Params.basePrice }});
+            var total = basic;
             var service = [150, 50, 250, 150, 150, 120, 0]
             var priceStringText = '£';
             var priceString = '';

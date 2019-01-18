@@ -363,6 +363,16 @@ body {
         padding-bottom: 40px;
     }
     
+    .container p {
+        color: white;
+        text-align: center;
+        padding-bottom: 30px;
+        
+        a {
+            color: $MicroLimeGreen;
+        }
+    }
+    
     form {
         width: 80%;
         margin: 0 auto;
