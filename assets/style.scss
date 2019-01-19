@@ -160,6 +160,10 @@ body {
             color: white;
         }
         
+        a {
+            color: $MicroLimeGreen;
+        }
+        
         a:hover {
             text-decoration: none;
         }
@@ -1183,6 +1187,13 @@ input {
         color: white;
         font-weight: 200;
         margin-bottom: 0;
+        
+        a {
+            color: $MicroSelected;
+            &:hover {
+                color: inherit;
+            }
+        }
     }
     #copyright {
         font-size: 18px;
@@ -2213,6 +2224,7 @@ input {
     
     p {
         color: white;
+        text-align: center;
     }
     
     .price-estimate {
