@@ -11,7 +11,7 @@
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:title" content='Micro Boutique Branding{{ if ne .Title ("Micro Boutique Branding")}} - {{ .Title }}{{ end }}' />
         <meta property="og:description" content="{{ .Params.meta_description }}" />
-        <meta property="og:image" content="/images/micro-link-image.png" />
+        <meta property="og:image" content="{{ .Params.meta_og_image }}" />
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
