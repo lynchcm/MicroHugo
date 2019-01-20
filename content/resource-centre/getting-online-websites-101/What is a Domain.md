@@ -1,6 +1,6 @@
 +++
 meta_description = "What exactly is a website domain? We cover how to buy a domain and how much to budget, as well as tips on what kind of domain to buy and how long you own a domain for."
-meta_og_url = "https://wearemicro.co/resource-centre/getting-online-websites-101/what-is-a-domain/"
+meta_og_image = "/images/getting-online-og.png"
 article_h1 = "What is a Domain?"
 article_image = "/uploads/signposts.jpg"
 article_summary = "From how much to budget to where to buy them from, this guide covers everything you need to keep in mind when choosing and buying a domain for your new business website."

@@ -1,5 +1,6 @@
 +++
 meta_description = "When you run your own business there's so much to do and on a tight budget. Here are the top 8 free tools you need to make sure your startup runs smoothly."
+meta_og_image = "/images/small-business-hacks-og.png"
 article_h1 = "The 8 Must-Have Free Tools for Running Your Own Business"
 article_image = "/uploads/free.jpg"
 article_summary = "The one thing all small business have in common? There’s never enough time in the day! From keeping track of tasks and customers to tracking your time, here are the eight tools you need to keep everything running smoothly."

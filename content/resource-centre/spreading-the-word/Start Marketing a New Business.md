@@ -1,5 +1,6 @@
 +++
 meta_description = "Launched your company and wondering where the clients are? We walk you through modern techniques to market your small business that are budget friendly and will help increase sales opportunities."
+meta_og_image = "/images/spreading-the-word-og.png"
 article_h1 = "How to Start Marketing a New Business"
 article_image = "/uploads/facebook.jpg"
 article_summary = "Your website is up and the business cards are hot off the press… now what? This guide to modern inbound marketing techniques will make sure you know where to focus your attention those first few weeks after launch."

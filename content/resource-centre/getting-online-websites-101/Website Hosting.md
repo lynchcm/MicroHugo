@@ -1,6 +1,6 @@
 +++
 meta_description = "Setting up your own website can be overwhelming. This basic guide walks you through everything you need to know about website hosting and choosing the right hosting option for you."
-meta_og_url = "https://wearemicro.co/resource-centre/getting-online-websites-101/website-hosting/"
+meta_og_image = "/images/getting-online-og.png"
 article_h1 = "What is Website Hosting?"
 article_image = "/uploads/cables.jpg"
 article_summary = "This jargon-busting article takes you through exactly what hosting is, why you need it, what to look for in a hosting provider, and how much you can expect to pay for it when setting up your own website."

@@ -1,6 +1,6 @@
 +++
 meta_description = "From the right LinkedIn tagline to making a custom profile URL, we cover 21 quick ways to improve your LinkedIn profile and help you get found by recruiters and potential clients."
-meta_og_url = "https://wearemicro.co/resource-centre/networking-on-linkedin/improving-your-linkedin-profile/"
+meta_og_image = "/images/networking-on-linkedin-og.png"
 article_h1 = "How to Improve Your LinkedIn Profile"
 article_image = "/uploads/checklist.jpg"
 article_summary = "Following on from our LinkedIn evaluation matrix, here’s how to fix those common LinkedIn profile mistakes and take your profile from run of the mill to all star with a few simple tips and tweaks."

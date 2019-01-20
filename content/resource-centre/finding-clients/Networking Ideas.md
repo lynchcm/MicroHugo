@@ -1,6 +1,6 @@
 +++
 meta_description = "Bored of LinkedIn? Here are top online networking ideas as well as networking events that will help raise your profile, find more customers, and grow your business."
-meta_og_url = "https://wearemicro.co/resource-centre/finding-clients/networking-ideas/"
+meta_og_image = "/images/finding-clients-og.png"
 article_h1 = "Networking Ideas for Finding New Clients and Customers"
 article_image = "/uploads/networking-handshake.jpg"
 article_summary = "Getting out there and finding new clients is essential to grow your business. But sometimes you don’t even have to leave the house to make new connections. Take a look at our guide to face-to-face and virtual networking for small businesses."

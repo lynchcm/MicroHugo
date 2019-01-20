@@ -1,6 +1,6 @@
 +++
 meta_description = "From refining your business proposition to marketing, our resource centre is packed with tips on how to make your small business successful based on our first hand experience."
-meta_og_url = "https://wearemicro.co/resource-centre/"
+meta_og_image = "/images/resource-centre-og.png"
 sitemap_exclude = false
 title = "Resource Centre"
 

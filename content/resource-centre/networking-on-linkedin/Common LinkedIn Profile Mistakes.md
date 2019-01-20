@@ -1,5 +1,6 @@
 +++
 meta_description = "Avoid common LinkedIn mistakes and get the most out of your profile with this LinkedIn evaluation matrix that will help you identify things to improve and bring recruiters and clients to your profile."
+meta_og_image = "/images/networking-on-linkedin-og.png"
 article_h1 = "Are You Making These Common LinkedIn Profile Mistakes?"
 article_image = "/uploads/matrix.jpg"
 article_summary = "Still using your job title as your tagline? Know which parts of your profile are visible to recruiters? Use our LinkedIn profile evaluation matrix to quickly figure out which parts of your profile are letting you down."

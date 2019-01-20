@@ -2,6 +2,7 @@
 sitemap_exclude = false
 draft = false
 meta_description = "How to find clients is one of the hardest bits of being a small business. From identifying your target marketing to networking, we look at the best way to reach new customers."
+meta_og_image = "/images/finding-clients-og.png"
 title = "Finding Clients"
 layout = "article-list"
 article_list_h1 = "Finding Clients"
