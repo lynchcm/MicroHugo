@@ -169,7 +169,6 @@
                 mouseXfromCentre = event.pageX - ($(window).width() / 2);
                 mouseYfromCentre = event.pageY - ($(window).height() / 2);
                 scaledPosFromCentre = [(positionOffset1 * mouseXfromCentre), (positionOffset1 * mouseYfromCentre), (positionOffset2 * (mouseXfromCentre + mouseYfromCentre))];
-                //alert(scaledPosFromCentre[2]);
             });
             
             
@@ -237,40 +236,34 @@
             
             var portfolioLaptopImages = ['/images/lifeconsultancygroup-laptop.png', '/images/ckcoaching-laptop.png', '/images/5thelement-laptop.png', '/images/concept34-laptop.png', '/images/genneu-laptop.png'];
             var portfolioMobileImages = ['/images/lifeconsultancygroup-mobile.png', '/images/ckcoaching-mobile.png', '/images/5thelement-mobile.png', '/images/concept34-mobile.png', '/images/genneu-mobile.png'];
-            var i = 1;
             var oddOrEven;
             var EvenOrOdd;
-            var j;
+            var animationCounter = 0;
+            var animationCycleCount;
+            var zIndexLaptop = [4999999, 4999998, 4999997, 4999996]
+            var zIndexMobile = [9999999, 9999998, 9999997, 9999996]
             setInterval(function() {
-                j = i % portfolioLaptopImages.length;
-                oddOrEven = i % 2;
-                if (oddOrEven == 1) {
-                    evenOrOdd = 2;
-                } else {
-                    oddOrEven = 2;
-                    evenOrOdd = 1;
-                }
-                $('#portfolio-mobile-animation-' + oddOrEven).animate({
+                animationCycleCount = animationCounter % 4;
+                $('#portfolio-mobile-animation-' + animationCycleCount).animate({
                     top: '100%'
                 });
-                $('#portfolio-laptop-animation-' + oddOrEven).animate({
+                $('#portfolio-laptop-animation-' + animationCycleCount).animate({
                     top: '100%'
                 }, function() {
-                    
-                    $('#portfolio-laptop-animation-' + oddOrEven).css('z-index', '5'); //move front image backwards
-                    $('#portfolio-mobile-animation-' + oddOrEven).css('z-index', '9');
-                    $('#portfolio-laptop-animation-' + evenOrOdd).css('z-index', '7'); //move back image forwards
-                    $('#portfolio-mobile-animation-' + evenOrOdd).css('z-index', '10');
-                    $('#portfolio-laptop-animation-' + oddOrEven).attr('src', portfolioLaptopImages[j]);
-                    $('#portfolio-mobile-animation-' + oddOrEven).attr('src', portfolioMobileImages[j]);//change now hidden image to next image
-                    $('#portfolio-laptop-animation-' + oddOrEven).removeAttr('style'); //move changed image back inside frame ready to be revealed
-                    $('#portfolio-mobile-animation-' + oddOrEven).removeAttr('style');
-                    i++;
-                    //alert(j);
-                })
-                //$('#portfolio-laptop').attr('src', '/images/concept34-laptop.png');
+                    zIndexLaptop[animationCycleCount] = $('#portfolio-laptop-animation-' + animationCycleCount).css('z-index');
+                    zIndexMobile[animationCycleCount] = $('#portfolio-mobile-animation-' + animationCycleCount).css('z-index');
+                    zIndexLaptop[animationCycleCount] -= 4;
+                    zIndexMobile[animationCycleCount] -= 4;
+                    $('#portfolio-laptop-animation-' + animationCycleCount).css('z-index', zIndexLaptop[animationCycleCount]);
+                    $('#portfolio-mobile-animation-' + animationCycleCount).css('z-index', zIndexMobile[animationCycleCount]);
+                    $('#portfolio-laptop-animation-' + animationCycleCount).css('top', '');
+                    $('#portfolio-mobile-animation-' + animationCycleCount).css('top', '');
+                });
                 
+                animationCounter++;
             }, 1250);
+                
+            
             
 {{ end }}
             

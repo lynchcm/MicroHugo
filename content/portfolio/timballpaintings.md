@@ -2,7 +2,7 @@
 sitemap_exclude = true
 type = "portfolio"
 order = "2"
-laptopImg = "/images/timballpaintings-desktop.png"
+laptopImg = "/images/timballpaintings-laptop.png"
 mobileImg = "/images/timballpaintings-mobile.png"
 company = "Tim Ball"
 category = "Painter"

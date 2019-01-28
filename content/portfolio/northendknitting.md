@@ -2,7 +2,7 @@
 sitemap_exclude = true
 type = "portfolio"
 order = "1"
-laptopImg = "/images/northendknitting-desktop.png"
+laptopImg = "/images/northendknitting-laptop.png"
 mobileImg = "/images/northendknitting-mobile.png"
 company = "North End Knitting School"
 category = "Knitting School"
