@@ -236,12 +236,11 @@
             
             var portfolioLaptopImages = ['/images/lifeconsultancygroup-laptop.png', '/images/ckcoaching-laptop.png', '/images/5thelement-laptop.png', '/images/concept34-laptop.png', '/images/genneu-laptop.png'];
             var portfolioMobileImages = ['/images/lifeconsultancygroup-mobile.png', '/images/ckcoaching-mobile.png', '/images/5thelement-mobile.png', '/images/concept34-mobile.png', '/images/genneu-mobile.png'];
-            var oddOrEven;
-            var EvenOrOdd;
             var animationCounter = 0;
             var animationCycleCount;
-            var zIndexLaptop = [4999999, 4999998, 4999997, 4999996]
-            var zIndexMobile = [9999999, 9999998, 9999997, 9999996]
+            var zIndexLaptop = [4999999, 4999998, 4999997, 4999996, 4999995];
+            var zIndexMobile = [9999999, 9999998, 9999997, 9999996, 9999995];
+            var j;
             setInterval(function() {
                 animationCycleCount = animationCounter % 4;
                 $('#portfolio-mobile-animation-' + animationCycleCount).animate({
@@ -250,18 +249,22 @@
                 $('#portfolio-laptop-animation-' + animationCycleCount).animate({
                     top: '100%'
                 }, function() {
-                    zIndexLaptop[animationCycleCount] = $('#portfolio-laptop-animation-' + animationCycleCount).css('z-index');
-                    zIndexMobile[animationCycleCount] = $('#portfolio-mobile-animation-' + animationCycleCount).css('z-index');
-                    zIndexLaptop[animationCycleCount] -= 4;
-                    zIndexMobile[animationCycleCount] -= 4;
-                    $('#portfolio-laptop-animation-' + animationCycleCount).css('z-index', zIndexLaptop[animationCycleCount]);
-                    $('#portfolio-mobile-animation-' + animationCycleCount).css('z-index', zIndexMobile[animationCycleCount]);
-                    $('#portfolio-laptop-animation-' + animationCycleCount).css('top', '');
+                    
+                    $('#portfolio-mobile-animation-' + animationCycleCount).css('z-index', zIndexMobile[4]);
+                    $('#portfolio-laptop-animation-' + animationCycleCount).css('z-index', zIndexLaptop[4]);
+                    
+                    for (var i = 0; i < 4; i++) {
+                        j = ((animationCycleCount + 1 + i) % 4);
+                        $('#portfolio-mobile-animation-' + j).css('z-index', zIndexMobile[i]);
+                        $('#portfolio-laptop-animation-' + j).css('z-index', zIndexLaptop[i]);
+                    }
+                    
                     $('#portfolio-mobile-animation-' + animationCycleCount).css('top', '');
+                    $('#portfolio-laptop-animation-' + animationCycleCount).css('top', '');
                 });
                 
                 animationCounter++;
-            }, 1250);
+            }, 2500);
                 
             
             
