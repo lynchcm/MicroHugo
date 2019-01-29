@@ -5,13 +5,13 @@
 <!--    <div class="template-background-2"></div>-->
 <!--    <div class="template-background-3"></div>-->
     
-    <div class="container-fluid page-intro">
-        <div class="container">
+    <div class="full-width page-intro">
+        <div class="ltd-width">
             <h1 class="capitals">Resource Centre</h1>
             <p>{{ .Content }}</p>
         </div>
     </div>
-    <div class="container" id="resource-centre-sections">
+    <div class="ltd-width" id="resource-centre-sections">
 
 
         {{ $.Scratch.Set "counter" 0 }}
@@ -19,9 +19,9 @@
         {{ range where (.Site.Pages.ByParam "order") "Params.layout" "article-list" }}
             {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         
-            {{ if eq (mod ($.Scratch.Get "counter") 2) 1 }}<div class="row">{{ end }}
+            {{ if eq (mod ($.Scratch.Get "counter") 2) 1 }}<div class="row2">{{ end }}
 <!--                <div class="grey-hover-overlay"></div>-->
-                <div class='col-md-6{{ if gt ($.Scratch.Get "counter") 2 }} border-on-top{{ end }}{{ if eq ($.Scratch.Get "counter") 2 }} border-on-top-mobile{{ end }}{{ if eq (mod ($.Scratch.Get "counter") 2) 1 }} border-on-right{{ end }}'>
+                <div class='col-50-med{{ if gt ($.Scratch.Get "counter") 2 }} border-on-top{{ end }}{{ if eq ($.Scratch.Get "counter") 2 }} border-on-top-mobile{{ end }}{{ if eq (mod ($.Scratch.Get "counter") 2) 1 }} border-on-right{{ end }}'>
                     <a href="{{ .Permalink }}">
                         <div class="resource-centre-category-link-div">
                             {{ partial .Params.section_image . }}

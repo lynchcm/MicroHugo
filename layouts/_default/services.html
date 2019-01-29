@@ -6,18 +6,18 @@
     <div class="template-background-3"></div>
 
 
-    <div class="container-fluid page-intro services-intro">
-        <div class="container">
+    <div class="full-width page-intro services-intro">
+        <div class="ltd-width">
             <h1 class="capitals">{{ .Title }}</h1>
             <p>We build affordable custom websites, tailored to your business. Choose exactly what you need from the additional features menu below to get an immediate price estimate. If you're looking for something that's not mentioned or you’re not sure what you need, get in touch and tell us more. If you’re based in Sheffield, we’re happy to arrange a face-to-face meeting.</p>
         </div>
     </div>
 
-    <div class="container-fluid always-included-and-additional">
-        <div class="container">
+    <div class="full-width always-included-and-additional">
+        <div class="ltd-width">
             <h2 class="capitals">Always Included</h2>
-            <div class="row">
-                <div class="col-md-6 no-padding">
+            <div class="row2">
+                <div class="col-50-med no-padding">
                     <table>
                         <tr>
                             <td class="tick">{{ partial "tick.svg" . }}</td>
@@ -37,7 +37,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-md-6 no-padding">
+                <div class="col-50-med no-padding">
                     <table>
                         <tr>
                             <td class="tick">{{ partial "tick.svg" . }}</td>
@@ -80,7 +80,7 @@
         </div>
     </div>
     <div class="service-selection-scrollbar-hide">
-        <div class="container-fluid service-selection-container">
+        <div class="full-width service-selection-container">
             <div class="service-selection-box-wrapper">
                 <input type="checkbox" class="service-checkbox" id="service-1">
                 <input type="checkbox" class="service-checkbox" id="service-2">
@@ -118,9 +118,8 @@
             </div>
         </div>
     </div>
-    <!--<div class="hide-scrollbar"></div>-->
-    <div class="container-fluid estimate-section">
-        <div class="container">
+    <div class="full-width estimate-section">
+        <div class="ltd-width">
             <div class="price-estimate">
                 <p class="capitals">Your estimate:</p>
                 <p id="estimate-value"></p>
@@ -129,11 +128,11 @@
             <p>The above quote is a rough estimate based on the information you've given us. We'd love to hear about your project in more detail: complete the contact form below and we'll be in touch to set up a 15-minute intro call.</p>
         </div>
     </div>
-    <div class="container-fluid faq-section">
-        <div class="container">
+    <div class="full-width faq-section">
+        <div class="ltd-width">
             <h2 class="capitals">FAQs</h2>
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row2">
+                <div class="col-50-lg">
 
                     {{ $.Scratch.Set "counter" 0 }}
                     {{ range where (.Pages.ByParam "order") "Params.type" "faq-col-1" }}
@@ -153,7 +152,7 @@
                     {{ end }}
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-50-lg">
 
                     {{ $.Scratch.Set "counter" 5 }}
                     {{ range where (.Pages.ByParam "order") "Params.type" "faq-col-2" }}

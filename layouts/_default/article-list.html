@@ -3,7 +3,7 @@
 <div class="template-background resource-centre-background">
     <div class="resource-centre-diagonal"></div>
     
-    <div class="container resource-centre-categories-bar">
+    <div class="full-width resource-centre-categories-bar">
         <div class="icon-bar">
             <div class="icon-box">
                 <p id="icon-bar-grey-text"><a href="/resource-centre">RESOURCE<br>CENTRE<br>HOME</a></p>
@@ -24,16 +24,16 @@
         </div>
     </div>
     
-    <div class="container article-list-intro">
+    <div class="ltd-width article-list-intro">
         <h1 class="capitals">{{ .Params.article_list_h1 }}</h1>
         <p>{{ .Content }}</p>
     </div>
 
     {{ range .Pages.ByParam "order" }}
-    <div class="container article-list-item-wrapper">
+    <div class="ltd-width article-list-item-wrapper">
         <a href="{{ .Permalink }}">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row2">
+                <div class="col-50-med">
                     <div class="article-list-image">
                         {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.article_image) }}
                         {{ $resizedSmall := $resource.Resize "400x" }}
@@ -43,7 +43,7 @@
                              src="{{$resource.Permalink}}">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-50-med">
                     <div class="article-list-text">
                         <h2>{{ .Params.article_h1 }}</h2>
                         <p>{{ .Params.article_summary }}</p>

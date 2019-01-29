@@ -17,11 +17,11 @@
     
     <div id="micro-summary">
         <h2 class="capitals">Affordable<br>Websites &amp; Branding</h2>
-        <div class="row">
-            <div class="col-lg-6 text-column">
+        <div class="row2">
+            <div class="col-50-lg text-column intro-portfolio">
                 <p>We’re a Sheffield based web design company that specialise in creating affordable, custom sites for small businesses. All our sites are secure, google friendly, and adapt to mobile and tablet. There’s no copy and paste templates: your site will be as unique as your business. Prices start from just £{{ .Site.Params.basePrice }} &mdash; head to our <a href="/services/">Services page</a> for an instant&nbsp;quote.</p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-50-lg intro-portfolio">
                 <div class= column-container>
                     <div id="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
                     <picture class="portfolio-laptop-animation" id="portfolio-laptop-animation-0">
@@ -66,52 +66,50 @@
     </div>
 </div>
 
-<div class="container-fluid features-background">
-    <!--<div class="container">-->
-        <div class="row feature-columns-row">
-            <div class="col-md-6 col-lg-3">
-                <div class="svg-img">
-                    {{ partial "envelope.svg" . }}
-                </div>
-                <h3 class="capitals">360<br>APPROACH</h3>
-                <p>Save time and create a coherent, profesional look with our total brand approach.</p>
+<div class="full-width features-background">
+    <div class="row2 feature-columns-row">
+        <div class="col-50-med col-25-lg">
+            <div class="svg-img">
+                {{ partial "envelope.svg" . }}
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="svg-img">
-                    {{ partial "pound-icon.svg" . }}
-                </div>
-                <h3 class="capitals">MICRO<br>PRICES</h3>
-                <p>Build your own package, only paying for exactly what you need.</p>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="svg-img">
-                    {{ partial "map-icon.svg" . }}
-                </div>
-                <h3 class="capitals">Never Outsourced</h3>
-                <p>Everything is done by our small, Sheffield-based team, not outsourced to freelancers.</p>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="svg-img">
-                    {{ partial "calendar-icon.svg" . }}
-                </div>
-                <h3 class="capitals">QUICK TURNAROUND</h3>
-                <p>We turn around custom websites in weeks, not months.</p>
-            </div>
+            <h3 class="capitals">360<br>APPROACH</h3>
+            <p>Save time and create a coherent, profesional look with our total brand approach.</p>
         </div>
-    <!--</div>-->
+        <div class="col-50-med col-25-lg">
+            <div class="svg-img">
+                {{ partial "pound-icon.svg" . }}
+            </div>
+            <h3 class="capitals">MICRO<br>PRICES</h3>
+            <p>Build your own package, only paying for exactly what you need.</p>
+        </div>
+        <div class="col-50-med col-25-lg">
+            <div class="svg-img">
+                {{ partial "map-icon.svg" . }}
+            </div>
+            <h3 class="capitals">Never Outsourced</h3>
+            <p>Everything is done by our small, Sheffield-based team, not outsourced to freelancers.</p>
+        </div>
+        <div class="col-50-med col-25-lg">
+            <div class="svg-img">
+                {{ partial "calendar-icon.svg" . }}
+            </div>
+            <h3 class="capitals">QUICK TURNAROUND</h3>
+            <p>We turn around custom websites in weeks, not months.</p>
+        </div>
+    </div>
 </div>
 
-<div class="container-fluid features-and-about-background">
+<div class="full-width features-and-about-background">
     <h2 class="capitals">About Us</h2>
-    <div class="row about-row">
-        <div class="col-lg-6 about-image">
+    <div class="row2 about-row">
+        <div class="col-50-lg about-image">
 <!--            <img src="images/blue-both.png">-->
             <picture>
                 <source srcset="/images/blue-both.webp" type="image/webp">
                 <img src="images/blue-both.png" alt="micro boutique branding co-founders">
             </picture>
         </div>
-        <div class="col-lg-6">
+        <div class="col-50-lg">
             <h2 class="capitals">About Us</h2>
             <p>When we started our first business, we struggled to find an affordable website. We didn't want a copy-and-paste site or to be tied to a site builder, but we didn't have a big budget.</p>
             <p>That’s why we started Micro &mdash; to be the service we couldn't find. Drawing on our first-hand business experience, we develop eye-catching websites that help small businesses compete with corporate giants and reach more customers.</p>

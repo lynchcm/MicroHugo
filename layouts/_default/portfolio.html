@@ -6,13 +6,13 @@
     <div class="template-background-3"></div>
 
 
-    <div class="container-fluid page-intro portfolio-intro">
-        <div class="container">
-            <h1 class="capitals">{{ .Title }}</h1>
-        </div>
+    <div class="full-width page-intro portfolio-intro">
+<!--        <div class="container">-->
+        <h1 class="capitals">{{ .Title }}</h1>
+<!--        </div>-->
     </div>
 
-    <div class="container-fluid no-padding">
+    <div class="full-width no-padding">
         <div class="slideshow testimonials-slideshow">
             <input type="radio" id="slide-1-radio" name="testimonials" class="slideshow-radio" checked="checked">
             <input type="radio" id="slide-2-radio" name="testimonials" class="slideshow-radio">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-    <div class="container portfolio">
+    <div class="ltd-width portfolio">
 
         {{ $.Scratch.Set "counter" 0 }}
         {{ range where (.Pages.ByParam "order") "Params.type" "portfolio" }}
@@ -89,8 +89,8 @@
             {{ end }}
 
 
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row2">
+            <div class="col-50-lg portfolio-col">
                 <div class= column-container>
                     <div class="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
                     <img class="portfolio-laptop" src="{{ .Params.laptopImg }}">
@@ -98,7 +98,7 @@
                     <img class="portfolio-mobile" src="{{ .Params.mobileImg }}">
                 </div>
             </div>
-            <div class="col-lg-6 portfolio-text">
+            <div class="col-50-lg portfolio-col portfolio-text">
                 <h2 class="capitals">{{ .Params.company }}</h2>
                 <a href="{{ .Params.linkURL }}" target="_blank">{{ .Params.linkName }}</a>
                 <p>{{ .Params.description }}</p>
