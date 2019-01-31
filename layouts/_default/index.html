@@ -26,7 +26,9 @@
                     <div id="portfolio-shell-laptop">{{ partial "portfolio-shell-laptop.svg" . }}</div>
                     <picture class="portfolio-laptop-animation" id="portfolio-laptop-animation-0">
                         <source class="lazyLoad" data-src="/images/timballpaintings-laptop.webp" type="image/webp">
-                        <img class="lazyLoad" data-src="/images/northendknitting-laptop.png"> 
+                        <noscript><source srcset="/images/timballpaintings-laptop.webp" type="image/webp"></noscript>
+                        <img class="lazyLoad" data-src="/images/timballpaintings-laptop.png">
+                        <noscript><img src="/images/timballpaintings-laptop.png"></noscript>
                     </picture>
                     <picture class="portfolio-laptop-animation" id="portfolio-laptop-animation-1">
                         <source class="lazyLoad" data-src="/images/lifeconsultinggroup-laptop.webp" type="image/webp">
@@ -43,7 +45,9 @@
                     <div id="portfolio-shell-mobile">{{ partial "portfolio-shell-mobile.svg" . }}</div>
                     <picture class="portfolio-mobile-animation" id="portfolio-mobile-animation-0">
                         <source class="lazyLoad" data-src="/images/timballpaintings-mobile.webp" type="image/webp">
+                        <noscript><source srcset="/images/timballpaintings-mobile.webp" type="image/webp"></noscript>
                         <img class="lazyLoad" data-src="/images/timballpaintings-mobile.png"> 
+                        <noscript><img src="/images/timballpaintings-mobile.png"></noscript>
                     </picture>
                     <picture class="portfolio-mobile-animation" id="portfolio-mobile-animation-1">
                         <source class="lazyLoad" data-src="/images/lifeconsultinggroup-mobile.webp" type="image/webp">

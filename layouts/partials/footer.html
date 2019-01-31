@@ -173,7 +173,14 @@
                 lazyLoadImages.forEach(function(image) {
                     imageObserver.observe(image);
                 })
+            } else {
+                setTimeout(function() {
+                    lazyLoadImages.forEach(function(image) {
+                        loadImage(image);
+                    })
+                }, 1000);
             }
+                
                 
             
             function loadImage(image) {
