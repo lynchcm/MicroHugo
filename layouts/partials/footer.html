@@ -158,37 +158,37 @@
                 $('#menu-checkbox').prop('checked', false);
             });
             
-            const lazyLoadImages = document.querySelectorAll(".lazyLoad");
-            
-            var imageObserver = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        loadImage(entry.target);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            })
-            
-            lazyLoadImages.forEach(function(image) {
-                imageObserver.observe(image);
-            })
-            
-            function loadImage(image) {
-                const src = image.dataset.src;
-                if (image.tagName == 'img' || image.tagName == 'IMG') {
-                    image.src = src;
-                    if (!src) {
-                        return;
-                    }
-                }
-                if (image.tagName == 'source' || image.tagName == 'SOURCE') {
-                    image.srcset = src;
-                    if (!src) {
-                        return;
-                    }
-                }
-            }
-            
+//            const lazyLoadImages = document.querySelectorAll(".lazyLoad");
+//            
+//            var imageObserver = new IntersectionObserver(function(entries, observer) {
+//                entries.forEach(function(entry) {
+//                    if (entry.isIntersecting) {
+//                        loadImage(entry.target);
+//                        observer.unobserve(entry.target);
+//                    }
+//                });
+//            })
+//            
+//            lazyLoadImages.forEach(function(image) {
+//                imageObserver.observe(image);
+//            })
+//            
+//            function loadImage(image) {
+//                const src = image.dataset.src;
+//                if (image.tagName == 'img' || image.tagName == 'IMG') {
+//                    image.src = src;
+//                    if (!src) {
+//                        return;
+//                    }
+//                }
+//                if (image.tagName == 'source' || image.tagName == 'SOURCE') {
+//                    image.srcset = src;
+//                    if (!src) {
+//                        return;
+//                    }
+//                }
+//            }
+//            
            
             
             var scaledPosFromCentre = [0, 0, 0];
