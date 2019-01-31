@@ -158,7 +158,7 @@
                 $('#menu-checkbox').prop('checked', false);
             });
             
-//            const lazyLoadImages = document.querySelectorAll(".lazyLoad");
+            const lazyLoadImages = document.querySelectorAll(".lazyLoad");
 //            
 //            var imageObserver = new IntersectionObserver(function(entries, observer) {
 //                entries.forEach(function(entry) {
@@ -173,21 +173,21 @@
 //                imageObserver.observe(image);
 //            })
 //            
-//            function loadImage(image) {
-//                const src = image.dataset.src;
-//                if (image.tagName == 'img' || image.tagName == 'IMG') {
-//                    image.src = src;
-//                    if (!src) {
-//                        return;
-//                    }
-//                }
-//                if (image.tagName == 'source' || image.tagName == 'SOURCE') {
-//                    image.srcset = src;
-//                    if (!src) {
-//                        return;
-//                    }
-//                }
-//            }
+            function loadImage(image) {
+                const src = image.dataset.src;
+                if (image.tagName == 'img' || image.tagName == 'IMG') {
+                    image.src = src;
+                    if (!src) {
+                        return;
+                    }
+                }
+                if (image.tagName == 'source' || image.tagName == 'SOURCE') {
+                    image.srcset = src;
+                    if (!src) {
+                        return;
+                    }
+                }
+            }
 //            
            
             
